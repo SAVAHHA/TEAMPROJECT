@@ -16,7 +16,8 @@ namespace TEAMPROJECT.Core
         public List<User> Users = new List<User>();
         
         public virtual T Deserialize<T>(string fileName) {
-            using(var sr = new StreamReader(fileName)) {
+            using(var sr = new StreamReader(regex.Replace(Environment.CurrentDirectory, "") + fileName)) 
+            {
                 using(var jsonReader = new JsonTextReader(sr)) 
                 {
                     var serializer = new JsonSerializer();
@@ -26,7 +27,7 @@ namespace TEAMPROJECT.Core
         }
         public virtual void Serialize<T>(string fileName, T data)
         {
-            using (var sw = new StreamWriter(fileName))
+            using (var sw = new StreamWriter(regex.Replace(Environment.CurrentDirectory, "") + fileName))
             {
                 using (var jsonWriter = new JsonTextWriter(sw))
                 {
