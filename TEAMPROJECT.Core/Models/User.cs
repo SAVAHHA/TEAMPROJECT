@@ -12,6 +12,7 @@ namespace TEAMPROJECT.Core
         public DateTime DateOfBirth { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
+        public int UserID { get; set; }
 
     }
 }
