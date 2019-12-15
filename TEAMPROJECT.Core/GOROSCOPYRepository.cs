@@ -5,11 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace TEAMPROJECT.Core
 {
     class GOROSCOPYRepository: IRepository
     {
+        //Регулярное вырожение для двух проектов
+        private Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.User\\bin\\Debug|\\TEAMPROJECT\.GUI\.Owner\\bin\\Debug");
+        
         public virtual T Deserialize<T>(string fileName) {
             using(var sr = new StreamReader(fileName)) {
                 using(var jsonReader = new JsonTextReader(sr)) 
