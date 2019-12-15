@@ -13,6 +13,7 @@ namespace TEAMPROJECT.Core
     {
         //Регулярное вырожение для двух проектов
         private Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.User\\bin\\Debug|\\TEAMPROJECT\.GUI\.Owner\\bin\\Debug");
+        public List<>
         
         public virtual T Deserialize<T>(string fileName) {
             using(var sr = new StreamReader(fileName)) {
@@ -23,7 +24,6 @@ namespace TEAMPROJECT.Core
                 }
             }
         }
-
         public virtual void Serialize<T>(string fileName, T data)
         {
             using (var sw = new StreamWriter(fileName))
@@ -35,5 +35,7 @@ namespace TEAMPROJECT.Core
                 }
             }
         }
+
+        public 
     }
 }
