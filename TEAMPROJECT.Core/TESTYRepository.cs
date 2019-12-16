@@ -3,24 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using System.IO;
 using System.Text.RegularExpressions;
+using System.IO;
+using Newtonsoft.Json;
 using TEAMPROJECT.Core.Models;
-//using TEAMPROJECT.Core.Interfaces;
 
 namespace TEAMPROJECT.Core
 {
-    class GOROSCOPYRepository: IRepository
-    {
-        //Регулярное вырожение для двух проектов
+    class TESTYRepository : IRepository
+    { //Регулярное вырожение для двух проектов
         private Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.User\\bin\\Debug|\\TEAMPROJECT\.GUI\.Owner\\bin\\Debug");
         public List<User> Users = new List<User>();
-        
-        public virtual T Deserialize<T>(string fileName) {
-            using(var sr = new StreamReader(regex.Replace(Environment.CurrentDirectory, "") + fileName)) 
+
+        public virtual T Deserialize<T>(string fileName)
+        {
+            using (var sr = new StreamReader(regex.Replace(Environment.CurrentDirectory, "") + fileName))
             {
-                using(var jsonReader = new JsonTextReader(sr)) 
+                using (var jsonReader = new JsonTextReader(sr))
                 {
                     var serializer = new JsonSerializer();
                     return serializer.Deserialize<T>(jsonReader);
@@ -39,6 +38,6 @@ namespace TEAMPROJECT.Core
             }
         }
 
-         
+
     }
 }
