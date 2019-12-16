@@ -26,7 +26,7 @@ namespace TEAMPROJECT.GUI.User
 
         private void EnterAccountButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
 
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
