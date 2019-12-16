@@ -5,7 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.User"
         mc:Ignorable="d"
-        Title="SelectTest" Height="450" Width="800">
+        Title="SelectTest" Height="450" Width="800" Background="#d5e7fb" >
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#f793ff"/>
+            <Setter Property="Foreground" Value="#4f0b40"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#67103a"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -21,8 +42,10 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="151,149,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Grid.Row="3">Кто ты из Винкс?</Button>
         <Button Content="Button" HorizontalAlignment="Left" Margin="151,223,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="101,34,0,0" TextWrapping="Wrap" Text="Выбери тест" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="101,10.333,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
