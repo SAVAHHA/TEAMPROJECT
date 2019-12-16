@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.Owner"
         mc:Ignorable="d"
-        Title="WelcomingWindow" Height="450" Width="800" Background="Green">
+        Title="WelcomingWindow" Height="450" Width="800" Background="MistyRose">
     <Grid>
         
     </Grid>
