@@ -8,12 +8,12 @@ using System.IO;
 using System.Text.RegularExpressions;
 using TEAMPROJECT.Core.Models;
 using TEAMPROJECT.Core.Interfaces;
-//using TEAMPROJECT.Core.Interfaces;
 
 namespace TEAMPROJECT.Core
 {
     class GOROSCOPYRepository: Repository
     {
-        
+        new List<User> Users = new List<User>();
+
     }
 }
