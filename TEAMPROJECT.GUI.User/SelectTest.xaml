@@ -12,6 +12,15 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Button Content="Button" HorizontalAlignment="Left" Margin="151,149,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="151,223,0,0" VerticalAlignment="Top" Width="75"/>
 
