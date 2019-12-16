@@ -14,6 +14,8 @@ namespace TEAMPROJECT.Core
     class GOROSCOPYRepository: Repository
     {
         new List<User> Users = new List<User>();
+        List<Zodiac> Zodiacs = new List<Zodiac>();
+        List<Prediction> Predictions = new List<Prediction>();
 
     }
 }
