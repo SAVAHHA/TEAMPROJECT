@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Text.RegularExpressions;
 using TEAMPROJECT.Core.Models;
+using TEAMPROJECT.Core.Interfaces;
 //using TEAMPROJECT.Core.Interfaces;
 
 namespace TEAMPROJECT.Core

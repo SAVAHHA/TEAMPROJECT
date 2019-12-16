@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace TEAMPROJECT.Core
+namespace TEAMPROJECT.Core.Interfaces
 {
     interface IRepository
     {
