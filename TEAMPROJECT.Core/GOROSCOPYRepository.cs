@@ -17,5 +17,6 @@ namespace TEAMPROJECT.Core
         List<Zodiac> Zodiacs = new List<Zodiac>();
         List<Prediction> Predictions = new List<Prediction>();
 
+
     }
 }
