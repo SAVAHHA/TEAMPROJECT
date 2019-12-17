@@ -1,0 +1,38 @@
+﻿[
+  {
+    "TestId": 1,
+    "Question": "Какого цвета у тебя волосы?",
+    "QuestionId": 1,
+    "AnswerId": 0,
+    "Answer1": "ssd",
+    "Answer2": "ssd",
+    "Answer3": "ssd",
+    "Answer4": "ssd",
+    "Result1": 0,
+    "Result2": 0,
+    "Result3": 0,
+    "Result4": 0,
+    "Result5": 0,
+    "Result6": 0
+  },
+  {
+    "Minutes": 60,
+    "Rate": 50
+  },
+  {
+    "Minutes": 120,
+    "Rate": 100
+  },
+  {
+    "Minutes": 180,
+    "Rate": 140
+  },
+  {
+    "Minutes": 240,
+    "Rate": 180
+  },
+  {
+    "Minutes": 300,
+    "Rate": 200
+  }
+]
