@@ -19,8 +19,8 @@
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="Bold">Добро пожаловать, лучший администратор!</TextBlock>
         <TextBlock Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="DemiBold">Выберите следующее действие</TextBlock>
-        <Button Grid.Row="2" Grid.Column="0" Name="TestStatisticsButton" Margin="30,20,10,10" FontSize="22">Получить статистику по тестам</Button>
-        <Button Grid.Row="2" Grid.Column="1" Name="GoroscoryStatisticsButton" Margin="10,20,30,10" FontSize="22">Работать с гороскопами</Button>
-        <Button Grid.Row="3" Name="ExitButton" Margin="217,40,219,10" FontSize="22" Grid.ColumnSpan="2" >Выход</Button>
+        <Button Grid.Row="2" Grid.Column="0" Name="TestStatisticsButton" Margin="30,20,10,10" FontSize="22" Click="TestStatisticsButton_Click">Получить статистику по тестам</Button>
+        <Button Grid.Row="2" Grid.Column="1" Name="GoroscoryStatisticsButton" Margin="10,20,30,10" FontSize="22" Click="GoroscoryStatisticsButton_Click">Работать с гороскопами</Button>
+        <Button Grid.Row="3" Name="ExitButton" Margin="217,40,219,10" FontSize="22" Grid.ColumnSpan="2" Click="ExitButton_Click">Выход</Button>
     </Grid>
 </Window>

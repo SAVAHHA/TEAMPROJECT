@@ -15,28 +15,25 @@ using System.Windows.Shapes;
 namespace TEAMPROJECT.GUI.Owner
 {
     /// <summary>
-    /// Логика взаимодействия для WelcomingWindow.xaml
+    /// Логика взаимодействия для GoroscopyWorkWindow.xaml
     /// </summary>
-    public partial class WelcomingWindow : Window
+    public partial class GoroscopyWorkWindow : Window
     {
-        public WelcomingWindow()
+        public GoroscopyWorkWindow()
         {
             InitializeComponent();
         }
 
-        private void GoroscoryStatisticsButton_Click(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-
+            WelcomingWindow welcomingWindow = new WelcomingWindow();
+            welcomingWindow.Show();
+            this.Close();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-        }
-
-        private void TestStatisticsButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

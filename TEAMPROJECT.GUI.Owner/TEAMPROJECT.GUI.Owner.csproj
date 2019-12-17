@@ -57,9 +57,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GoroscopyWorkWindow.xaml.cs">
+      <DependentUpon>GoroscopyWorkWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WelcomingWindow.xaml.cs">
       <DependentUpon>WelcomingWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="GoroscopyWorkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
