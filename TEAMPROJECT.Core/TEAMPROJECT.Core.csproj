@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="GOROSCOPYRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Models\Compability.cs" />
     <Compile Include="Models\Prediction.cs" />
     <Compile Include="Models\Zodiac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,8 +59,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

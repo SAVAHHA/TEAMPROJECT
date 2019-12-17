@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace TEAMPROJECT.Core
 {
-    class Repository: IRepository
+    public class Repository: IRepository
     {
         //Регулярное вырожение для двух проектов
         private Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.User\\bin\\Debug|\\TEAMPROJECT\.GUI\.Owner\\bin\\Debug");
@@ -39,7 +39,40 @@ namespace TEAMPROJECT.Core
                 }
             }
         }
-
-
+        public virtual void AddUser(string name, DateTime dateOfBirth, string login, string password)
+        {
+            User user = new User();
+            user.Name = name;
+            user.DateOfBirth = dateOfBirth;
+            user.Login = login;
+            user.Password = password;
+            user.UserID = Users.Count() + 1;
+            Users.Add(user);
+        }
+        public virtual bool Entrance(string login, string password)
+        {
+            bool check = false;
+            foreach (var user in Users)
+            {
+                if (user.Login == login && user.Password == password)
+                {
+                    check = true;
+                    break;
+                }
+            }
+            return check;
+        }
+        public virtual int GetID(string login, string password)
+        {
+            int Id = 0;
+            foreach (var user in Users)
+            {
+                if (user.Login == login && user.Password == password)
+                {
+                    Id = user.UserID;
+                }
+            }
+            return Id;
+        }
     }
 }
