@@ -11,14 +11,16 @@
             <Setter Property="Background" Value="#f793ff"/>
             <Setter Property="Foreground" Value="#4f0b40"/>
             <Setter Property="FontWeight" Value="DemiBold"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="BorderThickness" Value="4"/>
             <Setter Property="BorderBrush" Value="AliceBlue"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="Height" Value="35"/>
         </Style>
         <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="#67103a"/>
             <Setter Property="FontSize" Value="20"/>
-            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="FontStyle" Value="Italic"/>
         </Style>
         <Style TargetType="TextBox">
@@ -43,8 +45,10 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Button Grid.Row="3">Кто ты из Винкс?</Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="151,223,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBlock HorizontalAlignment="Left" Margin="101,34,0,0" TextWrapping="Wrap" Text="Выбери тест" VerticalAlignment="Top"/>
+        <Button Grid.Row="4">Кто ты из преподов Вышки?</Button>
+        <Button Grid.Row="5">Кто ты из Винкс?</Button>
+
+        <TextBlock HorizontalAlignment="Left" Margin="44,34,0,0" TextWrapping="Wrap" Text="Выберите тест" VerticalAlignment="Top" Grid.RowSpan="2" Width="277" Grid.ColumnSpan="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="101,10.333,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
