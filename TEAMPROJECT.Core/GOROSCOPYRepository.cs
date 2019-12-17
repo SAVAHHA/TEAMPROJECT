@@ -14,8 +14,9 @@ namespace TEAMPROJECT.Core
     public class GOROSCOPYRepository
     {
         //Users берем из Repository
-        List<Zodiac> Zodiacs = new List<Zodiac>();
+        //Zodiacs берем из Repository
         List<Prediction> Predictions = new List<Prediction>();
+        List<Compability> Compabilities = new List<Compability>();
 
         public string GetRandomPrediction()
         {
@@ -23,6 +24,27 @@ namespace TEAMPROJECT.Core
             int number = random.Next(Predictions.Count());
             string predictionText = Predictions[number].Info;
             return predictionText;
+        }
+
+        public int GetCompability(string zodiac1, string zodiac2)
+        {
+            int percent = 0;
+            foreach (var compability in Compabilities)
+            {
+                if (compability.Zodiac1.Name == zodiac1 && compability.Zodiac2.Name == zodiac2)
+                {
+                    percent = compability.Percents;
+                }
+            }
+            return percent;
+        }
+
+        public void AddPrediction(string predictionText)
+        {
+            Prediction prediction = new Prediction();
+            prediction.Info = predictionText;
+            prediction.PredictionID = Predictions.Count() + 1;
+            Predictions.Add(prediction);
         }
     }
 }

@@ -16,6 +16,7 @@ namespace TEAMPROJECT.Core
         //Регулярное вырожение для двух проектов
         private Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.User\\bin\\Debug|\\TEAMPROJECT\.GUI\.Owner\\bin\\Debug");
         public List<User> Users = new List<User>();
+        public List<Zodiac> Zodiacs = new List<Zodiac>();
 
         public virtual T Deserialize<T>(string fileName)
         {
@@ -47,6 +48,13 @@ namespace TEAMPROJECT.Core
             user.Login = login;
             user.Password = password;
             user.UserID = Users.Count() + 1;
+            foreach (var zodiac in Zodiacs)
+            {
+                if (zodiac.FirstDate.Month <= dateOfBirth.Month && zodiac.FirstDate.Day <= dateOfBirth.Day && zodiac.LastDate.Month >= dateOfBirth.Month && zodiac.LastDate.Day >= dateOfBirth.Day) 
+                {
+                    user.Zodiac = zodiac;
+                }
+            }
             Users.Add(user);
         }
         public virtual bool Entrance(string login, string password)
