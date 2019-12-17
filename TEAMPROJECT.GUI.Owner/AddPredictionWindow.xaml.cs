@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace TEAMPROJECT.GUI.Owner
 {
     /// <summary>
-    /// Логика взаимодействия для GoroscopyWorkWindow.xaml
+    /// Логика взаимодействия для AddPredictionWindow.xaml
     /// </summary>
-    public partial class GoroscopyWorkWindow : Window
+    public partial class AddPredictionWindow : Window
     {
-        public GoroscopyWorkWindow()
+        public AddPredictionWindow()
         {
             InitializeComponent();
         }
@@ -33,13 +33,6 @@ namespace TEAMPROJECT.GUI.Owner
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-        }
-
-        private void AddPredictionButton_Click(object sender, RoutedEventArgs e)
-        {
-            AddPredictionWindow addPredictionWindow = new AddPredictionWindow();
-            addPredictionWindow.Show();
             this.Close();
         }
     }

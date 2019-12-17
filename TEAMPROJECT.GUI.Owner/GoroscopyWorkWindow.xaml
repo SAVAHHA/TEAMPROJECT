@@ -8,22 +8,22 @@
         Title="GoroscopyWorkWindow" Height="450" Width="800" Background="#d5e7fb">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="84"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="84*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontWeight="Bold">Работа с гороскопами</TextBlock>
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontWeight="DemiBold" Margin="10,72,20,58" Grid.RowSpan="2">Пропорции знаков зодиака, пользующихся приложнием</TextBlock>
-        <Button Grid.Row="4" Grid.Column="0" Name="BackButton" Margin="30,20,10,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="202,0,201,36">Работа с гороскопами</TextBlock>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26" FontWeight="DemiBold" Margin="20,47,10,83" Grid.RowSpan="2">Пропорции знаков зодиака, пользующихся приложнием</TextBlock>
+        <Button Grid.Row="4" Grid.Column="0" Name="BackButton" Margin="10,20,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
         <Button Grid.Row="4" Grid.Column="1" Name="ExitButton" Margin="30,20,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
 
-        <ListBox Name="FirstSixZodiac"  Margin="10,42,0,10" Background="FloralWhite" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2">
+        <ListBox Name="FirstSixZodiac"  Margin="10,10,0,56" Background="FloralWhite" Grid.Row="1" Grid.Column="0" Grid.RowSpan="3">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -45,8 +45,8 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <ListBox Name="LastSixZodiac"  Margin="0,42,10,10" Background="FloralWhite" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
-            <ListBox.ItemTemplate> 
+        <ListBox Name="LastSixZodiac"  Margin="0,10,10,56" Background="FloralWhite" Grid.Row="1" Grid.Column="1" Grid.RowSpan="3">
+            <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Дата: " FontWeight="Bold"/>
@@ -67,5 +67,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+
+        <Button Grid.Row="3" Name="AddPredictionButton" Margin="171,45,171,80" FontSize="22" Click="AddPredictionButton_Click"  Grid.ColumnSpan="2" Grid.RowSpan="2">Добавить предсказание</Button>
     </Grid>
 </Window>
