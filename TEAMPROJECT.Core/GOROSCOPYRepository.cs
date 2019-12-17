@@ -11,7 +11,7 @@ using TEAMPROJECT.Core.Interfaces;
 
 namespace TEAMPROJECT.Core
 {
-    class GOROSCOPYRepository
+    public class GOROSCOPYRepository
     {
         //Users берем из Repository
         List<Zodiac> Zodiacs = new List<Zodiac>();
