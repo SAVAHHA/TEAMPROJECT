@@ -53,6 +53,8 @@
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Models\Compability.cs" />
     <Compile Include="Models\Prediction.cs" />
+    <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\TestResults.cs" />
     <Compile Include="Models\Zodiac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\User.cs" />
