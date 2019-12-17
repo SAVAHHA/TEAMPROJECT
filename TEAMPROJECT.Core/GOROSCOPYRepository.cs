@@ -24,7 +24,5 @@ namespace TEAMPROJECT.Core
             string predictionText = Predictions[number].Info;
             return predictionText;
         }
-
-        
     }
 }
