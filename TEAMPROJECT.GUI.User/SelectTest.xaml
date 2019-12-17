@@ -7,15 +7,18 @@
         mc:Ignorable="d"
         Title="SelectTest" Height="450" Width="800" Background="#d5e7fb" >
     <Window.Resources>
-        <Style TargetType="Button">
+        <Style TargetType="Button" x:Key="baseButton">
+        <Setter Property="Foreground" Value="#4f0b40"/>
+        <Setter Property="FontWeight" Value="DemiBold"/>
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="BorderThickness" Value="4"/>
+        <Setter Property="BorderBrush" Value="AliceBlue"/>
+        <Setter Property="Width" Value="190"/>
+        <Setter Property="Height" Value="35"/>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
             <Setter Property="Background" Value="#f793ff"/>
-            <Setter Property="Foreground" Value="#4f0b40"/>
-            <Setter Property="FontWeight" Value="DemiBold"/>
-            <Setter Property="FontSize" Value="10"/>
-            <Setter Property="BorderThickness" Value="4"/>
-            <Setter Property="BorderBrush" Value="AliceBlue"/>
-            <Setter Property="Width" Value="180"/>
-            <Setter Property="Height" Value="35"/>
         </Style>
         <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="#67103a"/>
@@ -44,9 +47,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Grid.Row="3">Кто ты из Винкс?</Button>
+        <Button Style="{StaticResource UsusalButton}" Grid.Row="3">Кто ты из Винкс?</Button>
         <Button Grid.Row="4">Кто ты из преподов Вышки?</Button>
-        <Button Grid.Row="5">Кто ты из Винкс?</Button>
+        <Button Grid.Row="5">Какой корпус Вышки тебе подходит?</Button>
 
         <TextBlock HorizontalAlignment="Left" Margin="44,34,0,0" TextWrapping="Wrap" Text="Выберите тест" VerticalAlignment="Top" Grid.RowSpan="2" Width="277" Grid.ColumnSpan="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="101,10.333,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
