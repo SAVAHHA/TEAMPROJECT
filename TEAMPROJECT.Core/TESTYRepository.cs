@@ -11,9 +11,9 @@ using TEAMPROJECT.Core.Interfaces;
 
 namespace TEAMPROJECT.Core
 {
-    class TESTYRepository
+    public class TESTYRepository
     {
-        List<User> Users = new List<User>();
+        //Users берем из Repository
 
     }
 }
