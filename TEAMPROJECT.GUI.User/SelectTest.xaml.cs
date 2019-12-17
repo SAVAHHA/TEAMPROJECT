@@ -23,5 +23,49 @@ namespace TEAMPROJECT.GUI.User
         {
             InitializeComponent();
         }
+
+        private void WinxTest_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new WinxFirstWindow();
+            window.Show();
+            Close();
+
+        }
+
+        private void PrepodTest_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new PrepodFirstWindow();
+            window.Show();
+            Close();
+        }
+
+        private void KorpusTest_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new KorpusFirstWindow();
+            window.Show();
+            Close();
+
+        }
+
+        private void AvtomatTest_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new AvtomatWindow();
+            window.Show();
+            Close();
+
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new MainMenuWindow();
+            window.Show();
+            Close();
+
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -57,12 +57,39 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AvtomatWindow.xaml.cs">
+      <DependentUpon>AvtomatWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KorpusFirstWindow.xaml.cs">
+      <DependentUpon>KorpusFirstWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuWindow.xaml.cs">
+      <DependentUpon>MainMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrepodFirstWindow.xaml.cs">
+      <DependentUpon>PrepodFirstWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SelectTest.xaml.cs">
       <DependentUpon>SelectTest.xaml</DependentUpon>
     </Compile>
     <Compile Include="WelcomeWindowUser.xaml.cs">
       <DependentUpon>WelcomeWindowUser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WinxFirstWindow.xaml.cs">
+      <DependentUpon>WinxFirstWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AvtomatWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KorpusFirstWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,11 +102,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PrepodFirstWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SelectTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WelcomeWindowUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinxFirstWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
