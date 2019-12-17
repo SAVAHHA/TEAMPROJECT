@@ -26,7 +26,9 @@ namespace TEAMPROJECT.GUI.Owner
 
         private void GoroscoryStatisticsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            GoroscopyWorkWindow goroscopy = new GoroscopyWorkWindow();
+            goroscopy.Show();
+            this.Close();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
