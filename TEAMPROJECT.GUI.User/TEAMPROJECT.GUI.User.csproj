@@ -78,6 +78,9 @@
     <Compile Include="WinxFirstWindow.xaml.cs">
       <DependentUpon>WinxFirstWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WinxTestWindow.xaml.cs">
+      <DependentUpon>WinxTestWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AvtomatWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,6 +118,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WinxFirstWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinxTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
