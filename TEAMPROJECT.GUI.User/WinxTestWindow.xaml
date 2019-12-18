@@ -1,0 +1,28 @@
+﻿<Window x:Class="TEAMPROJECT.GUI.User.WinxTestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TEAMPROJECT.GUI.User"
+        mc:Ignorable="d"
+        Title="WinxTestWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Name="Answer1" Content="Button" HorizontalAlignment="Left" Margin="223,51.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Answer1_Click"/>
+        <Button Name="Answer3" Content="Button" HorizontalAlignment="Left" Margin="143.333,36.667,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" Click="Answer3_Click"/>
+        <Button Name="Answer2" Content="Button" HorizontalAlignment="Left" Margin="223,40.333,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Answer2_Click"/>
+        <Button Name="Answer4" Content="Button" HorizontalAlignment="Left" Margin="194.333,46.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Click="Answer4_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="141,83,0,0" TextWrapping="Wrap" Text="номер вопроса" VerticalAlignment="Top" Height="13"/>
+        <TextBlock HorizontalAlignment="Left" Margin="81,40,0,0" TextWrapping="Wrap" Text="Текс вопроса" VerticalAlignment="Top" Height="38" Width="137"/>
+
+    </Grid>
+</Window>
