@@ -35,5 +35,10 @@ namespace TEAMPROJECT.GUI.Owner
         {
             this.Close();
         }
+
+        private void AddingButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
