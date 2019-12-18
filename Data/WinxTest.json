@@ -1,316 +1,314 @@
-﻿{
-  "WinxTest": [
-    {
-      "TestId": 1,
-      "Question": "Какого цвета у тебя волосы?",
-      "QuestionId": 1,
-      "AnswerId": 1,
-      "Answer": "Рыжие",
-      "Result1": 2, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 1, //Флора
-      "Result4": 0, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Какого цвета у тебя волосы?",
-      "QuestionId": 1,
-      "AnswerId": 2,
-      "Answer": "Блонд",
-      "Result1": 1, //Блум
-      "Result2": 2, //Стелла
-      "Result3": 2, //Флора
-      "Result4": 0, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 1 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Какого цвета у тебя волосы?",
-      "QuestionId": 1,
-      "AnswerId": 3,
-      "Answer": "Чёрные",
-      "Result1": 0, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 0, //Флора
-      "Result4": 2, //Муза
-      "Result5": 2, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Какого цвета у тебя волосы?",
-      "QuestionId": 1,
-      "AnswerId": 4,
-      "Answer": "Коричневые",
-      "Result1": 1, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 2, //Флора
-      "Result4": 0, //Муза
-      "Result5": 2, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Ты играешь на музыкальном инструменте?",
-      "QuestionId": 2,
-      "AnswerId": 1,
-      "Answer": "Я пою!",
-      "Result1": 2, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 1, //Флора
-      "Result4": 2, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Ты играешь на музыкальном инструменте?",
-      "QuestionId": 2,
-      "AnswerId": 2,
-      "Answer": "На гитаре",
-      "Result1": 1, //Блум
-      "Result2": 2, //Стелла
-      "Result3": 2, //Флора
-      "Result4": 2, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Ты играешь на музыкальном инструменте?",
-      "QuestionId": 2,
-      "AnswerId": 3,
-      "Answer": "На фортепиано",
-      "Result1": 0, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 0, //Флора
-      "Result4": 1, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 2 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Ты играешь на музыкальном инструменте?",
-      "QuestionId": 2,
-      "AnswerId": 4,
-      "Answer": "Только на нервах!",
-      "Result1": 0, //Блум
-      "Result2": 2, //Стелла
-      "Result3": 0, //Флора
-      "Result4": 0, //Муза
-      "Result5": 1, //Лейла
-      "Result6": 2 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Что обязательно должно присутствовать в твоём наряде феи?",
-      "QuestionId": 3,
-      "AnswerId": 1,
-      "Answer": "Диадема",
-      "Result1": 0, //Блум
-      "Result2": 1, //Стелла
-      "Result3": 2, //Флора
-      "Result4": 2, //Муза
-      "Result5": 2, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Что обязательно должно присутствовать в твоём наряде феи?",
-      "QuestionId": 3,
-      "AnswerId": 2,
-      "Answer": "Заколочки",
-      "Result1": 2, //Блум
-      "Result2": 2, //Стелла
-      "Result3": 0, //Флора
-      "Result4": 0, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 2 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Что обязательно должно присутствовать в твоём наряде феи?",
-      "QuestionId": 3,
-      "AnswerId": 3,
-      "Answer": "Побольше украшений на крылышках",
-      "Result1": 0, //Блум
-      "Result2": 2, //Стелла
-      "Result3": 2, //Флора
-      "Result4": 0, //Муза
-      "Result5": 2, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Что обязательно должно присутствовать в твоём наряде феи?",
-      "QuestionId": 3,
-      "AnswerId": 4,
-      "Answer": "Украшение на шее",
-      "Result1": 2, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 1, //Флора
-      "Result4": 2, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 2 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Как ты относишься к макияжу?",
-      "QuestionId": 4,
-      "AnswerId": 1,
-      "Answer": "Он мне не нужен, я и так красивая",
-      "Result1": 0, //Блум
-      "Result2": 2, //Стелла
-      "Result3": 0, //Флора
-      "Result4": 0, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 2 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "",
-      "QuestionId": 4,
-      "AnswerId": 2,
-      "Answer": "Не использую сама, но мне нравится хороший макияж на других",
-      "Result1": 1, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 1, //Флора
-      "Result4": 1, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 2 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Как ты относишься к макияжу?",
-      "QuestionId": 4,
-      "AnswerId": 3,
-      "Answer": "Обожаю косметику!",
-      "Result1": 1, //Блум
-      "Result2": 2, //Стелла
-      "Result3": 0, //Флора
-      "Result4": 1, //Муза
-      "Result5": 2, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Как ты относишься к макияжу?",
-      "QuestionId": 4,
-      "AnswerId": 4,
-      "Answer": "Хорошо, когда всё в меру",
-      "Result1": 1, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 2, //Флора
-      "Result4": 2, //Муза
-      "Result5": 1, //Лейла
-      "Result6": 2 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Как ты относишься к спорту?",
-      "QuestionId": 5,
-      "AnswerId": 1,
-      "Answer": "Иногда хожу в зал, но хотелось бы чаще",
-      "Result1": 0, //Блум
-      "Result2": 1, //Стелла
-      "Result3": 1, //Флора
-      "Result4": 1, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 2 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Как ты относишься к спорту?",
-      "QuestionId": 5,
-      "AnswerId": 2,
-      "Answer": "Я постоянно танцую. Это покруче спорта",
-      "Result1": 1, //Блум
-      "Result2": 1, //Стелла
-      "Result3": 1, //Флора
-      "Result4": 2, //Муза
-      "Result5": 2, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Как ты относишься к спорту?",
-      "QuestionId": 5,
-      "AnswerId": 3,
-      "Answer": "у меня постоянно тренировки. Спорт - это круто",
-      "Result1": 0, //Блум
-      "Result2": 0, //Стелла
-      "Result3": 0, //Флора
-      "Result4": 0, //Муза
-      "Result5": 2, //Лейла
-      "Result6": 0 //Текна
-    },
-    {
-      "TestId": 1,
-      "Question": "Как ты относишься к спорту?",
-      "QuestionId": 5,
-      "AnswerId": 4,
-      "Answer": "Лучше дома полежу и отдохну или сделаю что-то полезное ",
-      "Result1": 0, //Блум
-      "Result2": 2, //Стелла
-      "Result3": 0, //Флора
-      "Result4": 1, //Муза
-      "Result5": 0, //Лейла
-      "Result6": 1 //Текна
-    }
-    //{
-    //  "TestId": 1,
-    //  "Question": "Какого цвета у тебя волосы?",
-    //  "QuestionId": 1,
-    //  "AnswerId": 0,
-    //  "Answer": "ssd",
-    //  "Result1": 0,
-    //  "Result2": 0,
-    //  "Result3": 0,
-    //  "Result4": 0,
-    //  "Result5": 0,
-    //  "Result6": 0
-    //},
-    //{
-    //  "TestId": 1,
-    //  "Question": "Какого цвета у тебя волосы?",
-    //  "QuestionId": 1,
-    //  "AnswerId": 0,
-    //  "Answer": "ssd",
-    //  "Result1": 0,
-    //  "Result2": 0,
-    //  "Result3": 0,
-    //  "Result4": 0,
-    //  "Result5": 0,
-    //  "Result6": 0
-    //},
-    //{
-    //  "TestId": 1,
-    //  "Question": "Какого цвета у тебя волосы?",
-    //  "QuestionId": 1,
-    //  "AnswerId": 0,
-    //  "Answer": "ssd",
-    //  "Result1": 0,
-    //  "Result2": 0,
-    //  "Result3": 0,
-    //  "Result4": 0,
-    //  "Result5": 0,
-    //  "Result6": 0
-    //},
-    //{
-    //  "TestId": 1,
-    //  "Question": "Какого цвета у тебя волосы?",
-    //  "QuestionId": 1,
-    //  "AnswerId": 0,
-    //  "Answer": "ssd",
-    //  "Result1": 0,
-    //  "Result2": 0,
-    //  "Result3": 0,
-    //  "Result4": 0,
-    //  "Result5": 0,
-    //  "Result6": 0
-    //}
-  ]
-}
+﻿[
+  {
+    "TestId": 1,
+    "Question": "Какого цвета у тебя волосы?",
+    "QuestionId": 1,
+    "AnswerId": 1,
+    "Answer": "Рыжие",
+    "Result1": 2, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 1, //Флора
+    "Result4": 0, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Какого цвета у тебя волосы?",
+    "QuestionId": 1,
+    "AnswerId": 2,
+    "Answer": "Блонд",
+    "Result1": 1, //Блум
+    "Result2": 2, //Стелла
+    "Result3": 2, //Флора
+    "Result4": 0, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 1 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Какого цвета у тебя волосы?",
+    "QuestionId": 1,
+    "AnswerId": 3,
+    "Answer": "Чёрные",
+    "Result1": 0, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 0, //Флора
+    "Result4": 2, //Муза
+    "Result5": 2, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Какого цвета у тебя волосы?",
+    "QuestionId": 1,
+    "AnswerId": 4,
+    "Answer": "Коричневые",
+    "Result1": 1, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 2, //Флора
+    "Result4": 0, //Муза
+    "Result5": 2, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Ты играешь на музыкальном инструменте?",
+    "QuestionId": 2,
+    "AnswerId": 1,
+    "Answer": "Я пою!",
+    "Result1": 2, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 1, //Флора
+    "Result4": 2, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Ты играешь на музыкальном инструменте?",
+    "QuestionId": 2,
+    "AnswerId": 2,
+    "Answer": "На гитаре",
+    "Result1": 1, //Блум
+    "Result2": 2, //Стелла
+    "Result3": 2, //Флора
+    "Result4": 2, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Ты играешь на музыкальном инструменте?",
+    "QuestionId": 2,
+    "AnswerId": 3,
+    "Answer": "На фортепиано",
+    "Result1": 0, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 0, //Флора
+    "Result4": 1, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 2 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Ты играешь на музыкальном инструменте?",
+    "QuestionId": 2,
+    "AnswerId": 4,
+    "Answer": "Только на нервах!",
+    "Result1": 0, //Блум
+    "Result2": 2, //Стелла
+    "Result3": 0, //Флора
+    "Result4": 0, //Муза
+    "Result5": 1, //Лейла
+    "Result6": 2 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Что обязательно должно присутствовать в твоём наряде феи?",
+    "QuestionId": 3,
+    "AnswerId": 1,
+    "Answer": "Диадема",
+    "Result1": 0, //Блум
+    "Result2": 1, //Стелла
+    "Result3": 2, //Флора
+    "Result4": 2, //Муза
+    "Result5": 2, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Что обязательно должно присутствовать в твоём наряде феи?",
+    "QuestionId": 3,
+    "AnswerId": 2,
+    "Answer": "Заколочки",
+    "Result1": 2, //Блум
+    "Result2": 2, //Стелла
+    "Result3": 0, //Флора
+    "Result4": 0, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 2 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Что обязательно должно присутствовать в твоём наряде феи?",
+    "QuestionId": 3,
+    "AnswerId": 3,
+    "Answer": "Побольше украшений на крылышках",
+    "Result1": 0, //Блум
+    "Result2": 2, //Стелла
+    "Result3": 2, //Флора
+    "Result4": 0, //Муза
+    "Result5": 2, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Что обязательно должно присутствовать в твоём наряде феи?",
+    "QuestionId": 3,
+    "AnswerId": 4,
+    "Answer": "Украшение на шее",
+    "Result1": 2, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 1, //Флора
+    "Result4": 2, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 2 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к макияжу?",
+    "QuestionId": 4,
+    "AnswerId": 1,
+    "Answer": "Он мне не нужен, я и так красивая",
+    "Result1": 0, //Блум
+    "Result2": 2, //Стелла
+    "Result3": 0, //Флора
+    "Result4": 0, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 2 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "",
+    "QuestionId": 4,
+    "AnswerId": 2,
+    "Answer": "Не использую сама, но мне нравится хороший макияж на других",
+    "Result1": 1, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 1, //Флора
+    "Result4": 1, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 2 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к макияжу?",
+    "QuestionId": 4,
+    "AnswerId": 3,
+    "Answer": "Обожаю косметику!",
+    "Result1": 1, //Блум
+    "Result2": 2, //Стелла
+    "Result3": 0, //Флора
+    "Result4": 1, //Муза
+    "Result5": 2, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к макияжу?",
+    "QuestionId": 4,
+    "AnswerId": 4,
+    "Answer": "Хорошо, когда всё в меру",
+    "Result1": 1, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 2, //Флора
+    "Result4": 2, //Муза
+    "Result5": 1, //Лейла
+    "Result6": 2 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к спорту?",
+    "QuestionId": 5,
+    "AnswerId": 1,
+    "Answer": "Иногда хожу в зал, но хотелось бы чаще",
+    "Result1": 0, //Блум
+    "Result2": 1, //Стелла
+    "Result3": 1, //Флора
+    "Result4": 1, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 2 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к спорту?",
+    "QuestionId": 5,
+    "AnswerId": 2,
+    "Answer": "Я постоянно танцую. Это покруче спорта",
+    "Result1": 1, //Блум
+    "Result2": 1, //Стелла
+    "Result3": 1, //Флора
+    "Result4": 2, //Муза
+    "Result5": 2, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к спорту?",
+    "QuestionId": 5,
+    "AnswerId": 3,
+    "Answer": "у меня постоянно тренировки. Спорт - это круто",
+    "Result1": 0, //Блум
+    "Result2": 0, //Стелла
+    "Result3": 0, //Флора
+    "Result4": 0, //Муза
+    "Result5": 2, //Лейла
+    "Result6": 0 //Текна
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к спорту?",
+    "QuestionId": 5,
+    "AnswerId": 4,
+    "Answer": "Лучше дома полежу и отдохну или сделаю что-то полезное ",
+    "Result1": 0, //Блум
+    "Result2": 2, //Стелла
+    "Result3": 0, //Флора
+    "Result4": 1, //Муза
+    "Result5": 0, //Лейла
+    "Result6": 1 //Текна
+  }
+  //{
+  //  "TestId": 1,
+  //  "Question": "Какого цвета у тебя волосы?",
+  //  "QuestionId": 1,
+  //  "AnswerId": 0,
+  //  "Answer": "ssd",
+  //  "Result1": 0,
+  //  "Result2": 0,
+  //  "Result3": 0,
+  //  "Result4": 0,
+  //  "Result5": 0,
+  //  "Result6": 0
+  //},
+  //{
+  //  "TestId": 1,
+  //  "Question": "Какого цвета у тебя волосы?",
+  //  "QuestionId": 1,
+  //  "AnswerId": 0,
+  //  "Answer": "ssd",
+  //  "Result1": 0,
+  //  "Result2": 0,
+  //  "Result3": 0,
+  //  "Result4": 0,
+  //  "Result5": 0,
+  //  "Result6": 0
+  //},
+  //{
+  //  "TestId": 1,
+  //  "Question": "Какого цвета у тебя волосы?",
+  //  "QuestionId": 1,
+  //  "AnswerId": 0,
+  //  "Answer": "ssd",
+  //  "Result1": 0,
+  //  "Result2": 0,
+  //  "Result3": 0,
+  //  "Result4": 0,
+  //  "Result5": 0,
+  //  "Result6": 0
+  //},
+  //{
+  //  "TestId": 1,
+  //  "Question": "Какого цвета у тебя волосы?",
+  //  "QuestionId": 1,
+  //  "AnswerId": 0,
+  //  "Answer": "ssd",
+  //  "Result1": 0,
+  //  "Result2": 0,
+  //  "Result3": 0,
+  //  "Result4": 0,
+  //  "Result5": 0,
+  //  "Result6": 0
+  //}
+]

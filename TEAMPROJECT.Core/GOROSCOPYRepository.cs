@@ -19,7 +19,6 @@ namespace TEAMPROJECT.Core
         List<Compability> Compabilities = new List<Compability>();
         Repository repository = new Repository();
 
-
         public void LoadGOROSCOPYData()
         {
             Predictions = repository.Deserialize<List<Prediction>>("Predictions");
