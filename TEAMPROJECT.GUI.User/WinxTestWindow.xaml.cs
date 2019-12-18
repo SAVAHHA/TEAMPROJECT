@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
+using TEAMPROJECT.Core.Repository;
 
 namespace TEAMPROJECT.GUI.User
 {
@@ -19,28 +21,33 @@ namespace TEAMPROJECT.GUI.User
     /// </summary>
     public partial class WinxTestWindow : Window
     {
+        private TESTYRepository _testyrepository = new TESTYRepository();
         public WinxTestWindow()
         {
             InitializeComponent();
         }
-
+        int winxcount = 0;
         private void Answer1_Click(object sender, RoutedEventArgs e)
         {
+            winxcount++;
 
         }
 
         private void Answer3_Click(object sender, RoutedEventArgs e)
         {
+            winxcount++;
 
         }
 
         private void Answer2_Click(object sender, RoutedEventArgs e)
         {
+            winxcount++;
 
         }
 
         private void Answer4_Click(object sender, RoutedEventArgs e)
         {
+            winxcount++;
 
         }
     }
