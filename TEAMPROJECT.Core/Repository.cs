@@ -17,6 +17,12 @@ namespace TEAMPROJECT.Core
         public Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.User\\bin\\Debug|\\TEAMPROJECT\.GUI\.Owner\\bin\\Debug");
         public List<User> Users = new List<User>();
         public List<Zodiac> Zodiacs = new List<Zodiac>();
+        
+        public void LoadData()
+        {
+            Users = Deserialize<List<User>>("Users.json");
+            Zodiacs = Deserialize<List<Zodiac>>("Zodiacs.json");
+        }
 
         public virtual T Deserialize<T>(string fileName)
         {
