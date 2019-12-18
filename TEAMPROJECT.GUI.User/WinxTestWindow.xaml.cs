@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TEAMPROJECT.Core;
+using TEAMPROJECT.Core.Models;
+using TEAMPROJECT.Core.Interfaces;
 using TEAMPROJECT.Core.Repository;
 
 namespace TEAMPROJECT.GUI.User

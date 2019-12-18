@@ -1,0 +1,314 @@
+[
+  {
+    "TestId": 1,
+    "Question": "Какая сфера деятельности тебе интересна?",
+    "QuestionId": 1,
+    "AnswerId": 1,
+    "Answer": "Точныеи фундаментальные науки",
+    "Result1": 2, //Субоч
+    "Result2": 0, //Белова
+    "Result3": 1, //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Какая сфера деятельности тебе интересна?",
+    "QuestionId": 1,
+    "AnswerId": 2,
+    "Answer": "Я шарю во всём",
+    "Result1": 2, //Субоч
+    "Result2": 0, //Белова
+    "Result3": 1, //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Какая сфера деятельности тебе интересна?",
+    "QuestionId": 1,
+    "AnswerId": 3,
+    "Answer": "Гуманитарные науки",
+    "Result1": 2, //Субоч
+    "Result2": 0, //Белова
+    "Result3": 1, //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Какая сфера деятельности тебе интересна?",
+    "QuestionId": 1,
+    "AnswerId": 4,
+    "Answer": "Лангуагес",
+    "Result1": 2, //Субоч
+    "Result2": 0, //Белова
+    "Result3": 2, //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 2, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Ты любишь..",
+    "QuestionId": 2,
+    "AnswerId": 1,
+    "Answer": "Тракторы",
+    "Result1": 2,  //Субоч
+    "Result2": 0,  //Белова
+    "Result3": 1,  //Броневич
+    "Result4": 2, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Ты любишь..",
+    "QuestionId": 2,
+    "AnswerId": 2,
+    "Answer": "Фrанцию",
+    "Result1": 1,  //Субоч
+    "Result2": 2,  //Белова
+    "Result3": 2,  //Броневич
+    "Result4": 2, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Ты любишь..",
+    "QuestionId": 2,
+    "AnswerId": 3,
+    "Answer": "Кофе",
+    "Result1": 0,  //Субоч
+    "Result2": 0,  //Белова
+    "Result3": 0,  //Броневич
+    "Result4": 1, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 2 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Ты любишь..",
+    "QuestionId": 2,
+    "AnswerId": 4,
+    "Answer": "Только на нервах!",
+    "Result1": 0,  //Субоч
+    "Result2": 2,  //Белова
+    "Result3": 0,  //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 1, //Шведов
+    "Result6": 2 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к автоматам?",
+    "QuestionId": 3,
+    "AnswerId": 1,
+    "Answer": "Диадема",
+    "Result1": 0,  //Субоч
+    "Result2": 1,  //Белова
+    "Result3": 2,  //Броневич
+    "Result4": 2, //Аносова
+    "Result5": 2, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к автоматам?",
+    "QuestionId": 3,
+    "AnswerId": 2,
+    "Answer": "Заколочки",
+    "Result1": 2,  //Субоч
+    "Result2": 2,  //Белова
+    "Result3": 0,  //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 2 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к автоматам?",
+    "QuestionId": 3,
+    "AnswerId": 3,
+    "Answer": "Побольше украшений на крылышках",
+    "Result1": 0,  //Субоч
+    "Result2": 2,  //Белова
+    "Result3": 2,  //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 2, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Как ты относишься к автоматам?",
+    "QuestionId": 3,
+    "AnswerId": 4,
+    "Answer": "Украшение на шее",
+    "Result1": 2,  //Субоч
+    "Result2": 0,  //Белова
+    "Result3": 1,  //Броневич
+    "Result4": 2, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 2 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Идёт семинар, твои действия..",
+    "QuestionId": 4,
+    "AnswerId": 1,
+    "Answer": "Он мне не нужен, я и так красивая",
+    "Result1": 0,  //Субоч
+    "Result2": 2,  //Белова
+    "Result3": 0,  //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 2 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Идёт семинар, твои действия..",
+    "QuestionId": 4,
+    "AnswerId": 2,
+    "Answer": "Не использую сама, но мне нравится хороший макияж на других",
+    "Result1": 1, //Субоч
+    "Result2": 0, //Белова
+    "Result3": 1, //Броневич
+    "Result4": 1, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 2 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Идёт семинар, твои действия..",
+    "QuestionId": 4,
+    "AnswerId": 3,
+    "Answer": "Расскажу классную историю, ЖИЗНЕННУЮ",
+    "Result1": 1,  //Субоч
+    "Result2": 2,  //Белова
+    "Result3": 0,  //Броневич
+    "Result4": 1, //Аносова
+    "Result5": 2, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Идёт семинар, твои действия..",
+    "QuestionId": 4,
+    "AnswerId": 4,
+    "Answer": "Позалипаю-ка в телефоне",
+    "Result1": 1,  //Субоч
+    "Result2": 0,  //Белова
+    "Result3": 2,  //Броневич
+    "Result4": 2, //Аносова
+    "Result5": 1, //Шведов
+    "Result6": 2 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Студенты шалят, твои действия..",
+    "QuestionId": 5,
+    "AnswerId": 1,
+    "Answer": "Пересядьте!",
+    "Result1": 0,  //Субоч
+    "Result2": 1,  //Белова
+    "Result3": 1,  //Броневич
+    "Result4": 1, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 2 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Студенты шалят, твои действия..",
+    "QuestionId": 5,
+    "AnswerId": 2,
+    "Answer": "Обнулю МКР без предупреждения",
+    "Result1": 1,  //Субоч
+    "Result2": 1,  //Белова
+    "Result3": 1,  //Броневич
+    "Result4": 2, //Аносова
+    "Result5": 2, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Студенты шалят, твои действия..",
+    "QuestionId": 5,
+    "AnswerId": 3,
+    "Answer": "Удалю из друзей ВК",
+    "Result1": 0,  //Субоч
+    "Result2": 0,  //Белова
+    "Result3": 0,  //Броневич
+    "Result4": 0, //Аносова
+    "Result5": 2, //Шведов
+    "Result6": 0 //Трубакова
+  },
+  {
+    "TestId": 1,
+    "Question": "Студенты шалят, твои действия..",
+    "QuestionId": 5,
+    "AnswerId": 4,
+    "Answer": "Ну а что я могу сделать?",
+    "Result1": 0,  //Субоч
+    "Result2": 2,  //Белова
+    "Result3": 0,  //Броневич
+    "Result4": 1, //Аносова
+    "Result5": 0, //Шведов
+    "Result6": 1 //Трубакова
+  }
+  //{
+  //  "TestId": 1,
+  //  "Question": "Какого цвета у тебя волосы?",
+  //  "QuestionId": 1,
+  //  "AnswerId": 0,
+  //  "Answer": "ssd",
+  //  "Result1": 0,
+  //  "Result2": 0,
+  //  "Result3": 0,
+  //  "Result4": 0,
+  //  "Result5": 0,
+  //  "Result6": 0
+  //},
+  //{
+  //  "TestId": 1,
+  //  "Question": "Какого цвета у тебя волосы?",
+  //  "QuestionId": 1,
+  //  "AnswerId": 0,
+  //  "Answer": "ssd",
+  //  "Result1": 0,
+  //  "Result2": 0,
+  //  "Result3": 0,
+  //  "Result4": 0,
+  //  "Result5": 0,
+  //  "Result6": 0
+  //},
+  //{
+  //  "TestId": 1,
+  //  "Question": "Какого цвета у тебя волосы?",
+  //  "QuestionId": 1,
+  //  "AnswerId": 0,
+  //  "Answer": "ssd",
+  //  "Result1": 0,
+  //  "Result2": 0,
+  //  "Result3": 0,
+  //  "Result4": 0,
+  //  "Result5": 0,
+  //  "Result6": 0
+  //},
+  //{
+  //  "TestId": 1,
+  //  "Question": "Какого цвета у тебя волосы?",
+  //  "QuestionId": 1,
+  //  "AnswerId": 0,
+  //  "Answer": "ssd",
+  //  "Result1": 0,
+  //  "Result2": 0,
+  //  "Result3": 0,
+  //  "Result4": 0,
+  //  "Result5": 0,
+  //  "Result6": 0
+  //}
+]
