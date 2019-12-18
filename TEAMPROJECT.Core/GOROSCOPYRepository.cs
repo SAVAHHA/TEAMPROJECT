@@ -17,6 +17,14 @@ namespace TEAMPROJECT.Core
         //Zodiacs берем из Repository
         List<Prediction> Predictions = new List<Prediction>();
         List<Compability> Compabilities = new List<Compability>();
+        Repository repository = new Repository();
+
+
+        public void LoadGOROSCOPYData()
+        {
+            Predictions = repository.Deserialize<List<Prediction>>("Predictions");
+            Compabilities = repository.Deserialize<List<Compability>>("Compabilities");
+        }
 
         public string GetRandomPrediction()
         {
