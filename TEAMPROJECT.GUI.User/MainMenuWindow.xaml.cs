@@ -31,5 +31,10 @@ namespace TEAMPROJECT.GUI.User
             Close();
 
         }
+
+        private void Goroskopi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
