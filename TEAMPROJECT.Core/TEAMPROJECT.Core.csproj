@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="GOROSCOPYRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Models\AllTests.cs" />
     <Compile Include="Models\Compability.cs" />
     <Compile Include="Models\Prediction.cs" />
     <Compile Include="Models\Test.cs" />

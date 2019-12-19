@@ -22,9 +22,11 @@ namespace TEAMPROJECT.Core
         Repository repository = new Repository();
         public List<Test> winxtest;
         public List<TestResults> testResults;
+        public List<AllTests> AllTests;
         //Users берем из Repository
         private void LoadData()
         {
+            AllTests = repository.Deserialize<List<AllTests>>("AllTests");
             winxtest = repository.Deserialize<List<Test>>("WinxTest");
             testResults = repository.Deserialize<List<TestResults>>("TestResults");   
         }
