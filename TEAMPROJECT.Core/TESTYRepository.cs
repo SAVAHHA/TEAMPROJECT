@@ -47,32 +47,68 @@ namespace TEAMPROJECT.Core
             }        
         }
 
-        public void TextQATest(List<Test> testlist, int clickcount, out string questionText, out string answer1Text,  out string answer2Text, out string answer3Text, out string answer4Text)
+        public string TextQATest(List<Test> testlist, int clickcount)
         {
-                foreach (Test answer in testlist)
-                {
+            string questionText = " ";
+            foreach (Test answer in testlist)
+            {
+                
                     if (answer.QuestionId == clickcount + 1)
                     {
                         questionText = answer.Question;
 
-                        if (answer.AnswerId == 1)
-                        {
-                            answer1Text = answer.Answer;
-                        }
-                        else if (answer.AnswerId == 2)
-                        {
-                            answer2Text = answer.Answer;
-                        }
-                        else if (answer.AnswerId == 3)
-                        {
-                            answer3Text = answer.Answer;
-                        }
-                        else if (answer.AnswerId == 4)
-                        {
-                            answer4Text = answer.Answer;
-                        }
+
                     }
+            }
+            return questionText;
+        }
+        public string TextA1Test(List<Test> testlist, int clickcount)
+        {
+            string answer1Text = " ";
+            foreach (Test answer in testlist)
+            {
+                if (answer.QuestionId == clickcount + 1 && answer.AnswerId == 1)
+                {
+                    answer1Text = answer.Question;
                 }
+            }
+            return answer1Text;
+        }
+        public string TextA2Test(List<Test> testlist, int clickcount)
+        {
+            string answer2Text = " ";
+            foreach (Test answer in testlist)
+            {
+                if (answer.QuestionId == clickcount + 1 && answer.AnswerId == 2)
+                {
+                    answer2Text = answer.Question;
+                }
+            }
+            return answer2Text;
+        }
+        public string TextA3Test(List<Test> testlist, int clickcount)
+        {
+            string answer3Text = " ";
+            foreach (Test answer in testlist)
+            {
+                if (answer.QuestionId == clickcount + 1 && answer.AnswerId == 3)
+                {
+                    answer3Text = answer.Question;
+                }
+            }
+            return answer3Text;
+        }
+        public string TextA4Test(List<Test> testlist, int clickcount)
+        {
+            string answer4Text = " ";
+            foreach (Test answer in testlist)
+            {
+                if (answer.QuestionId == clickcount + 1 && answer.AnswerId == 4)
+                {
+                    answer4Text = answer.Question;
+                }
+            }
+            return answer4Text;
         }
 
         public int GetMax(int n1, int n2, int n3, int n4, int n5, int n6)
