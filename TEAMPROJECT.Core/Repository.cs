@@ -23,7 +23,6 @@ namespace TEAMPROJECT.Core
             Users = Deserialize<List<User>>("Users.json");
             Zodiacs = Deserialize<List<Zodiac>>("Zodiacs.json");
         }
-
         public virtual T Deserialize<T>(string fileName)
         {
             using (var sr = new StreamReader(regex.Replace(Environment.CurrentDirectory, "") + fileName))
@@ -63,13 +62,15 @@ namespace TEAMPROJECT.Core
             }
             Users.Add(user);
         }
-        public virtual bool Entrance(string login, string password)
+        public virtual bool Entrance(string login, string password, out int id)
         {
+            id = 0;
             bool check = false;
             foreach (var user in Users)
             {
                 if (user.Login == login && user.Password == password)
                 {
+                    id = user.UserID;
                     check = true;
                     break;
                 }
@@ -88,5 +89,6 @@ namespace TEAMPROJECT.Core
             }
             return Id;
         }
+       
     }
 }

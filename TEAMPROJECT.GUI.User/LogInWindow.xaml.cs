@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
 
 namespace TEAMPROJECT.GUI.User
 {
@@ -19,6 +20,9 @@ namespace TEAMPROJECT.GUI.User
     /// </summary>
     public partial class LogInWindow : Window
     {
+        GOROSCOPYRepository gOROSCOPYRepository = new GOROSCOPYRepository();
+        Repository repository = new Repository();
+
         public LogInWindow()
         {
             InitializeComponent();
@@ -26,7 +30,18 @@ namespace TEAMPROJECT.GUI.User
 
         private void UserLogIn_Click(object sender, RoutedEventArgs e)
         {
-
+            int id;
+            bool check = repository.Entrance(UserLoginTextBox.Text, UserPasswordBox.Password, out id);
+            if (check == true)
+            {
+                SwitchWindow switchWindow = new SwitchWindow(id);
+                switchWindow.Show();
+                this.Close();
+            }
+            else
+            {
+                //alert window
+            }
         }
     }
 }

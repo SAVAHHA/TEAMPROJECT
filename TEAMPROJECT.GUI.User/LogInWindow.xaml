@@ -18,8 +18,8 @@
         </Grid.RowDefinitions>
         <TextBlock FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10">Логин:</TextBlock>
         <TextBlock Grid.Row="1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10">Пароль:</TextBlock>
-        <TextBox Name="LoginTextBox" Grid.Column="1" Margin="30"></TextBox>
-        <PasswordBox Grid.Row="1" Name="PasswordBox" Grid.Column="1" Margin="30"></PasswordBox>
+        <TextBox Name="UserLoginTextBox" Grid.Column="1" Margin="30"></TextBox>
+        <PasswordBox Grid.Row="1" Name="UserPasswordBox" Grid.Column="1" Margin="30"></PasswordBox>
         <Button Name="UserLogIn" Margin="30" Grid.Row="2" Grid.Column="1" FontSize="20" Click="UserLogIn_Click">Войти</Button>
     </Grid>
 </Window>

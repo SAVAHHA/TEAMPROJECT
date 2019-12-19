@@ -19,7 +19,7 @@ namespace TEAMPROJECT.GUI.User
     /// </summary>
     public partial class SwitchWindow : Window
     {
-        public SwitchWindow()
+        public SwitchWindow(int UserId) 
         {
             InitializeComponent();
         }
