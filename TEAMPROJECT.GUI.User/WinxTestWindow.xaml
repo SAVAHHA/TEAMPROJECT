@@ -5,7 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.User"
         mc:Ignorable="d"
-        Title="WinxTestWindow" Height="450" Width="800">
+        Title="SelectTest" Height="450" Width="800" Background="#d5e7fb" >
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="baseButton">
+            <Setter Property="Foreground" Value="#4f0b40"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+            <Setter Property="Height" Value="65"/>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
+            <Setter Property="Background" Value="#f793ff"/>
+            <Setter Property="Width" Value="250"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="BackButton">
+            <Setter Property="Background" Value="#ca4d"/>
+            <Setter Property="Width" Value="70"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Headings">
+            <Setter Property="Foreground" Value="#823a6f"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Usual">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -17,12 +51,12 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Name="Answer1" Content="Button" HorizontalAlignment="Left" Margin="223,51.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Answer1_Click"/>
-        <Button Name="Answer3" Content="Button" HorizontalAlignment="Left" Margin="143.333,36.667,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" Click="Answer3_Click"/>
-        <Button Name="Answer2" Content="Button" HorizontalAlignment="Left" Margin="223,40.333,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Answer2_Click"/>
-        <Button Name="Answer4" Content="Button" HorizontalAlignment="Left" Margin="194.333,46.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Click="Answer4_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="141,83,0,0" TextWrapping="Wrap" Text="номер вопроса" VerticalAlignment="Top" Height="13"/>
-        <TextBlock HorizontalAlignment="Left" Margin="81,40,0,0" TextWrapping="Wrap" Text="Текс вопроса" VerticalAlignment="Top" Height="38" Width="137"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer1" HorizontalAlignment="Left" Margin="81,30.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Answer1_Click"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer3" Content="Button" HorizontalAlignment="Left" Margin="73.333,30.667,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" Click="Answer3_Click"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer2" Content="Button" HorizontalAlignment="Left" Margin="81,30.333,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Answer2_Click"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer4" Content="Button" HorizontalAlignment="Left" Margin="73.333,30.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Click="Answer4_Click"/>
+        <TextBlock Style="{StaticResource Usual}" HorizontalAlignment="Left" Margin="141,83,0,0" TextWrapping="Wrap" Text="номер вопроса" VerticalAlignment="Top" Height="13"/>
+        <TextBlock Style="{StaticResource Headings}" HorizontalAlignment="Left" Margin="81,40,0,0" TextWrapping="Wrap" Text="Текс вопроса" VerticalAlignment="Top" Height="38" Width="351" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

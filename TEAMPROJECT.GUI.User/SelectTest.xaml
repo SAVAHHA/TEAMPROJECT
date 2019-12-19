@@ -8,21 +8,21 @@
         Title="SelectTest" Height="450" Width="800" Background="#d5e7fb" >
     <Window.Resources>
         <Style TargetType="Button" x:Key="baseButton">
-        <Setter Property="Foreground" Value="#4f0b40"/>
-        <Setter Property="FontWeight" Value="DemiBold"/>
-        <Setter Property="FontSize" Value="10"/>
-        <Setter Property="BorderThickness" Value="4"/>
-        <Setter Property="BorderBrush" Value="AliceBlue"/>
-        <Setter Property="Height" Value="35"/>
+            <Setter Property="Foreground" Value="#4f0b40"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+            <Setter Property="Height" Value="40"/>
         </Style>
 
         <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
             <Setter Property="Background" Value="#f793ff"/>
-            <Setter Property="Width" Value="190"/>
+            <Setter Property="Width" Value="250"/>
         </Style>
         <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="BackButton">
             <Setter Property="Background" Value="#ca4d"/>
-            <Setter Property="Width" Value="70"/>
+            <Setter Property="Width" Value="100"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="Headings">
             <Setter Property="Foreground" Value="#823a6f"/>
@@ -42,9 +42,9 @@
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="362*"/>
+            <ColumnDefinition Width="207*"/>
+            <ColumnDefinition Width="224*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -57,13 +57,13 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Name="WinxTest" Style="{StaticResource UsusalButton}" Grid.Row="3" Click="WinxTest_Click">Кто ты из Винкс?</Button>
-        <Button Name="PrepodTest"  Style="{StaticResource UsusalButton}" Grid.Row="4" Click="PrepodTest_Click">Кто ты из преподов Вышки?</Button>
-        <Button Name="KorpusTest" Style="{StaticResource UsusalButton}" Grid.Row="5" Click="KorpusTest_Click" >Какой корпус Вышки тебе подходит?</Button>
-        <Button Name="AvtomatTest" Style="{StaticResource UsusalButton}" Grid.Row="6" Click="AvtomatTest_Click">Будет ли у тебя автомат по С# ?</Button>
-        <Button Name="BackButton" Style="{StaticResource BackButton}" Grid.Row="8" Grid.Column="1" Click="BackButton_Click">Назад</Button>
+        <Button Name="WinxTest" Style="{StaticResource UsusalButton}" Grid.Row="2" Click="WinxTest_Click" Margin="44,43.667,68,10.333" Grid.RowSpan="2">Кто ты из Винкс?</Button>
+        <Button Name="PrepodTest"  Style="{StaticResource UsusalButton}" Grid.Row="3" Click="PrepodTest_Click" Margin="44,47,68,7" Grid.RowSpan="2" >Кто ты из преподов Вышки?</Button>
+        <Button Name="KorpusTest" Style="{StaticResource UsusalButton}" Grid.Row="5" Click="KorpusTest_Click" Margin="44,0,68,6.667" >Какой корпус Вышки тебе подходит?</Button>
+        <Button Name="AvtomatTest" Style="{StaticResource UsusalButton}" Grid.Row="6" Click="AvtomatTest_Click" Margin="44,0.333,68,6.333" >Будет ли у тебя автомат по С# ?</Button>
+        <Button Name="BackButton" Style="{StaticResource BackButton}" Grid.Row="8" Grid.Column="1" Click="BackButton_Click" >Назад</Button>
         <Button Name="ExitButton" Style="{StaticResource BackButton}" Grid.Row="8" Grid.Column="2" Click="ExitButton_Click">Выйти</Button>
-        <TextBlock Style="{StaticResource Headings}" HorizontalAlignment="Left" Margin="44,34,0,0" TextWrapping="Wrap" Text="Выберите тест" VerticalAlignment="Top" Grid.RowSpan="2" Width="277" Grid.ColumnSpan="2"/>
+        <TextBlock Style="{StaticResource Headings}" HorizontalAlignment="Left" Margin="44,0.333,0,0" TextWrapping="Wrap" Text="Выберите тест" VerticalAlignment="Top" Height="59" Grid.RowSpan="2" Width="318" Grid.Row="1"/>
         <!--<TextBox HorizontalAlignment="Left" Height="23" Margin="101,10.333,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>-->
         <!--<TextBlock Style="{StaticResource Usual}" Grid.Column="1" HorizontalAlignment="Left" Margin="34.333,29,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>-->
 
