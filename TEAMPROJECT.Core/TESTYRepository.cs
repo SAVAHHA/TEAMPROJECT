@@ -44,6 +44,7 @@ namespace TEAMPROJECT.Core
                 }
             }        
         }
+
         public void TextQATest(List<Test> testlist, int clickcount, out string questionText, out string answer1Text,  out string answer2Text, out string answer3Text, out string answer4Text)
         {
             while (clickcount < testlist.Count / 4)
