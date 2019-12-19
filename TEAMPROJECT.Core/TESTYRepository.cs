@@ -28,24 +28,53 @@ namespace TEAMPROJECT.Core
             winxtest = repository.Deserialize<List<Test>>("WinxTest");
             testResults = repository.Deserialize<List<TestResults>>("TestResults");   
         }
-        private void ButtonTestLogic(int clickcount, int answernumber, int r1, int r2, int r3, int r4, int r5, int r6)
+        public void ButtonTestLogic(List<Test> testlist, int clickcount, int answernumber, int r1, int r2, int r3, int r4, int r5, int r6)
         {
-            foreach (Test winxanswer in winxtest)
+            foreach (Test answer in testlist)
             {
                 //string writenextquestion = winxanswer.Question;
-                if (winxanswer.QuestionId == clickcount && winxanswer.AnswerId == answernumber)
+                if (answer.QuestionId - 1 == clickcount && answer.AnswerId == answernumber)
                 {
-                    r1 += winxanswer.Result1;
-                    r2 += winxanswer.Result2;
-                    r3 += winxanswer.Result3;
-                    r4 += winxanswer.Result4;
-                    r5 += winxanswer.Result5;
-                    r6 += winxanswer.Result6;
+                    r1 += answer.Result1;
+                    r2 += answer.Result2;
+                    r3 += answer.Result3;
+                    r4 += answer.Result4;
+                    r5 += answer.Result5;
+                    r6 += answer.Result6;
                 }
             }        
         }
+        public void TextQATest(List<Test> testlist, int clickcount, out string questionText, out string answer1Text,  out string answer2Text, out string answer3Text, out string answer4Text)
+        {
+            while (clickcount < testlist.Count / 4)
+            {
+                foreach (Test answer in testlist)
+                {
+                    if (answer.QuestionId == clickcount + 1)
+                    {
+                        questionText = answer.Question;
+                        if (answer.AnswerId == 1)
+                        {
+                            answer1Text = answer.Answer;
+                        }
+                        else if (answer.AnswerId == 2)
+                        {
+                            answer2Text = answer.Answer;
+                        }
+                        else if (answer.AnswerId == 3)
+                        {
+                            answer3Text = answer.Answer;
+                        }
+                        else if (answer.AnswerId == 4)
+                        {
+                            answer4Text = answer.Answer;
+                        }
+                    }
+                }
+            }
+        }
 
-        private int GetMax(int n1, int n2, int n3, int n4, int n5, int n6)
+        public int GetMax(int n1, int n2, int n3, int n4, int n5, int n6)
         {
             int n1n2 = Math.Max(n1, n2);
             int n3n4 = Math.Max(n3, n4);
@@ -53,9 +82,11 @@ namespace TEAMPROJECT.Core
             int n1n2n3n4 = Math.Max(n1n2, n3n4);
             return Math.Max(n1n2n3n4, n5n6);
         }
-        private int TestResultLogic(int r1, int r2, int r3, int r4, int r5, int r6)
+        public int TestResultLogic(int r1, int r2, int r3, int r4, int r5, int r6)
         {
             return GetMax(r1, r2, r3, r4, r5, r6);
         }
+
+
     }
 }
