@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TEAMPROJECT.Core.Models
 {
-    class AllTests
+    public class AllTests
     {
         public int TestID { get; set; }
         public string TestName { get; set; }
