@@ -25,6 +25,6 @@
             <TextBlock Text="Количество прохождений - " FontWeight="DemiBold" FontSize="24"/>
             <TextBlock Text="{Binding EntryDt}"/>
         </StackPanel>
-        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="15" FontSize="24" FontWeight="DemiBold">Пропорции полученных результатов:</TextBlock>
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="15 " FontSize="24" FontWeight="DemiBold">Пропорции полученных результатов:</TextBlock>
     </Grid>
 </Window>
