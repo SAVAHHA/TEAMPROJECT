@@ -26,7 +26,9 @@ namespace TEAMPROJECT.GUI.Owner
 
         private void OneTestButton_Click(object sender, RoutedEventArgs e)
         {
-
+            ChoosingTestWindow choosingTestWindow = new ChoosingTestWindow();
+            choosingTestWindow.Show();
+            this.Close();
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
