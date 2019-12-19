@@ -57,7 +57,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new MainMenuWindow();
+            var window = new MainMenuWindow(0);
             window.Show();
             Close();
 
