@@ -22,6 +22,19 @@ namespace TEAMPROJECT.GUI.Owner
         public ChoosingTestWindow()
         {
             InitializeComponent();
+            TestsComboBox.ItemsSource
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            WelcomingWindow welcomingWindow = new WelcomingWindow();
+            welcomingWindow.Show();
+            this.Close();
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
