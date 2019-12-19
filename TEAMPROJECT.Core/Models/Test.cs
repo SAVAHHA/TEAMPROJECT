@@ -9,6 +9,7 @@ namespace TEAMPROJECT.Core.Models
     public class Test
     {
         public int TestId { get; set; }
+        public string TestName { get; set; }
         public string Question { get; set; }
         public int QuestionId { get; set; }
         public int AnswerId { get; set; }

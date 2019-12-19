@@ -33,20 +33,21 @@ namespace TEAMPROJECT.GUI.User
         int Result4 = 0;
         int Result5 = 0;
         int Result6 = 0;
-        string questionText;
-        string answer1Text;
-        string answer2Text;
-        string answer3Text;
-        string answer4Text;
+
+        string qText;
+        string a1Text;
+        string a2Text;
+        string a3Text;
+        string a4Text;
         public WinxTestWindow()
         {
             InitializeComponent();
-            _testyrepository.TextQATest(_testyrepository.winxtest, winxcount, out questionText, out answer1Text, out answer2Text, out answer3Text, out answer4Text);
-            QuestionTextBlock.Text = questionText;
-            Answer1.Content = answer1Text;
-            Answer2.Content = answer2Text;
-            Answer3.Content = answer3Text;
-            Answer4.Content = answer4Text;
+            _testyrepository.TextQATest(_testyrepository.winxtest, winxcount, out qText, out a1Text, out a2Text, out a3Text, out a4Text);
+            QuestionTextBlock.Text = qText;
+            Answer1.Content = a1Text;
+            Answer2.Content = a2Text;
+            Answer3.Content = a3Text;
+            Answer4.Content = a4Text;
 
         }
         
