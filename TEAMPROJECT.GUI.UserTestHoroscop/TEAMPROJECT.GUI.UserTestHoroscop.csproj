@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4DF64EDB-848C-4E5F-8B77-D17275386334}</ProjectGuid>
+    <ProjectGuid>{9E9C1C64-4D99-4F53-B6D4-89026438B574}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TEAMPROJECT.GUI.User</RootNamespace>
-    <AssemblyName>TEAMPROJECT.GUI.User</AssemblyName>
+    <RootNamespace>TEAMPROJECT.GUI.UserTestHoroscop</RootNamespace>
+    <AssemblyName>TEAMPROJECT.GUI.UserTestHoroscop</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -24,7 +24,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,7 +33,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -57,24 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AvtomatWindow.xaml.cs">
-      <DependentUpon>AvtomatWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="HoroscopsMainWindow.xaml.cs">
-      <DependentUpon>HoroscopsMainWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="KorpusFirstWindow.xaml.cs">
-      <DependentUpon>KorpusFirstWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="LogInWindow.xaml.cs">
-      <DependentUpon>LogInWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainMenuWindow.xaml.cs">
-      <DependentUpon>MainMenuWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PrepodFirstWindow.xaml.cs">
-      <DependentUpon>PrepodFirstWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
@@ -83,9 +63,6 @@
     </Compile>
     <Compile Include="SelectTest.xaml.cs">
       <DependentUpon>SelectTest.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SwitchWindow.xaml.cs">
-      <DependentUpon>SwitchWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="WelcomeWindowUser.xaml.cs">
       <DependentUpon>WelcomeWindowUser.xaml</DependentUpon>
@@ -100,10 +77,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="HoroscopsMainWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="KorpusFirstWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -112,22 +85,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainMenuWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="AvtomatWindow.xaml.cs">
+      <DependentUpon>AvtomatWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KorpusFirstWindow.xaml.cs">
+      <DependentUpon>KorpusFirstWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogInWindow.xaml.cs">
+      <DependentUpon>LogInWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PrepodFirstWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -141,10 +115,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SelectTest.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SwitchWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -162,6 +132,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainMenuWindow.xaml.cs">
+      <DependentUpon>MainMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrepodFirstWindow.xaml.cs">
+      <DependentUpon>PrepodFirstWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
