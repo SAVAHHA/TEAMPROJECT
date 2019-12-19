@@ -42,9 +42,9 @@ namespace TEAMPROJECT.Core
                     r5 += winxanswer.Result5;
                     r6 += winxanswer.Result6;
                 }
-            }
-                
+            }        
         }
+
         private int GetMax(int n1, int n2, int n3, int n4, int n5, int n6)
         {
             int n1n2 = Math.Max(n1, n2);
@@ -53,9 +53,9 @@ namespace TEAMPROJECT.Core
             int n1n2n3n4 = Math.Max(n1n2, n3n4);
             return Math.Max(n1n2n3n4, n5n6);
         }
-        private void TestResultLogic(int r1, int r2, int r3, int r4, int r5, int r6)
+        private int TestResultLogic(int r1, int r2, int r3, int r4, int r5, int r6)
         {
-            int result = GetMax(r1, r2, r3, r4, r5, r6);
+            return GetMax(r1, r2, r3, r4, r5, r6);
         }
     }
 }
