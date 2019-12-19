@@ -37,8 +37,16 @@ namespace TEAMPROJECT.GUI.Owner
         }
 
         private void AddingButton_Click(object sender, RoutedEventArgs e)
-        {
-
+        {   
+            if (PredskazaniyeTextBox.Text.Length == 0)
+            {
+                MessageBox.Show("Предсказание не может быть пустым! Введите, пожалуйста, текст.", "Действие невозможно!", MessageBoxButton.OK);
+            }
+            else
+            {
+                MessageBox.Show("Предсказание успешно добавлено!", "Поздравляем!", MessageBoxButton.OK);
+                PredskazaniyeTextBox.Clear();
+            }
         }
     }
 }
