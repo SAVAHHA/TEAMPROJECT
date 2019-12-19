@@ -24,10 +24,14 @@
         <Button Grid.Row="5" Grid.Column="1" Name="ExitButton" Margin="30,10,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
         <TextBlock Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Margin="15">Выберите тест:</TextBlock>
         <TextBlock Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Margin="15,0,0,3" Height="67">Выберите дату <LineBreak/>(оставьте поле пустым для получения статистики за все время):</TextBlock>
-        <ComboBox Name="TestsComboBox" Grid.Row="2" Grid.ColumnSpan="2" Margin="10">
+        <!--<ComboBox Name="TestsComboBox" Grid.Row="2" Grid.ColumnSpan="2" Margin="10">
             <ComboBox.ItemTemplate>
-                
-            </ComboBox.ItemTemplate>
-        </ComboBox>
+                <DataTemplate>
+                    <TextBlock Text="{Binding TestName}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>-->
+        <!--</ComboBox>-->
+        <DatePicker Grid.Row="4" Name="TestDatePicker" IsDropDownOpen="False" SelectedDateFormat="Long" VerticalAlignment="Center" Margin="15,23,30,23"/>
+        <Button Grid.Row="4" Grid.Column="1" Name="GetStatButton" Margin="30,13,10, 13" FontSize="22" Click="GetStatButton_Click">Готово</Button>
     </Grid>
 </Window>

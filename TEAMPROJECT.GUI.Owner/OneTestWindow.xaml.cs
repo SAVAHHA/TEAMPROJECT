@@ -11,24 +11,20 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
 
 namespace TEAMPROJECT.GUI.Owner
 {
     /// <summary>
-    /// Логика взаимодействия для WelcomingWindow.xaml
+    /// Логика взаимодействия для OneTestWindow.xaml
     /// </summary>
-    public partial class WelcomingWindow : Window
+    public partial class OneTestWindow : Window
     {
-        public WelcomingWindow()
+        public OneTestWindow()
         {
             InitializeComponent();
-        }
-
-        private void GoroscoryStatisticsButton_Click(object sender, RoutedEventArgs e)
-        {
-            GoroscopyWorkWindow goroscopy = new GoroscopyWorkWindow();
-            goroscopy.Show();
-            this.Close();
+            //OWNERRepository _ownerRepo;
+            //periodTextBox.Text = _ownerRepo.selectedDate.ToString().Substring(0, 10);
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
@@ -36,11 +32,12 @@ namespace TEAMPROJECT.GUI.Owner
             this.Close();
         }
 
-        private void TestStatisticsButton_Click(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            TestyWorkWindow testyWorkWindow = new TestyWorkWindow();
-            testyWorkWindow.Show();
+            WelcomingWindow welcomingWindow = new WelcomingWindow();
+            welcomingWindow.Show();
             this.Close();
+            
         }
     }
 }

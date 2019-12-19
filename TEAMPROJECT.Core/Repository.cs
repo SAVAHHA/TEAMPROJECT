@@ -26,9 +26,9 @@ namespace TEAMPROJECT.Core
 
         public virtual T Deserialize<T>(string fileName)
         {
-            using (var sr = new StreamReader(regex.Replace(Environment.CurrentDirectory, "") + fileName))
+            using (var sw = new StreamReader(regex.Replace(Environment.CurrentDirectory, "") + fileName))
             {
-                using (var jsonReader = new JsonTextReader(sr))
+                using (var jsonReader = new JsonTextReader(sw))
                 {
                     var serializer = new JsonSerializer();
                     return serializer.Deserialize<T>(jsonReader);
