@@ -22,6 +22,11 @@ namespace TEAMPROJECT.GUI.User
         public MainMenuWindow()
         {
             InitializeComponent();
+            //UserWelcome(......);
+        }
+        public void UserWelcome(string name)
+        {
+            WelcomeTextBlock.Text = $"Welcome, {name}!";
         }
 
         private void Testi_Click(object sender, RoutedEventArgs e)

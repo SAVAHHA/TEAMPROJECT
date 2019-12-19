@@ -60,13 +60,23 @@
     <Compile Include="AddPredictionWindow.xaml.cs">
       <DependentUpon>AddPredictionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChoosingTestWindow.xaml.cs">
+      <DependentUpon>ChoosingTestWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GoroscopyWorkWindow.xaml.cs">
       <DependentUpon>GoroscopyWorkWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TestyWorkWindow.xaml.cs">
+      <DependentUpon>TestyWorkWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="WelcomingWindow.xaml.cs">
       <DependentUpon>WelcomingWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AddPredictionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChoosingTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -86,6 +96,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TestyWorkWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WelcomingWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
