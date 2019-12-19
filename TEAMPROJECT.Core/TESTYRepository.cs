@@ -47,35 +47,35 @@ namespace TEAMPROJECT.Core
             }        
         }
 
-        public void TextQATest(List<Test> testlist, int clickcount, out string questionText, out string answer1Text,  out string answer2Text, out string answer3Text, out string answer4Text)
-        {
-            while (clickcount < testlist.Count / 4)
-            {
-                foreach (Test answer in testlist)
-                {
-                    if (answer.QuestionId == clickcount + 1)
-                    {
-                        questionText = answer.Question;
-                        if (answer.AnswerId == 1)
-                        {
-                            answer1Text = answer.Answer;
-                        }
-                        else if (answer.AnswerId == 2)
-                        {
-                            answer2Text = answer.Answer;
-                        }
-                        else if (answer.AnswerId == 3)
-                        {
-                            answer3Text = answer.Answer;
-                        }
-                        else if (answer.AnswerId == 4)
-                        {
-                            answer4Text = answer.Answer;
-                        }
-                    }
-                }
-            }
-        }
+        //public void TextQATest(List<Test> testlist, int clickcount, out string questionText, out string answer1Text,  out string answer2Text, out string answer3Text, out string answer4Text)
+        //{
+        //    while (clickcount < testlist.Count / 4)
+        //    {
+        //        foreach (Test answer in testlist)
+        //        {
+        //            if (answer.QuestionId == clickcount + 1)
+        //            {
+        //                questionText = answer.Question;
+        //                if (answer.AnswerId == 1)
+        //                {
+        //                    answer1Text = answer.Answer;
+        //                }
+        //                else if (answer.AnswerId == 2)
+        //                {
+        //                    answer2Text = answer.Answer;
+        //                }
+        //                else if (answer.AnswerId == 3)
+        //                {
+        //                    answer3Text = answer.Answer;
+        //                }
+        //                else if (answer.AnswerId == 4)
+        //                {
+        //                    answer4Text = answer.Answer;
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
 
         public int GetMax(int n1, int n2, int n3, int n4, int n5, int n6)
         {

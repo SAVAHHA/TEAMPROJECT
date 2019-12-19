@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
 
 namespace TEAMPROJECT.GUI.Owner
 {
@@ -19,10 +20,12 @@ namespace TEAMPROJECT.GUI.Owner
     /// </summary>
     public partial class ChoosingTestWindow : Window
     {
+        OWNERRepository _ownerRepo { get; set; }
         public ChoosingTestWindow()
         {
             InitializeComponent();
-            TestsComboBox.ItemsSource
+            //TESTYRepository _testyRepository = new TESTYRepository();
+            //TestsComboBox.ItemsSource = _testyRepository.AllTests;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -34,6 +37,15 @@ namespace TEAMPROJECT.GUI.Owner
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void GetStatButton_Click(object sender, RoutedEventArgs e)
+        {
+            _ownerRepo = new OWNERRepository();
+            _ownerRepo.selectedDate = TestDatePicker.SelectedDate;
+            OneTestWindow oneTestWindow = new OneTestWindow();
+            oneTestWindow.Show();
             this.Close();
         }
     }
