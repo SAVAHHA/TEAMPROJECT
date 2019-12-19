@@ -62,6 +62,7 @@
     <Compile Include="TESTYRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\AllTests.json" />
     <None Include="Data\PrepodTest.json" />
     <None Include="Data\Users.json" />
     <None Include="Data\WinxTest.json" />
