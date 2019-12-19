@@ -21,6 +21,6 @@
         <Button Grid.Row="3" Grid.Column="0" Name="BackButton" Margin="10,35,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
         <Button Grid.Row="3" Grid.Column="1" Name="ExitButton" Margin="30,35,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
         <Button Grid.Row="2" Name="AddingButton" Margin="222,57,214,0" FontSize="22" Click="AddingButton_Click"  Grid.ColumnSpan="2">Добавить</Button>
-        <TextBox Name="PredskazaniyeTextBox" Grid.Row="1" Grid.ColumnSpan="2" Margin="15,0,15,67" Height="143" FontSize="20" VerticalAlignment="Bottom" Grid.RowSpan="2" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" AcceptsReturn="True"></TextBox>
+        <TextBox Name="PredskazaniyeTextBox" Grid.Row="1" Grid.ColumnSpan="2" Margin="15,0,15,67" Height="143" FontSize="20" VerticalAlignment="Bottom" Grid.RowSpan="2" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" SpellCheck.IsEnabled="True" Language="ru-ru"></TextBox>
     </Grid>
 </Window>
