@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.User"
         mc:Ignorable="d"
-        Title="RegistrationWindow" Height="450" Width="800">
+        Title="RegistrationWindow"  Height="450" Width="450">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">Введите информацию</TextBlock>
+        <TextBlock Grid.Row="1" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Имя:</TextBlock>
+        <TextBlock Grid.Row="2" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Номер автомобиля:</TextBlock>
+        <TextBlock Grid.Row="3" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Логин:</TextBlock>
+        <TextBlock Grid.Row="4" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Пароль:</TextBlock>
+        <TextBox Name="UserName" Grid.Row="1" Grid.Column="1" Margin="15"></TextBox>
+        <TextBox Name="UserCarPlateNumber" Grid.Row="2" Grid.Column="1" Margin="15"></TextBox>
+        <TextBox Name="UserLogin" Grid.Row="3" Grid.Column="1" Margin="15"></TextBox>
+        <PasswordBox Name="UserPassword" Grid.Row="4" Grid.Column="1" Margin="15"></PasswordBox>
+        <Button Name="RegistrationCancel" Margin="30 15" Grid.Row="5" FontSize="17" Click="RegistrationCancel_Click">Отмена</Button>
+        <Button Name="RegistrationOK" Margin="30 15" Grid.Row="5" Grid.Column="1" FontSize="17" Click="RegistrationOK_Click">Готово</Button>
     </Grid>
 </Window>
