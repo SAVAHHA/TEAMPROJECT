@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEAMPROJECT.GUI.Owner", "TE
 		{91869E96-9D1F-4989-935B-8E375705DCA8} = {91869E96-9D1F-4989-935B-8E375705DCA8}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlyForTest", "OnlyForTest\OnlyForTest.csproj", "{BC124401-2D03-4D2F-A83E-8EDE6AF7894C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0BECF76A-3006-4EC0-9C0D-327872596D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BECF76A-3006-4EC0-9C0D-327872596D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BECF76A-3006-4EC0-9C0D-327872596D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC124401-2D03-4D2F-A83E-8EDE6AF7894C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC124401-2D03-4D2F-A83E-8EDE6AF7894C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC124401-2D03-4D2F-A83E-8EDE6AF7894C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC124401-2D03-4D2F-A83E-8EDE6AF7894C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
