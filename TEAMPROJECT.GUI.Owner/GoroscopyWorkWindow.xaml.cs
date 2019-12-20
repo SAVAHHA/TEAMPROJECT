@@ -24,7 +24,13 @@ namespace TEAMPROJECT.GUI.Owner
         {
             InitializeComponent();
             Repository _repo = new Repository();
+            OWNERRepository _ownerRepo = new OWNERRepository();
             LastSixZodiac.ItemsSource = _repo.Zodiacs;
+            foreach (var zodiac in _repo.Zodiacs)
+            {
+                zodiac.NumberOfUsers = _ownerRepo.CountZodiac(zodiac.Name);
+                zodiac.PercentageOfUsers = (zodiac.NumberOfUsers * 100) / _repo.Users.Count();
+            }
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
