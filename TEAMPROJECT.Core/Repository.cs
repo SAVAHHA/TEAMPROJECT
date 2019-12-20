@@ -14,7 +14,7 @@ namespace TEAMPROJECT.Core
     public class Repository: IRepository
     {
         //Регулярное вырожение для двух проектов
-        public Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.User\\bin|\\TEAMPROJECT\.GUI\.Owner\\bin");
+        public Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.UserTestHoroscop\\bin|\\TEAMPROJECT\.GUI\.Owner\\bin");
         public List<User> Users = new List<User>();
         public List<Zodiac> Zodiacs = new List<Zodiac>();
         
@@ -46,8 +46,9 @@ namespace TEAMPROJECT.Core
                 }
             }
         }
-        public virtual void AddUser(string name, DateTime dateOfBirth, string login, string password)
+        public virtual void AddUser(string name, string dateOfBirthStr, string login, string password)
         {
+            DateTime dateOfBirth = DateTime.Parse(dateOfBirthStr);
             User user = new User();
             user.Name = name;
             user.DateOfBirth = dateOfBirth;
@@ -63,14 +64,16 @@ namespace TEAMPROJECT.Core
             }
             Users.Add(user);
         }
-        public virtual bool Entrance(string login, string password)
+        public virtual bool Entrance(string login, string password, out int id)
         {
+            id = 0;
             bool check = false;
             foreach (var user in Users)
             {
                 if (user.Login == login && user.Password == password)
                 {
                     check = true;
+                    id = user.UserID;
                     break;
                 }
             }
