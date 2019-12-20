@@ -70,6 +70,7 @@
     <None Include="Data\AllTests.json" />
     <None Include="Data\Predictions.json" />
     <None Include="Data\PrepodTest.json" />
+    <None Include="Data\TestResults.json" />
     <None Include="Data\Users.json" />
     <None Include="Data\WinxTest.json" />
     <None Include="Data\Zodiacs.json" />

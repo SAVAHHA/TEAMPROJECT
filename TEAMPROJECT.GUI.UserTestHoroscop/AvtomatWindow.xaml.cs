@@ -26,8 +26,8 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new MainMenuWindow(0);
-            window.Show();
+            //var window = new MainMenuWindow();
+            //window.Show();
             Close();
 
         }
