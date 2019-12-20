@@ -21,7 +21,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class AvtomatWindow : Window
     {
-        public AvtomatWindow()
+        public AvtomatWindow(User currentUser)
         {
             InitializeComponent();
             TestResults new_testresult = new TestResults();
