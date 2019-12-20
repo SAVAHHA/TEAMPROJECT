@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TEAMPROJECT.Core;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -20,9 +21,10 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class PredictionWindow : Window
     {
+        User curreUser { get; set; }
         Repository repository = new Repository();
         GOROSCOPYRepository gOROSCOPYRepository = new GOROSCOPYRepository();
-        public PredictionWindow()
+        public PredictionWindow(User CurrentUser)
         {
             InitializeComponent();
             PredictionText.Text = gOROSCOPYRepository.GetRandomPrediction();

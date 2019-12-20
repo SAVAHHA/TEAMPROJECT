@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -18,16 +19,18 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// Логика взаимодействия для AvtomatWindow.xaml
     /// </summary>
     public partial class AvtomatWindow : Window
-    {
-        public AvtomatWindow()
+    { 
+        User currentUser { get; set; } 
+        public AvtomatWindow(User CurrentUser)
         {
             InitializeComponent();
+            currentUser = CurrentUser;
         }
 
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)
         {
-            //var window = new MainMenuWindow();
-            //window.Show();
+            var window = new MainMenuWindow(currentUser);
+            window.Show();
             Close();
 
         }

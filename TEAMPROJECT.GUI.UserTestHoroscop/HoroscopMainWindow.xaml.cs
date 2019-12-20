@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -19,14 +20,16 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class HoroscopMainWindow : Window
     {
-        public HoroscopMainWindow()
+        User CurrentUser { get; set; }
+        public HoroscopMainWindow(User currentUser)
         {
             InitializeComponent();
+            CurrentUser = currentUser;
         }
 
         private void PredictionsButton_Click(object sender, RoutedEventArgs e)
         {
-            PredictionWindow predictionWindow = new PredictionWindow();
+            PredictionWindow predictionWindow = new PredictionWindow(CurrentUser);
             predictionWindow.Show();
             this.Close();
         }

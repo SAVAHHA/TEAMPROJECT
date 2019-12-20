@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -19,7 +20,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class KorpusFirstWindow : Window
     {
-        public KorpusFirstWindow()
+        public KorpusFirstWindow(User CurrentUser)
         {
             InitializeComponent();
         }
