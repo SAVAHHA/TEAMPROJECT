@@ -27,8 +27,7 @@ namespace TEAMPROJECT.Core
         public void LoadGOROSCOPYData()
         {
             Predictions = repository.Deserialize<List<Prediction>>("../../TEAMPROJECT.Core/Data/Predictions.json");
-            //Compabilities = repository.Deserialize<List<Compability>>("../../TEAMPROJECT.Core/Data/Compabilities.json");
-            
+            //Compabilities = repository.Deserialize<List<Compability>>("../../TEAMPROJECT.Core/Data/Compabilities.json"); 
         }
         public string GetRandomPrediction()
         {
