@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -22,6 +24,12 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         public AvtomatWindow()
         {
             InitializeComponent();
+            TestResults new_testresult = new TestResults();
+            new_testresult.PassDate = DateTime.Now;
+            new_testresult.TestName = "Автомат по C#";
+            //new_testresult.User =;
+            new_testresult.ResultName = "Нет!";
+
         }
 
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)
