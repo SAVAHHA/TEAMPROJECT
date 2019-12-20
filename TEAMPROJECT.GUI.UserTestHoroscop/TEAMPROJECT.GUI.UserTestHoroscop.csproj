@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0BECF76A-3006-4EC0-9C0D-327872596D33}</ProjectGuid>
+    <ProjectGuid>{9E9C1C64-4D99-4F53-B6D4-89026438B574}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TEAMPROJECT.GUI.Owner</RootNamespace>
-    <AssemblyName>TEAMPROJECT.GUI.Owner</AssemblyName>
+    <RootNamespace>TEAMPROJECT.GUI.UserTestHoroscop</RootNamespace>
+    <AssemblyName>TEAMPROJECT.GUI.UserTestHoroscop</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -24,7 +24,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,13 +33,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <LangVersion>8.0</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
-  <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -63,62 +55,96 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddPredictionWindow.xaml.cs">
-      <DependentUpon>AddPredictionWindow.xaml</DependentUpon>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ChoosingTestWindow.xaml.cs">
-      <DependentUpon>ChoosingTestWindow.xaml</DependentUpon>
+    <Compile Include="RegistrationWindow.xaml.cs">
+      <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GoroscopyWorkWindow.xaml.cs">
-      <DependentUpon>GoroscopyWorkWindow.xaml</DependentUpon>
+    <Compile Include="ResultWinxWindow.xaml.cs">
+      <DependentUpon>ResultWinxWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="OneTestWindow.xaml.cs">
-      <DependentUpon>OneTestWindow.xaml</DependentUpon>
+    <Compile Include="SelectTest.xaml.cs">
+      <DependentUpon>SelectTest.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TestyWorkWindow.xaml.cs">
-      <DependentUpon>TestyWorkWindow.xaml</DependentUpon>
+    <Compile Include="WelcomeWindowUser.xaml.cs">
+      <DependentUpon>WelcomeWindowUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WelcomingWindow.xaml.cs">
-      <DependentUpon>WelcomingWindow.xaml</DependentUpon>
+    <Compile Include="WinxFirstWindow.xaml.cs">
+      <DependentUpon>WinxFirstWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddPredictionWindow.xaml">
+    <Compile Include="WinxTestWindow.xaml.cs">
+      <DependentUpon>WinxTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AvtomatWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ChoosingTestWindow.xaml">
+    <Page Include="KorpusFirstWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GoroscopyWorkWindow.xaml">
+    <Page Include="LogInWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="AvtomatWindow.xaml.cs">
+      <DependentUpon>AvtomatWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="OneTestWindow.xaml">
+    <Compile Include="KorpusFirstWindow.xaml.cs">
+      <DependentUpon>KorpusFirstWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogInWindow.xaml.cs">
+      <DependentUpon>LogInWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainMenuWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TestyWorkWindow.xaml">
+    <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WelcomingWindow.xaml">
+    <Page Include="PrepodFirstWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegistrationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResultWinxWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WelcomeWindowUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinxFirstWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinxTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainMenuWindow.xaml.cs">
+      <DependentUpon>MainMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrepodFirstWindow.xaml.cs">
+      <DependentUpon>PrepodFirstWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

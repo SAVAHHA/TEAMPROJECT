@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TEAMPROJECT.Core;
 
-namespace TEAMPROJECT.GUI.User
+namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
     /// <summary>
     /// Логика взаимодействия для RegistrationWindow.xaml
@@ -37,7 +37,7 @@ namespace TEAMPROJECT.GUI.User
 
         private void RegistrationOK_Click(object sender, RoutedEventArgs e)
         {
-            repository.AddUser(UserName.Text, DateTime.Parse(UserDateOfBirth.Text), UserLogin.Text, UserPassword.Password);
+            repository.AddUser(UserName.Text, UserDateOfBirth.Text, UserLogin.Text, UserPassword.Password);
 
         }
     }

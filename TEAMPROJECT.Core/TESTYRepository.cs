@@ -17,6 +17,7 @@ namespace TEAMPROJECT.Core
         public TESTYRepository()
         {
             LoadData();
+
         }
         
         Repository repository = new Repository();

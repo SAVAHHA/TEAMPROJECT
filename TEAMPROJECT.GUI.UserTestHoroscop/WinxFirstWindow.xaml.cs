@@ -12,16 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace TEAMPROJECT.GUI.User
+namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
     /// <summary>
-    /// Логика взаимодействия для SwitchWindow.xaml
+    /// Логика взаимодействия для WinxFirstWindow.xaml
     /// </summary>
-    public partial class SwitchWindow : Window
+    public partial class WinxFirstWindow : Window
     {
-        public SwitchWindow(int UserId) 
+        public WinxFirstWindow()
         {
             InitializeComponent();
+        }
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new WinxTestWindow();
+            window.Show();
+            Close();
+
+
         }
     }
 }

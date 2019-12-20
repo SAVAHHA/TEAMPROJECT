@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TEAMPROJECT.GUI.User"
+        xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
                 Title="SelectTest" Height="450" Width="800" Background="#d5e7fb" >
     <Window.Resources>
@@ -58,3 +58,4 @@
         </Button>
     </Grid>
 </Window>
+
