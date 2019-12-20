@@ -60,7 +60,8 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 new_testresult.PassDate = DateTime.Now;
                 new_testresult.TestName = testname;
                 //new_testresult.User =;
-                //new_testresult.ResultName = ;
+                new_testresult.ResultName = _testyrepository.WinxTestResultLogic(Result1,Result2,Result3,Result4,Result5,Result6);
+                
 
                 var window = new ResultWinxWindow();
                 window.Show();
