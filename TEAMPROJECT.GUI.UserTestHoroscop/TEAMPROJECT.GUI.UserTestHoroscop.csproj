@@ -58,11 +58,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CompabilityWindow.xaml.cs">
+      <DependentUpon>CompabilityWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HoroscopMainWindow.xaml.cs">
       <DependentUpon>HoroscopMainWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PredictionWindow.xaml.cs">
-      <DependentUpon>PredictionWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
@@ -83,6 +83,10 @@
       <DependentUpon>WinxTestWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AvtomatWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CompabilityWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,10 +116,6 @@
       <DependentUpon>LogInWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainMenuWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PredictionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

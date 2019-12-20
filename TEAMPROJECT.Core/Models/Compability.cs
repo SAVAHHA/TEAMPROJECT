@@ -9,8 +9,8 @@ namespace TEAMPROJECT.Core.Models
     public class Compability
     {
         public int CompabilityID { get; set; }
-        public Zodiac Zodiac1 { get; set; }
-        public Zodiac Zodiac2 { get; set; }
+        public string Zodiac1 { get; set; }
+        public string Zodiac2 { get; set; }
         public int Percents { get; set; }
     }
 }

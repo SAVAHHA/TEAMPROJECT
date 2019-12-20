@@ -31,6 +31,11 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             PredictionTextBlock.Text = gOROSCOPYRepository.GetPrediction(currentUser.Zodiac.Name);
         }
 
+        private void CompabilityButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         //private void PredictionsButton_Click(object sender, RoutedEventArgs e)
         //{
         //    PredictionWindow predictionWindow = new PredictionWindow(CurrentUser);

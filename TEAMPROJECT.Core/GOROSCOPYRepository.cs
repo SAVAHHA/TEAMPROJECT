@@ -79,7 +79,7 @@ namespace TEAMPROJECT.Core
             int percent = 0;
             foreach (var compability in Compabilities)
             {
-                if (compability.Zodiac1.Name == zodiac1 && compability.Zodiac2.Name == zodiac2)
+                if (compability.Zodiac1 == zodiac1 && compability.Zodiac2 == zodiac2)
                 {
                     percent = compability.Percents;
                 }

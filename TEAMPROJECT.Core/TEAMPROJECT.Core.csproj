@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\AllTests.json" />
+    <None Include="Data\Compabilities.json" />
     <None Include="Data\Predictions.json" />
     <None Include="Data\PredictionsPerZodiacs.json" />
     <None Include="Data\PrepodTest.json" />
