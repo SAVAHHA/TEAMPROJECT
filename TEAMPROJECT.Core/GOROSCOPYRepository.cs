@@ -21,10 +21,9 @@ namespace TEAMPROJECT.Core
 
         public void LoadGOROSCOPYData()
         {
-            Predictions = repository.Deserialize<List<Prediction>>("Predictions");
-            Compabilities = repository.Deserialize<List<Compability>>("Compabilities");
+            Predictions = repository.Deserialize<List<Prediction>>("../../TEAMPROJECT.Core/Data/Predictions.json");
+            Compabilities = repository.Deserialize<List<Compability>>("../../TEAMPROJECT.Core/Data/Compabilities.json");
         }
-
         public string GetRandomPrediction()
         {
             Random random = new Random();
@@ -32,7 +31,6 @@ namespace TEAMPROJECT.Core
             string predictionText = Predictions[number].Info;
             return predictionText;
         }
-
         public int GetCompability(string zodiac1, string zodiac2)
         {
             int percent = 0;
@@ -45,7 +43,6 @@ namespace TEAMPROJECT.Core
             }
             return percent;
         }
-
         public void AddPrediction(string predictionText)
         {
             Prediction prediction = new Prediction();
@@ -53,10 +50,9 @@ namespace TEAMPROJECT.Core
             prediction.PredictionID = Predictions.Count() + 1;
             Predictions.Add(prediction);
         }
-
         public void RewritePredictions()
         {
-            repository.Serialize("Prediction", Predictions);
+            repository.Serialize("Predictions", Predictions);
         }
     }
 }

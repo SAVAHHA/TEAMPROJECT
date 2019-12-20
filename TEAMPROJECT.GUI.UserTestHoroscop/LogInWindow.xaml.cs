@@ -34,7 +34,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             bool check = repository.Entrance(UserLoginTextBox.Text, UserPasswordBox.Password, out id);
             if (check == true)
             {
-                MainMenuWindow mainMenuWindow = new MainMenuWindow();//id);
+                MainMenuWindow mainMenuWindow = new MainMenuWindow(id);//id);
                 mainMenuWindow.Show();
                 this.Close();
             }

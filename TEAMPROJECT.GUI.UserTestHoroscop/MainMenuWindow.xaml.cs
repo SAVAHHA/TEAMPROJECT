@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -20,7 +21,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     public partial class MainMenuWindow : Window
     {
 
-        public MainMenuWindow()//int UserId)
+        public MainMenuWindow(int UserId)
         {
             //if (UserId == 0) { //прописать
             //}

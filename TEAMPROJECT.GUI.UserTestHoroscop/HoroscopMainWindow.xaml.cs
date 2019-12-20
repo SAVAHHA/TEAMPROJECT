@@ -23,5 +23,10 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         {
             InitializeComponent();
         }
+
+        private void PredictionsButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
