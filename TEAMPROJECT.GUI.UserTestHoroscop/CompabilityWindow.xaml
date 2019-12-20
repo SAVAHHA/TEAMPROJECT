@@ -5,8 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
-        Title="CompabilityWindow" Height="450" Width="800">
+        Title="CompabilityWindow" Height="450" Width="450" Background="#d5e7fb" >
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="baseButton">
+            <Setter Property="Foreground" Value="#4f0b40"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+            <Setter Property="Height" Value="40"/>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
+            <Setter Property="Background" Value="#f793ff"/>
+            <Setter Property="Width" Value="250"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="BackButton">
+            <Setter Property="Background" Value="#ca4d"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Headings">
+            <Setter Property="Foreground" Value="#823a6f"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Usual">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         
+        <ListBox Name="CompabilityListBox"  Margin="10,100,10,56" Background="FloralWhite" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Zodiac2}" FontWeight="DemiBold" FontSize="20"/>
+                        <TextBlock Text=" - " FontWeight="DemiBold" FontSize="20"/>
+                        <TextBlock Text="{Binding Percents}" FontWeight="DemiBold" FontSize="20"/>
+                        <TextBlock Text=" % " FontWeight="DemiBold" FontSize="20"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBlock Name="Zodiac1TextBlock" Style="{StaticResource Headings}" HorizontalAlignment="Left" Margin="39,33,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="39" Width="343" FontSize="20"/>
     </Grid>
 </Window>

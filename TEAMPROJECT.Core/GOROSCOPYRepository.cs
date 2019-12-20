@@ -27,7 +27,7 @@ namespace TEAMPROJECT.Core
         public void LoadGOROSCOPYData()
         {
             Predictions = repository.Deserialize<List<Prediction>>("../../TEAMPROJECT.Core/Data/Predictions.json");
-            //Compabilities = repository.Deserialize<List<Compability>>("../../TEAMPROJECT.Core/Data/Compabilities.json"); 
+            Compabilities = repository.Deserialize<List<Compability>>("../../TEAMPROJECT.Core/Data/Compabilities.json"); 
         }
         public string GetRandomPrediction()
         {
@@ -74,17 +74,17 @@ namespace TEAMPROJECT.Core
             return prediction;
         }
         
-        public int GetCompability(string zodiac1, string zodiac2)
+        public List<Compability> GetCompability(string zodiac)
         {
-            int percent = 0;
+            var CurrentCompability = new List<Compability>();
             foreach (var compability in Compabilities)
             {
-                if (compability.Zodiac1 == zodiac1 && compability.Zodiac2 == zodiac2)
+                if (compability.Zodiac1 == zodiac)
                 {
-                    percent = compability.Percents;
+                    CurrentCompability.Add(compability);
                 }
             }
-            return percent;
+            return CurrentCompability;
         }
         public void AddPrediction(string predictionText)
         {

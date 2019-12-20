@@ -54,5 +54,6 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 MessageBox.Show("Не все поля заполнены", "Введите данные", MessageBoxButton.OK);
             }
         }
+
     }
 }

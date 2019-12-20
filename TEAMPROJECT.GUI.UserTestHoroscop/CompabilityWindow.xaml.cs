@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -19,9 +21,16 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class CompabilityWindow : Window
     {
-        public CompabilityWindow()
+        GOROSCOPYRepository gOROSCOPYRepository = new GOROSCOPYRepository();
+        public CompabilityWindow(User currentUser)
         {
             InitializeComponent();
+            CompabilityListBox.ItemsSource = gOROSCOPYRepository.GetCompability(currentUser.Zodiac.Name);
+            Zodiac1TextBlock.Text = "Совместимость с: " + currentUser.Zodiac.Name;
+            //foreach (var compability in gOROSCOPYRepository.GetCompability(currentUser.Zodiac.Name))
+            //{
+            //    compability.
+            //}
         }
     }
 }

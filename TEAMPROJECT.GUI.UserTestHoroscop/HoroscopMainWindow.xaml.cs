@@ -33,7 +33,9 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         private void CompabilityButton_Click(object sender, RoutedEventArgs e)
         {
-
+            CompabilityWindow compabilityWindow = new CompabilityWindow(CurrentUser);
+            compabilityWindow.Show();
+            this.Close();
         }
 
         //private void PredictionsButton_Click(object sender, RoutedEventArgs e)
