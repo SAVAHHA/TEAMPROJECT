@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TEAMPROJECT.Core.Models
 {
-    class Prediction
+    public class Prediction
     {
         public int PredictionID { get; set; }
         public string Info { get; set; }
