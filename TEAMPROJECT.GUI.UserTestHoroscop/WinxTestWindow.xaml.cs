@@ -31,6 +31,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         int Result4 = 0;
         int Result5 = 0;
         int Result6 = 0;
+        
 
         public WinxTestWindow()
         {
@@ -51,9 +52,15 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             _testyrepository.ButtonTestLogic(_testyrepository.winxtest, winxcount, answernumber1, Result1, Result2, Result3, Result4, Result5, Result6);
 
             winxcount++;
-
+            string testname = _testyrepository.TextNameTest(_testyrepository.winxtest);
             if (winxcount == _testyrepository.winxtest.Count / 4)
             {
+                TestResults new_testresult = new TestResults();
+                new_testresult.PassDate = DateTime.Now;
+                new_testresult.TestName = testname;
+                //new_testresult.User =;
+                //new_testresult.ResultName = ;
+
                 var window = new ResultWinxWindow();
                 window.Show();
                 Close();

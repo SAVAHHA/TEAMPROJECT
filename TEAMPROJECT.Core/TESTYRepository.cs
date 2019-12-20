@@ -25,7 +25,7 @@ namespace TEAMPROJECT.Core
         public List<TestResults> testResults;
         public List<AllTests> allTests;
         public const string AllTestsName = "../../TEAMPROJECT.Core/Data/AllTests.json";
-        //public const string TestResultsName = "../../../Data/.json";
+        public const string TestResultsName = "../../TEAMPROJECT.Core/Data/TestResults.json";
         public const string WinxTestName = "../../TEAMPROJECT.Core/Data/WinxTest.json";
         //Users берем из Repository
         private void LoadData()
@@ -33,7 +33,11 @@ namespace TEAMPROJECT.Core
 
             allTests = repository.Deserialize<List<AllTests>>(AllTestsName);
             winxtest = repository.Deserialize<List<Test>>(WinxTestName);
-            //testResults = repository.Deserialize<List<TestResults>>(TestResultsName);   
+            testResults = repository.Deserialize<List<TestResults>>(TestResultsName);   
+        }
+        public void SaveTestData()
+        {
+            repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", testResults);
         }
         public void ButtonTestLogic(List<Test> testlist, int clickcount, int answernumber, int r1, int r2, int r3, int r4, int r5, int r6)
         {
@@ -65,6 +69,16 @@ namespace TEAMPROJECT.Core
             }
             return questionText;
         }
+        public string TextNameTest(List<Test> testlist)
+        {
+            string testNameText = " ";
+            foreach (Test answer in testlist)
+            {
+                testNameText = answer.TestName;
+            }
+            return testNameText;
+        }
+
         public string TextA1Test(List<Test> testlist, int clickcount)
         {
             string answer1Text = " ";
