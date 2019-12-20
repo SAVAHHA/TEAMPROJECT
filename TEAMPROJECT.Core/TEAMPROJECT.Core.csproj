@@ -57,7 +57,7 @@
     <Compile Include="Models\AllTests.cs" />
     <Compile Include="Models\Compability.cs" />
     <Compile Include="Models\Prediction.cs" />
-    <Compile Include="Models\ResultsCount.cs" />
+    <Compile Include="Models\PredictionsPerZodiacs.cs" />
     <Compile Include="Models\Test.cs" />
     <Compile Include="Models\TestResults.cs" />
     <Compile Include="Models\Zodiac.cs" />
@@ -70,6 +70,7 @@
   <ItemGroup>
     <None Include="Data\AllTests.json" />
     <None Include="Data\Predictions.json" />
+    <None Include="Data\PredictionsPerZodiacs.json" />
     <None Include="Data\PrepodTest.json" />
     <None Include="Data\TestResults.json" />
     <None Include="Data\Users.json" />

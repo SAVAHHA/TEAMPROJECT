@@ -85,6 +85,19 @@ namespace TEAMPROJECT.Core
             CurrentUser = CurrentUserCheck;
             return check;
         }
+        public bool CheckLogin(string login)
+        {
+            bool check = true;
+            foreach (var user in Users)
+            {
+                if (user.Login == login)
+                {
+                    check = false;
+                    break;
+                }
+            }
+            return check;
+        }
         public virtual int GetID(string login, string password)
         {
             int Id = 0;

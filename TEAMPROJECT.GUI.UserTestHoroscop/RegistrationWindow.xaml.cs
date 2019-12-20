@@ -37,10 +37,22 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         private void RegistrationOK_Click(object sender, RoutedEventArgs e)
         {
-            repository.AddUser(UserName.Text, UserDateOfBirth.Text, UserLogin.Text, UserPassword.Password);
-            LogInWindow logInWindow = new LogInWindow();
-            logInWindow.Show();
-            this.Close();
+            if (repository.CheckLogin(UserLogin.Text) == true && UserLogin.Text != "" && UserName.Text != "" && UserPassword.Password != "" && UserDateOfBirth.Text != "")
+            {
+                repository.AddUser(UserName.Text, UserDateOfBirth.Text, UserLogin.Text, UserPassword.Password);
+                LogInWindow logInWindow = new LogInWindow();
+                logInWindow.Show();
+                this.Close();
+            }
+            else if (repository.CheckLogin(UserLogin.Text) == false && UserLogin.Text != "" && UserName.Text != "" && UserPassword.Password != "" && UserDateOfBirth.Text != "")
+            {
+                UserLogin.Clear();
+                MessageBox.Show("Пользователь с таким логином уже заргистрирован", "Измените логин или войдите", MessageBoxButton.OK);
+            }
+            else
+            {
+                MessageBox.Show("Не все поля заполнены", "Введите данные", MessageBoxButton.OK);
+            }
         }
     }
 }

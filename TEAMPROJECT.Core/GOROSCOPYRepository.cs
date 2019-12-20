@@ -18,6 +18,7 @@ namespace TEAMPROJECT.Core
         public List<Prediction> Predictions = new List<Prediction>();
         public List<Compability> Compabilities = new List<Compability>();
         public Repository repository = new Repository();
+        public List<PredictionsPerZodiacs> predictionsPerZodiacs = new List<PredictionsPerZodiacs>();
 
         public GOROSCOPYRepository()
         {
@@ -26,15 +27,53 @@ namespace TEAMPROJECT.Core
         public void LoadGOROSCOPYData()
         {
             Predictions = repository.Deserialize<List<Prediction>>("../../TEAMPROJECT.Core/Data/Predictions.json");
-            //Compabilities = repository.Deserialize<List<Compability>>("../../TEAMPROJECT.Core/Data/Compabilities.json");
+            //Compabilities = repository.Deserialize<List<Compability>>("../../TEAMPROJECT.Core/Data/Compabilities.json"); 
         }
         public string GetRandomPrediction()
         {
+
             Random random = new Random();
             int number = random.Next(Predictions.Count());
             string predictionText = Predictions[number].Info;
             return predictionText;
         }
+        public string GetPrediction(string zodiac)
+        {
+            predictionsPerZodiacs = repository.Deserialize<List<PredictionsPerZodiacs>>("../../TEAMPROJECT.Core/Data/PredictionsPerZodiacs.json");
+            string? prediction = null;
+            bool check = false;
+            foreach (var predictionPZ in predictionsPerZodiacs)
+            {
+                if (predictionPZ.Zodiac.Name == zodiac && predictionPZ.DateOfPrediction.Date == DateTime.Now.Date)
+                {
+                    prediction = predictionPZ.Prediction.Info;
+                    check = true;
+                    break;
+                }
+            }
+            if (check == false)
+            {
+                Random random = new Random();
+                int number = random.Next(Predictions.Count());
+                prediction = Predictions[number].Info;
+                PredictionsPerZodiacs newPredictionPerZodiac = new PredictionsPerZodiacs();
+                newPredictionPerZodiac.Prediction = Predictions[number];
+                newPredictionPerZodiac.DateOfPrediction = DateTime.Now;
+                foreach (var currentZodiac in repository.Zodiacs)
+                {
+                    if (currentZodiac.Name == zodiac)
+                    {
+                        newPredictionPerZodiac.Zodiac = currentZodiac;
+                        break;
+                    }
+                }
+                predictionsPerZodiacs.Add(newPredictionPerZodiac);
+                repository.Serialize<List<PredictionsPerZodiacs>>("../../TEAMPROJECT.Core/Data/PredictionsPerZodiacs.json", predictionsPerZodiacs);
+
+            }
+            return prediction;
+        }
+        
         public int GetCompability(string zodiac1, string zodiac2)
         {
             int percent = 0;
