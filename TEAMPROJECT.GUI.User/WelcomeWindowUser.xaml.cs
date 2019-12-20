@@ -31,7 +31,7 @@ namespace TEAMPROJECT.GUI.User
         int n = 0;
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
         {
-            Test.Text = n.ToString();
+            //Test.Text = n.ToString();
             n++;
 
 
