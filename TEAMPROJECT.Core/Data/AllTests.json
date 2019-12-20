@@ -1,10 +1,10 @@
-{
+[
 	{
-    "TestId": 1,
-    "TestName": "Кто ты из преподов Вышки?",
+		"TestId": 1,
+		"TestName": "Кто ты из преподов Вышки?",
 	},
 	{
-    "TestId": 2,
-    "TestName": "hgsluidzvglu;g",
+		"TestId": 2,
+		"TestName": "hgsluidzvglu;g",
 	}
-}
+]

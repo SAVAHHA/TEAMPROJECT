@@ -24,14 +24,14 @@ namespace TEAMPROJECT.Core
         public List<Test> winxtest;
         public List<TestResults> testResults;
         public List<AllTests> allTests;
-        public const string AllTestsName = "../../TEAMPROJRCT.Core/Data/AllTests.json";
+        public const string AllTestsName = "../../TEAMPROJECT.Core/Data/AllTests.json";
         //public const string TestResultsName = "../../../Data/.json";
         public const string WinxTestName = "../../TEAMPROJECT.Core/Data/WinxTest.json";
         //Users берем из Repository
         private void LoadData()
         {
 
-            //allTests = repository.Deserialize<List<AllTests>>(AllTestsName);
+            allTests = repository.Deserialize<List<AllTests>>(AllTestsName);
             winxtest = repository.Deserialize<List<Test>>(WinxTestName);
             //testResults = repository.Deserialize<List<TestResults>>(TestResultsName);   
         }
