@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.Core
 {
@@ -11,6 +12,7 @@ namespace TEAMPROJECT.Core
         Repository _repo = new Repository();
         TESTYRepository _testRepo = new TESTYRepository();
         public DateTime? selectedDate = new DateTime();
+        public AllTests selectedTest;
         public int CountZodiac(string zodiacName)
         {
             int count = 0;
@@ -84,6 +86,42 @@ namespace TEAMPROJECT.Core
                 }
             }
             return name;
+        }
+
+        public int CountPassesOneDay()
+        {
+            if (selectedDate.ToString() == "")
+            {
+                Console.WriteLine("0");
+                int count = 0;
+                foreach (var pass in _testRepo.testResults)
+                {
+                    Console.WriteLine(pass.TestName);
+                    Console.WriteLine(selectedTest.TestName);
+                    if (pass.TestName == selectedTest.TestName)
+                    {
+                        count += 1;
+                    }
+                }
+                return count;
+            }
+            else
+            {
+                Console.WriteLine("+");
+                int count = 0;
+                foreach (var pass in _testRepo.testResults)
+                {
+                    Console.WriteLine(pass.TestName);
+                    Console.WriteLine(selectedTest.TestName);
+                    Console.WriteLine(pass.PassDate);
+                    Console.WriteLine(selectedDate);
+                    if (pass.TestName == selectedTest.TestName && selectedDate.ToString().Substring(0, 10) == pass.PassDate.ToString().Substring(0, 10))
+                    {
+                        count += 1;
+                    }
+                }
+                return count;
+            }
         }
     }
 }
