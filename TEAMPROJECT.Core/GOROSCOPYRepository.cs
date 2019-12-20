@@ -56,7 +56,7 @@ namespace TEAMPROJECT.Core
         }
         public void RewritePredictions()
         {
-            repository.Serialize("Predictions", Predictions);
+            repository.Serialize("../../TEAMPROJECT.Core/Data/Predictions.json", Predictions);
         }
     }
 }
