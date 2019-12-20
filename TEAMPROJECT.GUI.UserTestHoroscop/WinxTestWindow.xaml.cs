@@ -151,7 +151,6 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 new_testresult.ResultName = _testyrepository.WinxTestResultLogic(Result1, Result2, Result3, Result4, Result5, Result6);
 
                 _testyrepository.testResults.Add(new_testresult);
-                Console.WriteLine(_testyrepository.testResults[0].ResultName);
                 _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
 
                 var window = new ResultWinxWindow();

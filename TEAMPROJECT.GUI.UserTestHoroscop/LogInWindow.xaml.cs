@@ -36,6 +36,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             if (check == true)
             {
                 MainMenuWindow mainMenuWindow = new MainMenuWindow(CurrentUser);
+                Console.WriteLine(CurrentUser.Login);
                 mainMenuWindow.Show();
                 this.Close();
             }

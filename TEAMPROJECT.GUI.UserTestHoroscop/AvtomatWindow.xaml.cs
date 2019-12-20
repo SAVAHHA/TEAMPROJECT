@@ -26,12 +26,17 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         {
             _currentUser = CurrentUser;
             InitializeComponent();
+            TESTYRepository _testyrepository = new TESTYRepository();
             TestResults new_testresult = new TestResults();
+            Repository _repository = new Repository();
+
             new_testresult.PassDate = DateTime.Now;
             new_testresult.TestName = "Автомат по C#";
             new_testresult.User = _currentUser;
             new_testresult.ResultName = "Нет!";
 
+            _testyrepository.testResults.Add(new_testresult);
+            _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
         }
 
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)

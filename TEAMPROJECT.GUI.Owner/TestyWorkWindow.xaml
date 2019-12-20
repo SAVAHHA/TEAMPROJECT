@@ -53,11 +53,11 @@
         <Button Style="{StaticResource BackButton}" Grid.Row="5" Grid.Column="1" Name="ExitButton" Margin="30,10,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="15">
             <TextBlock Style="{StaticResource Usual}" Text="Количество клиентов, использующих тесты - " FontSize="20"/>
-            <TextBlock Style="{StaticResource Usual}" Text="{Binding EntryDt}"/>
+            <TextBlock Style="{StaticResource Usual}" Name="couUsTB" FontSize="20"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="15">
             <TextBlock Style="{StaticResource Usual}" Text="Общее количество прохождений тестов - " FontSize="20"/>
-            <TextBlock Text="{Binding EntryDt}"/>
+            <TextBlock Text="{Binding EntryDt}" Name="TotalTB" FontSize="20"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Margin="15">
             <TextBlock Style="{StaticResource Usual}" Text="Наиболее популярный тест:" FontSize="20"/>
