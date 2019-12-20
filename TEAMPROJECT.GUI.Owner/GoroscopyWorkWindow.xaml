@@ -52,7 +52,7 @@
         <Button Style="{StaticResource BackButton}" Grid.Row="4" Grid.Column="0" Name="BackButton" Margin="10,20,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
         <Button Style="{StaticResource BackButton}" Grid.Row="4" Grid.Column="1" Name="ExitButton" Margin="30,20,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
 
-        <ListBox Name="FirstSixZodiac"  Margin="10,10,0,56" Background="FloralWhite" Grid.Row="1" Grid.Column="0" Grid.RowSpan="3">
+        <!--<ListBox Name="FirstSixZodiac"  Margin="10,10,0,56" Background="FloralWhite" Grid.Row="1" Grid.Column="0" Grid.RowSpan="3">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -61,37 +61,26 @@
                         <TextBlock Text="{Binding ExitDt}"/>
                         <TextBlock Text=", стоимость: " FontWeight="Bold"/>
                         <TextBlock Text="{Binding TotalPayment}"/>
-                        <TextBlock Text=", дата оплаты: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding EntryDt}"/>
-                        <TextBlock Text=", номер машины: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding CarPlateNumber}"/>
-                        <TextBlock Text=", номер билета: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding TicketNumber}"/>
-                        <TextBlock Text=", ID пользователя: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding UserId}"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-        </ListBox>
+        </ListBox>-->
+        <StackPanel Grid.Row="1" Grid.RowSpan="2"  Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Zodiac.Name}"/>
+                <TextBlock Text=" - " FontWeight="Bold"/>
+                <TextBlock Text="{Binding ExitDt}"/>
+                <TextBlock Text=", стоимость: " FontWeight="Bold"/>
+                <TextBlock Text="{Binding TotalPayment}"/>
+            </StackPanel>
+        </StackPanel>
 
         <ListBox Name="LastSixZodiac"  Margin="0,10,10,56" Background="FloralWhite" Grid.Row="1" Grid.Column="1" Grid.RowSpan="3">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Дата: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding EntryDt}"/>
-                        <TextBlock Text=" - " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding ExitDt}"/>
-                        <TextBlock Text=", стоимость: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding TotalPayment}"/>
-                        <TextBlock Text=", дата оплаты: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding EntryDt}"/>
-                        <TextBlock Text=", номер машины: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding CarPlateNumber}"/>
-                        <TextBlock Text=", номер билета: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding TicketNumber}"/>
-                        <TextBlock Text=", ID пользователя: " FontWeight="Bold"/>
-                        <TextBlock Text="{Binding UserId}"/>
+                        <TextBlock Text="{Binding Name}"/>
+                        <TextBlock Text=" - " FontWeight="DemiBold"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

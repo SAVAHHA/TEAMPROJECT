@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
 
 namespace TEAMPROJECT.GUI.Owner
 {
@@ -22,6 +23,8 @@ namespace TEAMPROJECT.GUI.Owner
         public GoroscopyWorkWindow()
         {
             InitializeComponent();
+            Repository _repo = new Repository();
+            LastSixZodiac.ItemsSource = _repo.Zodiacs;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
