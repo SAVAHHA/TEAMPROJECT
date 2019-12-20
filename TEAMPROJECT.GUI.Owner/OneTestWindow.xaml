@@ -54,6 +54,17 @@
             <TextBlock Style="{StaticResource Usual}" Text="Количество прохождений - " FontSize="24"/>
             <TextBlock Style="{StaticResource Usual}" Name="countOneTB" FontSize="24" FontWeight="DemiBold"/>
         </StackPanel>
-        <TextBlock Style="{StaticResource Usual}" Grid.Row="2" Grid.ColumnSpan="2" Margin="15 " FontSize="24" >Пропорции полученных результатов:</TextBlock>
+        <TextBlock Style="{StaticResource Usual}" Grid.Row="2" Grid.ColumnSpan="2" Margin="15 " FontSize="24" >Количество полученных результатов:</TextBlock>
+        <ListBox Name="oneTestLB"  Margin="10,55,10,10" Background="FloralWhite" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding ResulttName}" FontWeight="DemiBold" FontSize="20"/>
+                        <TextBlock Text=" - " FontWeight="DemiBold" FontSize="20"/>
+                        <TextBlock Text="{Binding ResultNumber}" FontWeight="DemiBold" FontSize="20"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
