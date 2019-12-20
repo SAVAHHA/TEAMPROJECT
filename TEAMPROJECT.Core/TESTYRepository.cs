@@ -69,6 +69,16 @@ namespace TEAMPROJECT.Core
             }
             return questionText;
         }
+        public string TextNameTest(List<Test> testlist)
+        {
+            string testNameText = " ";
+            foreach (Test answer in testlist)
+            {
+                testNameText = answer.TestName;
+            }
+            return testNameText;
+        }
+
         public string TextA1Test(List<Test> testlist, int clickcount)
         {
             string answer1Text = " ";
