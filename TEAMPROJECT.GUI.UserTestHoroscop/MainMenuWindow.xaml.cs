@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TEAMPROJECT.Core;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -20,12 +21,14 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class MainMenuWindow : Window
     {
+        Repository repository = new Repository();
 
-        public MainMenuWindow(int UserId)
+        public MainMenuWindow(User CurrentUser)
         {
             //if (UserId == 0) { //прописать
             //}
             InitializeComponent();
+            WelcomeTextBlock.Text = "Доброго времени суток, " + CurrentUser.Name;
             //UserWelcome(......);
         }
         public void UserWelcome(string name)
@@ -43,7 +46,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         private void Goroskopi_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }
