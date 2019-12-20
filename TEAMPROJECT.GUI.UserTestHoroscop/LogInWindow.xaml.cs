@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TEAMPROJECT.Core;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -30,11 +31,11 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         private void UserLogIn_Click(object sender, RoutedEventArgs e)
         {
-            int id;
-            bool check = repository.Entrance(UserLoginTextBox.Text, UserPasswordBox.Password, out id);
+            User CurrentUser;
+            bool check = repository.Entrance(UserLoginTextBox.Text, UserPasswordBox.Password, out CurrentUser);
             if (check == true)
             {
-                MainMenuWindow mainMenuWindow = new MainMenuWindow(id);
+                MainMenuWindow mainMenuWindow = new MainMenuWindow(CurrentUser);
                 mainMenuWindow.Show();
                 this.Close();
             }

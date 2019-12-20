@@ -69,19 +69,20 @@ namespace TEAMPROJECT.Core
             Users.Add(user);
             Serialize<List<User>>("../../TEAMPROJECT.Core/Data/Users.json", Users);
         }
-        public virtual bool Entrance(string login, string password, out int id)
+        public virtual bool Entrance(string login, string password, out User CurrentUser)
         {
-            id = 0;
+            var CurrentUserCheck = new User();
             bool check = false;
             foreach (var user in Users)
             {
                 if (user.Login == login && user.Password == password)
                 {
                     check = true;
-                    id = user.UserID;
+                    CurrentUserCheck = user;
                     break;
                 }
             }
+            CurrentUser = CurrentUserCheck;
             return check;
         }
         public virtual int GetID(string login, string password)
