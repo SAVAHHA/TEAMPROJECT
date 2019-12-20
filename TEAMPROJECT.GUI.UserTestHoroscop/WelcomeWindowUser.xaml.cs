@@ -24,7 +24,6 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         public WelcomeWindowUser()
         {
             InitializeComponent();
-            repository.LoadData();
         }
         private void EnterAccountButton_Click(object sender, RoutedEventArgs e)
         {

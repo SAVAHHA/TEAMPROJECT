@@ -25,8 +25,7 @@ namespace TEAMPROJECT.Core
         public void LoadData()
         {
             Zodiacs = Deserialize<List<Zodiac>>("../../TEAMPROJECT.Core/Data/Zodiacs.json");
-            //Users = Deserialize<List<User>>("Users.json");
-            //Zodiacs = Deserialize<List<Zodiac>>("Zodiacs.json");
+            Users = Deserialize<List<User>>("../../TEAMPROJECT.Core/Data/Users.json");
         }
 
         public virtual T Deserialize<T>(string fileName)
@@ -68,6 +67,7 @@ namespace TEAMPROJECT.Core
                 }
             }
             Users.Add(user);
+            Serialize<List<User>>("../../TEAMPROJECT.Core/Data/Users.json", Users);
         }
         public virtual bool Entrance(string login, string password, out int id)
         {
