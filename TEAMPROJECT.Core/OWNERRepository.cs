@@ -28,11 +28,8 @@ namespace TEAMPROJECT.Core
             int counter = 0;
             foreach (var user in _repo.Users)
             {
-                Console.WriteLine(user.Name);
                 foreach (var item in _testRepo.testResults)
                 {
-                    Console.WriteLine(item.User.Name);
-                    Console.WriteLine(counter);
                     if (item.User.Login == user.Login)
                     {
                         counter += 1;
@@ -41,6 +38,52 @@ namespace TEAMPROJECT.Core
                 }
             }
             return counter;
+        }
+
+        public void PassesCounter()
+        {
+            foreach (var item in _testRepo.allTests)
+            {
+                int counter = 0;
+                foreach (var pass in _testRepo.testResults)
+                {
+                    if (item.TestName == pass.TestName)
+                    {
+                        counter += 1;
+                    }
+                }
+                item.NumnerOfPasses = counter;
+            }
+        }
+
+        public string GetMax()
+        {
+            int max = _testRepo.allTests[0].NumnerOfPasses;
+            string name = _testRepo.allTests[0].TestName;
+            foreach (var item in _testRepo.allTests)
+            {
+                if (item.NumnerOfPasses > max)
+                {
+                    max = item.NumnerOfPasses;
+                    name = item.TestName;
+                }
+            }
+            return name;
+        }
+
+        public string GetMin()
+        {
+            int min = _testRepo.allTests[0].NumnerOfPasses;
+            string name = _testRepo.allTests[0].TestName;
+            foreach (var item in _testRepo.allTests)
+            {
+                if (item.NumnerOfPasses < min)
+                {
+                    min = item.NumnerOfPasses;
+                    name = item.TestName;
+                }
+            }
+            return name;
         }
     }
 }

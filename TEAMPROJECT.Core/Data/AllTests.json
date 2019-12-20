@@ -2,9 +2,11 @@
 	{
 		"TestId": 1,
 		"TestName": "Кто ты из Винкс?",
+		"NumnerOfPasses": 0
 	},
 	{
 		"TestId": 2,
 		"TestName": "Автомат по C#?",
+		"NumnerOfPasses": 0
 	}
 ]

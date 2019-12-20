@@ -27,6 +27,9 @@ namespace TEAMPROJECT.GUI.Owner
             TESTYRepository _testRepo = new TESTYRepository();
             couUsTB.Text = _ownerRepo.CountUsersUsingTests().ToString();
             TotalTB.Text = _testRepo.testResults.Count().ToString();
+            _ownerRepo.PassesCounter();
+            maxTB.Text = _ownerRepo.GetMax();
+            minTB.Text = _ownerRepo.GetMin();
         }
 
         private void OneTestButton_Click(object sender, RoutedEventArgs e)

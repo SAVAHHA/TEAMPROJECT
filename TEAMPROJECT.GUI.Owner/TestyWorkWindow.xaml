@@ -35,8 +35,9 @@
             <Setter Property="BorderBrush" Value="AliceBlue"/>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid RenderTransformOrigin="0.5,0.447">
         <Grid.RowDefinitions>
+            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -49,24 +50,24 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock Style="{StaticResource Headings}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="15">Общая статистика по тестам</TextBlock>
-        <Button Style="{StaticResource BackButton}" Grid.Row="5" Grid.Column="0" Name="BackButton" Margin="10,10,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
-        <Button Style="{StaticResource BackButton}" Grid.Row="5" Grid.Column="1" Name="ExitButton" Margin="30,10,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
+        <Button Style="{StaticResource BackButton}" Grid.Row="6" Grid.Column="0" Name="BackButton" Margin="10,10,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
+        <Button Style="{StaticResource BackButton}" Grid.Row="6" Grid.Column="1" Name="ExitButton" Margin="30,10,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="15">
             <TextBlock Style="{StaticResource Usual}" Text="Количество клиентов, использующих тесты - " FontSize="20"/>
             <TextBlock Style="{StaticResource Usual}" Name="couUsTB" FontSize="20"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="15">
             <TextBlock Style="{StaticResource Usual}" Text="Общее количество прохождений тестов - " FontSize="20"/>
-            <TextBlock Text="{Binding EntryDt}" Name="TotalTB" FontSize="20"/>
+            <TextBlock x:Name="TotalTB" FontSize="20"/>
         </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="0" Margin="15">
-            <TextBlock Style="{StaticResource Usual}" Text="Наиболее популярный тест:" FontSize="20"/>
-            <TextBlock Text="{Binding EntryDt}"/>
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Margin="15" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource Usual}" Text="Наиболее популярный тест: " FontSize="20" Height="88" RenderTransformOrigin="0.491,0.022"/>
+            <TextBlock x:Name="maxTB" FontSize="20"/>
         </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="1" Margin="15">
-            <TextBlock Style="{StaticResource Usual}" Text="Наименее популярный тест:" FontSize="20"/>
-            <TextBlock Text="{Binding EntryDt}"/>
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Margin="15" Grid.RowSpan="2" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource Usual}" Text="Наименее популярный тест: " FontSize="20"/>
+            <TextBlock Name="minTB" FontSize="20"/>
         </StackPanel>
-        <Button Style="{StaticResource UsusalButton}" Grid.Row="4" Grid.ColumnSpan="2" Name="OneTestButton" Margin="10" FontSize="22" Click="OneTestButton_Click">Получить информацию по определенному тесту</Button>
+        <Button Style="{StaticResource UsusalButton}" Grid.Row="5" Grid.ColumnSpan="2" Name="OneTestButton" Margin="10" FontSize="22" Click="OneTestButton_Click">Получить информацию по определенному тесту</Button>
     </Grid>
 </Window>
