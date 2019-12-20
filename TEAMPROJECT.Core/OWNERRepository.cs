@@ -10,12 +10,12 @@ namespace TEAMPROJECT.Core
     {
         Repository _repo = new Repository();
         public DateTime? selectedDate = new DateTime();
-        public int CountZodiac(string zodiacNaame)
+        public int CountZodiac(string zodiacName)
         {
             int count = 0;
             foreach (var user in _repo.Users)
             {
-                if (user.Zodiac.Name == zodiacNaame)
+                if (user.Zodiac.Name == zodiacName)
                 {
                     count += 1;
                 }

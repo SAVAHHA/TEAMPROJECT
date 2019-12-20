@@ -3,72 +3,96 @@
     "Name": "Овен",
     "FirstDate": "2000-03-21T00:00:00",
     "LastDate": "2000-04-19T00:00:00",
-    "ZodiacID": 1
+    "ZodiacID": 1,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Телец",
     "FirstDate": "2000-04-20T00:00:00",
     "LastDate": "2000-05-25T00:00:00",
-    "ZodiacID": 2
+    "ZodiacID": 2,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Близнецы",
     "FirstDate": "2000-05-21T00:00:00",
     "LastDate": "2000-06-21T00:00:00",
-    "ZodiacID": 3
+    "ZodiacID": 3,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Рак",
     "FirstDate": "2000-06-22T00:00:00",
     "LastDate": "2000-07-22T00:00:00",
-    "ZodiacID": 4
+    "ZodiacID": 4,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Лев",
     "FirstDate": "2000-07-23T00:00:00",
     "LastDate": "2000-08-23T00:00:00",
-    "ZodiacID": 5
+    "ZodiacID": 5,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Дева",
     "FirstDate": "2000-08-24T00:00:00",
     "LastDate": "2000-09-23T00:00:00",
-    "ZodiacID": 6
+    "ZodiacID": 6,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Весы",
     "FirstDate": "2000-09-24T00:00:00",
     "LastDate": "2000-10-23T00:00:00",
-    "ZodiacID": 7
+    "ZodiacID": 7,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Скорпион",
     "FirstDate": "2000-10-24T00:00:00",
     "LastDate": "2000-11-22T00:00:00",
-    "ZodiacID": 8
+    "ZodiacID": 8,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Стрелец",
     "FirstDate": "2000-11-23T00:00:00",
     "LastDate": "2000-12-21T00:00:00",
-    "ZodiacID": 9
+    "ZodiacID": 9,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
     {
     "Name": "Козерог",
     "FirstDate": "2000-12-22T00:00:00",
     "LastDate": "2000-01-20T00:00:00",
-    "ZodiacID": 10
+    "ZodiacID": 10,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
    {
     "Name": "Водолей",
     "FirstDate": "2000-01-21T00:00:00",
     "LastDate": "2000-02-20T00:00:00",
-    "ZodiacID": 11
+    "ZodiacID": 11,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   },
    {
     "Name": "Рыбы",
     "FirstDate": "2000-02-21T00:00:00",
     "LastDate": "2000-03-20T00:00:00",
-    "ZodiacID": 12
+    "ZodiacID": 12,
+	"NumberOfUsers": 0,
+	"PercentageOfUsers": 0
   }
 ]
