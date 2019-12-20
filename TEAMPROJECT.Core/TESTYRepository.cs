@@ -28,6 +28,7 @@ namespace TEAMPROJECT.Core
         //public const string TestResultsName = "../../../Data/.json";
         public const string WinxTestName = "../../TEAMPROJECT.Core/Data/WinxTest.json";
         //Users берем из Repository
+
         private void LoadData()
         {
 
