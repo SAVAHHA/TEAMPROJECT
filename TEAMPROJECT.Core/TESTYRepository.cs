@@ -61,8 +61,6 @@ namespace TEAMPROJECT.Core
                     if (answer.QuestionId == clickcount + 1)
                     {
                         questionText = answer.Question;
-
-
                     }
             }
             return questionText;
@@ -74,7 +72,7 @@ namespace TEAMPROJECT.Core
             {
                 if (answer.QuestionId == clickcount + 1 && answer.AnswerId == 1)
                 {
-                    answer1Text = answer.Question;
+                    answer1Text = answer.Answer;
                 }
             }
             return answer1Text;
@@ -86,7 +84,7 @@ namespace TEAMPROJECT.Core
             {
                 if (answer.QuestionId == clickcount + 1 && answer.AnswerId == 2)
                 {
-                    answer2Text = answer.Question;
+                    answer2Text = answer.Answer;
                 }
             }
             return answer2Text;
@@ -98,7 +96,7 @@ namespace TEAMPROJECT.Core
             {
                 if (answer.QuestionId == clickcount + 1 && answer.AnswerId == 3)
                 {
-                    answer3Text = answer.Question;
+                    answer3Text = answer.Answer;
                 }
             }
             return answer3Text;
@@ -110,7 +108,7 @@ namespace TEAMPROJECT.Core
             {
                 if (answer.QuestionId == clickcount + 1 && answer.AnswerId == 4)
                 {
-                    answer4Text = answer.Question;
+                    answer4Text = answer.Answer;
                 }
             }
             return answer4Text;
@@ -124,9 +122,35 @@ namespace TEAMPROJECT.Core
             int n1n2n3n4 = Math.Max(n1n2, n3n4);
             return Math.Max(n1n2n3n4, n5n6);
         }
-        public int TestResultLogic(int r1, int r2, int r3, int r4, int r5, int r6)
+        public string WinxTestResultLogic(int r1, int r2, int r3, int r4, int r5, int r6)
         {
-            return GetMax(r1, r2, r3, r4, r5, r6);
+            string fairy = "";
+            int resultnumber =  GetMax(r1, r2, r3, r4, r5, r6);
+            if (resultnumber == 1)
+            {
+                fairy = "Блум";
+            }
+            if (resultnumber == 1)
+            {
+                fairy = "Стелла";
+            }
+            if (resultnumber == 1)
+            {
+                fairy = "Флора";
+            }
+            if (resultnumber == 1)
+            {
+                fairy = "Муза";
+            }
+            if (resultnumber == 1)
+            {
+                fairy = "Лейла";
+            }
+            if (resultnumber == 1)
+            {
+                fairy = "Текна";
+            }
+            return fairy;
         }
 
 

@@ -32,20 +32,14 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         int Result5 = 0;
         int Result6 = 0;
 
-        string qText;
-        string a1Text;
-        string a2Text;
-        string a3Text;
-        string a4Text;
         public WinxTestWindow()
         {
             InitializeComponent();
-           // _testyrepository.TextQATest(_testyrepository.winxtest, winxcount, out qText, out a1Text, out a2Text, out a3Text, out a4Text);
-            QuestionTextBlock.Text = qText;
-            Answer1.Content = a1Text;
-            Answer2.Content = a2Text;
-            Answer3.Content = a3Text;
-            Answer4.Content = a4Text;
+            QuestionTextBlock.Text = _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
+            Answer1.Content = _testyrepository.TextA1Test(_testyrepository.winxtest, winxcount);
+            Answer2.Content = _testyrepository.TextA2Test(_testyrepository.winxtest, winxcount);
+            Answer3.Content = _testyrepository.TextA3Test(_testyrepository.winxtest, winxcount);
+            Answer4.Content = _testyrepository.TextA4Test(_testyrepository.winxtest, winxcount);
 
         }
 
@@ -64,6 +58,11 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 window.Show();
                 Close();
             }
+            QuestionTextBlock.Text = _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
+            Answer1.Content = _testyrepository.TextA1Test(_testyrepository.winxtest, winxcount);
+            Answer2.Content = _testyrepository.TextA2Test(_testyrepository.winxtest, winxcount);
+            Answer3.Content = _testyrepository.TextA3Test(_testyrepository.winxtest, winxcount);
+            Answer4.Content = _testyrepository.TextA4Test(_testyrepository.winxtest, winxcount);
 
         }
 
@@ -78,7 +77,11 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 window.Show();
                 Close();
             }
-
+            QuestionTextBlock.Text = _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
+            Answer1.Content = _testyrepository.TextA1Test(_testyrepository.winxtest, winxcount);
+            Answer2.Content = _testyrepository.TextA2Test(_testyrepository.winxtest, winxcount);
+            Answer3.Content = _testyrepository.TextA3Test(_testyrepository.winxtest, winxcount);
+            Answer4.Content = _testyrepository.TextA4Test(_testyrepository.winxtest, winxcount);
         }
 
         private void Answer2_Click(object sender, RoutedEventArgs e)
@@ -92,6 +95,11 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 window.Show();
                 Close();
             }
+            QuestionTextBlock.Text = _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
+            Answer1.Content = _testyrepository.TextA1Test(_testyrepository.winxtest, winxcount);
+            Answer2.Content = _testyrepository.TextA2Test(_testyrepository.winxtest, winxcount);
+            Answer3.Content = _testyrepository.TextA3Test(_testyrepository.winxtest, winxcount);
+            Answer4.Content = _testyrepository.TextA4Test(_testyrepository.winxtest, winxcount);
         }
 
         private void Answer4_Click(object sender, RoutedEventArgs e)
@@ -105,7 +113,13 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 window.Show();
                 Close();
             }
-
+            QuestionTextBlock.Text = _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
+            Answer1.Content = _testyrepository.TextA1Test(_testyrepository.winxtest, winxcount);
+            Answer2.Content = _testyrepository.TextA2Test(_testyrepository.winxtest, winxcount);
+            Answer3.Content = _testyrepository.TextA3Test(_testyrepository.winxtest, winxcount);
+            Answer4.Content = _testyrepository.TextA4Test(_testyrepository.winxtest, winxcount);
         }
+
+
     }
 }
