@@ -20,8 +20,8 @@ namespace TEAMPROJECT.Core
         
         public void LoadData()
         {
-            //Users = Deserialize<List<User>>("Users.json");
-            //Zodiacs = Deserialize<List<Zodiac>>("Zodiacs.json");
+            Users = Deserialize<List<User>>("../../TEAMPROJECT.Core/Data/Users.json");
+            Zodiacs = Deserialize<List<Zodiac>>("../../TEAMPROJECT.Core/Data/Zodiacs.json");
         }
 
         public virtual T Deserialize<T>(string fileName)

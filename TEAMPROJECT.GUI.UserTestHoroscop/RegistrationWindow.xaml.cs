@@ -38,7 +38,9 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         private void RegistrationOK_Click(object sender, RoutedEventArgs e)
         {
             repository.AddUser(UserName.Text, UserDateOfBirth.Text, UserLogin.Text, UserPassword.Password);
-
+            LogInWindow logInWindow = new LogInWindow();
+            logInWindow.Show();
+            this.Close();
         }
     }
 }

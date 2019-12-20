@@ -1,20 +1,20 @@
 [ 
   {
-    "Name": Овен,
-    "FirstDate": 21.03.00,
-    "LastDate": 19.04.00,
+    "Name": "Овен",
+    "FirstDate": "0000-03-21",
+    "LastDate":  "0000-04-19",
     "ZodiacID": 1
   },
     {
     "Name": "Телец",
-    "FirstDate": 20.04.00,
-    "LastDate": 20.05.00,
+    "FirstDate": "0000-04-20",
+    "LastDate": "0000-05-20",
     "ZodiacID": 2
   },
     {
     "Name": "Близнецы",
-    "FirstDate": 21.05.00,
-    "LastDate": 21.06.00,
+    "FirstDate": "21.05.00",
+    "LastDate": "21.06.00",
     "ZodiacID": 3
   },
     {
@@ -55,20 +55,20 @@
   },
     {
     "Name": "Козерог",
-    "FirstDate": 22.12.00,
-    "LastDate": 20.01.00,
+    "FirstDate": "22.12.00",
+    "LastDate": "20.01.00",
     "ZodiacID": 10
   },
    {
     "Name": "Водолей",
-    "FirstDate": 21.01.00,
-    "LastDate": 20.02.00,
+    "FirstDate": "21.01.00",
+    "LastDate": "20.02.00",
     "ZodiacID": 11
   },
    {
     "Name": "Рыбы",
-    "FirstDate": 21.02.00,
-    "LastDate": 20.03.00,
+    "FirstDate": "21.02.00",
+    "LastDate": "20.03.00",
     "ZodiacID": 12
   }
 ]
