@@ -55,12 +55,10 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
         <Button Name="WinxTest" Style="{StaticResource UsusalButton}" Grid.Row="2" Click="WinxTest_Click" Margin="44,43.667,68,10.333" Grid.RowSpan="2">Кто ты из Винкс?</Button>
         <Button Name="PrepodTest"  Style="{StaticResource UsusalButton}" Grid.Row="3" Click="PrepodTest_Click" Margin="44,47,68,7" Grid.RowSpan="2" >Кто ты из преподов Вышки?</Button>
-        <Button Name="KorpusTest" Style="{StaticResource UsusalButton}" Grid.Row="5" Click="KorpusTest_Click" Margin="44,0,68,6.667" >Какой корпус Вышки тебе подходит?</Button>
-        <Button Name="AvtomatTest" Style="{StaticResource UsusalButton}" Grid.Row="6" Click="AvtomatTest_Click" Margin="44,0.333,68,6.333" >Будет ли у тебя автомат по С# ?</Button>
+        <Button Name="AvtomatTest" Style="{StaticResource UsusalButton}" Grid.Row="5" Click="AvtomatTest_Click" Margin="44,0.333,68,6.333" >Будет ли у тебя автомат по С# ?</Button>
         <Button Name="BackButton" Style="{StaticResource BackButton}" Grid.Row="8" Grid.Column="1" Click="BackButton_Click" >Назад</Button>
         <Button Name="ExitButton" Style="{StaticResource BackButton}" Grid.Row="8" Grid.Column="2" Click="ExitButton_Click">Выйти</Button>
         <TextBlock Style="{StaticResource Headings}" HorizontalAlignment="Left" Margin="44,0.333,0,0" TextWrapping="Wrap" Text="Выберите тест" VerticalAlignment="Top" Height="59" Grid.RowSpan="2" Width="318" Grid.Row="1"/>
