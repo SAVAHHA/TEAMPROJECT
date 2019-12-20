@@ -1,74 +1,74 @@
 [ 
   {
-    "Name": Овен,
-    "FirstDate": 21.03.00,
-    "LastDate": 19.04.00,
+    "Name": "РћРІРµРЅ",
+    "FirstDate": "2000-03-21T00:00:00",
+    "LastDate": "2000-04-19T00:00:00",
     "ZodiacID": 1
   },
     {
-    "Name": "Телец",
-    "FirstDate": 20.04.00,
-    "LastDate": 20.05.00,
+    "Name": "РўРµР»РµС†",
+    "FirstDate": "2000-04-20T00:00:00",
+    "LastDate": "2000-05-25T00:00:00",
     "ZodiacID": 2
   },
     {
-    "Name": "Близнецы",
-    "FirstDate": 21.05.00,
-    "LastDate": 21.06.00,
+    "Name": "Р‘Р»РёР·РЅРµС†С‹",
+    "FirstDate": "2000-05-21T00:00:00",
+    "LastDate": "2000-06-21T00:00:00",
     "ZodiacID": 3
   },
     {
-    "Name": "Рак",
-    "FirstDate": 22.06.00,
-    "LastDate": 22.07.00,
+    "Name": "Р Р°Рє",
+    "FirstDate": "2000-06-22T00:00:00",
+    "LastDate": "2000-07-22T00:00:00",
     "ZodiacID": 4
   },
     {
-    "Name": "Лев",
-    "FirstDate": 23.07.00,
-    "LastDate": 23.08.00,
+    "Name": "Р›РµРІ",
+    "FirstDate": "2000-07-23T00:00:00",
+    "LastDate": "2000-08-23T00:00:00",
     "ZodiacID": 5
   },
     {
-    "Name": "Дева",
-    "FirstDate": 24.08.00,
-    "LastDate": 23.09.00,
+    "Name": "Р”РµРІР°",
+    "FirstDate": "2000-08-24T00:00:00",
+    "LastDate": "2000-09-23T00:00:00",
     "ZodiacID": 6
   },
     {
-    "Name": "Весы",
-    "FirstDate": 24.09.00,
-    "LastDate": 23.10.00,
+    "Name": "Р’РµСЃС‹",
+    "FirstDate": "2000-09-24T00:00:00",
+    "LastDate": "2000-10-23T00:00:00",
     "ZodiacID": 7
   },
     {
-    "Name": "Скорпион",
-    "FirstDate": 24.10.00,
-    "LastDate": 22.11.00,
+    "Name": "РЎРєРѕСЂРїРёРѕРЅ",
+    "FirstDate": "2000-10-24T00:00:00",
+    "LastDate": "2000-11-22T00:00:00",
     "ZodiacID": 8
   },
     {
-    "Name": "Стрелец",
-    "FirstDate": 23.11.00,
-    "LastDate": 21.12.00,
+    "Name": "РЎС‚СЂРµР»РµС†",
+    "FirstDate": "2000-11-23T00:00:00",
+    "LastDate": "2000-12-21T00:00:00",
     "ZodiacID": 9
   },
     {
-    "Name": "Козерог",
-    "FirstDate": 22.12.00,
-    "LastDate": 20.01.00,
+    "Name": "РљРѕР·РµСЂРѕРі",
+    "FirstDate": "2000-12-22T00:00:00",
+    "LastDate": "2000-01-20T00:00:00",
     "ZodiacID": 10
   },
    {
-    "Name": "Водолей",
-    "FirstDate": 21.01.00,
-    "LastDate": 20.02.00,
+    "Name": "Р’РѕРґРѕР»РµР№",
+    "FirstDate": "2000-01-21T00:00:00",
+    "LastDate": "2000-02-20T00:00:00",
     "ZodiacID": 11
   },
    {
-    "Name": "Рыбы",
-    "FirstDate": 21.02.00,
-    "LastDate": 20.03.00,
+    "Name": "Р С‹Р±С‹",
+    "FirstDate": "2000-02-21T00:00:00",
+    "LastDate": "2000-03-20T00:00:00",
     "ZodiacID": 12
   }
 ]
