@@ -20,21 +20,22 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class WelcomeWindowUser : Window
     {
+        Repository repository = new Repository();
         public WelcomeWindowUser()
         {
             InitializeComponent();
         }
         private void EnterAccountButton_Click(object sender, RoutedEventArgs e)
         {
+            LogInWindow logInWindow = new LogInWindow();
+            logInWindow.Show();
             this.Close();
         }
-        int n = 0;
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
         {
-            //Test.Text = n.ToString();
-            n++;
-
-
+            RegistrationWindow registrationWindow = new RegistrationWindow();
+            registrationWindow.Show();
+            this.Close();
         }
     }
 }
