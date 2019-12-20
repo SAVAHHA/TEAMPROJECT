@@ -72,6 +72,7 @@
     <None Include="Data\PrepodTest.json" />
     <None Include="Data\Users.json" />
     <None Include="Data\WinxTest.json" />
+    <None Include="Data\Zodiacs.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

@@ -11,17 +11,21 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PredictionWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PredictionWindow : Window
     {
-        public MainWindow()
+        Repository repository = new Repository();
+        GOROSCOPYRepository gOROSCOPYRepository = new GOROSCOPYRepository();
+        public PredictionWindow()
         {
             InitializeComponent();
+            PredictionText.Text = gOROSCOPYRepository.GetRandomPrediction();
         }
     }
 }

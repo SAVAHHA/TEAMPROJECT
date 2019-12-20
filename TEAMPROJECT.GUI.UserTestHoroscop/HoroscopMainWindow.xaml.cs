@@ -23,5 +23,12 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         {
             InitializeComponent();
         }
+
+        private void PredictionsButton_Click(object sender, RoutedEventArgs e)
+        {
+            PredictionWindow predictionWindow = new PredictionWindow();
+            predictionWindow.Show();
+            this.Close();
+        }
     }
 }

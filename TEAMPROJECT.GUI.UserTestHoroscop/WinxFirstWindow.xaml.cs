@@ -21,6 +21,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     {
         public WinxFirstWindow()
         {
+            //PhonImage.ImageSource = "phon.png";
             InitializeComponent();
         }
 
