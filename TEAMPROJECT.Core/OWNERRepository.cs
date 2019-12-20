@@ -23,13 +23,5 @@ namespace TEAMPROJECT.Core
             return count;
         }
 
-        public int CountUsersUsingTests()
-        {
-            int count = 0;
-            foreach (var user in _repo.Users)
-            {
-
-            }
-        }
     }
 }
