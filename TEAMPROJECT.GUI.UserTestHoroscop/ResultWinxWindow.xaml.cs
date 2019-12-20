@@ -21,6 +21,10 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     {
         public ResultWinxWindow()
         {
+            //Congrats.Text = $
+            //ResultImage.Source = new BitmapImage(new Uri("/Photo/phon.png"));
+
+            //ResultImage.Source = "/Photo/phon.png";
             InitializeComponent();
         }
     }
