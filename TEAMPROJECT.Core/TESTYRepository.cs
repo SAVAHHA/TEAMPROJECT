@@ -32,7 +32,7 @@ namespace TEAMPROJECT.Core
         {
 
             //allTests = repository.Deserialize<List<AllTests>>(AllTestsName);
-            //winxtest = repository.Deserialize<List<Test>>(WinxTestName);
+            winxtest = repository.Deserialize<List<Test>>(WinxTestName);
             //testResults = repository.Deserialize<List<TestResults>>(TestResultsName);   
         }
         public void ButtonTestLogic(List<Test> testlist, int clickcount, int answernumber, int r1, int r2, int r3, int r4, int r5, int r6)

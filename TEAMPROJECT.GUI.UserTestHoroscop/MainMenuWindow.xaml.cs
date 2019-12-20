@@ -20,10 +20,10 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     public partial class MainMenuWindow : Window
     {
 
-        public MainMenuWindow(int UserId)
+        public MainMenuWindow()//int UserId)
         {
-            if (UserId == 0) { //прописать
-            }
+            //if (UserId == 0) { //прописать
+            //}
             InitializeComponent();
             //UserWelcome(......);
         }
