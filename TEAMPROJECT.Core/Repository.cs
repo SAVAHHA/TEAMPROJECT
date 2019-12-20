@@ -17,11 +17,16 @@ namespace TEAMPROJECT.Core
         public Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.UserTestHoroscop\\bin|\\TEAMPROJECT\.GUI\.Owner\\bin");
         public List<User> Users = new List<User>();
         public List<Zodiac> Zodiacs = new List<Zodiac>();
-        
+
+        public Repository()
+        {
+            LoadData();
+        }
         public void LoadData()
         {
-            Users = Deserialize<List<User>>("../../TEAMPROJECT.Core/Data/Users.json");
             Zodiacs = Deserialize<List<Zodiac>>("../../TEAMPROJECT.Core/Data/Zodiacs.json");
+            //Users = Deserialize<List<User>>("Users.json");
+            //Zodiacs = Deserialize<List<Zodiac>>("Zodiacs.json");
         }
 
         public virtual T Deserialize<T>(string fileName)
