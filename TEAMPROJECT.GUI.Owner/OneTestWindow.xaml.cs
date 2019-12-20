@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TEAMPROJECT.Core;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.Owner
 {
@@ -20,12 +21,17 @@ namespace TEAMPROJECT.GUI.Owner
     /// </summary>
     public partial class OneTestWindow : Window
     {
-        public OneTestWindow()
+        public OneTestWindow(DateTime? date, int index)
         {
             InitializeComponent();
-            //OWNERRepository _ownerRepo;
+            OWNERRepository ownerRepo = new OWNERRepository();
+            TESTYRepository _testRepo = new TESTYRepository();
+            ownerRepo.selectedDate = date;
+            ownerRepo.selectedTest = _testRepo.allTests[index];
+            countOneTB.Text = ownerRepo.CountPassesOneDay().ToString();
             //periodTextBox.Text = _ownerRepo.selectedDate.ToString().Substring(0, 10);
         }
+
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {

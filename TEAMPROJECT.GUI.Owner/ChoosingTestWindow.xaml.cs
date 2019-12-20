@@ -42,9 +42,7 @@ namespace TEAMPROJECT.GUI.Owner
 
         private void GetStatButton_Click(object sender, RoutedEventArgs e)
         {
-            ownerRepo = new OWNERRepository();
-            ownerRepo.selectedDate = TestDatePicker.SelectedDate;
-            OneTestWindow oneTestWindow = new OneTestWindow();
+            OneTestWindow oneTestWindow = new OneTestWindow(TestDatePicker.SelectedDate, TestsComboBox.SelectedIndex);
             oneTestWindow.Show();
             this.Close();
         }

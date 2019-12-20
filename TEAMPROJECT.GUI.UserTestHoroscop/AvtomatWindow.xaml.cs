@@ -21,22 +21,28 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class AvtomatWindow : Window
     {
-        User currentUser { get; set; }
+        User _currentUser { get; set; }
         public AvtomatWindow(User CurrentUser)
         {
+            _currentUser = CurrentUser;
             InitializeComponent();
+            TESTYRepository _testyrepository = new TESTYRepository();
             TestResults new_testresult = new TestResults();
+            Repository _repository = new Repository();
+
             new_testresult.PassDate = DateTime.Now;
             new_testresult.TestName = "Автомат по C#";
-            //new_testresult.User =;
+            new_testresult.User = _currentUser;
             new_testresult.ResultName = "Нет!";
-            currentUser = CurrentUser;
+
+            _testyrepository.testResults.Add(new_testresult);
+            _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
         }
 
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new MainMenuWindow(currentUser);
-            window.Show();
+            //var window = new MainMenuWindow();
+            //window.Show();
             Close();
 
         }
