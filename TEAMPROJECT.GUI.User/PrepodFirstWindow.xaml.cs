@@ -23,5 +23,10 @@ namespace TEAMPROJECT.GUI.User
         {
             InitializeComponent();
         }
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
