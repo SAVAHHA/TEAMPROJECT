@@ -21,6 +21,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class WinxTestWindow : Window
     {
+        User CurretUser { get; set; }
         private TESTYRepository _testyrepository = new TESTYRepository();
 
         int winxcount = 0;
@@ -33,7 +34,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         int Result6 = 0;
         
 
-        public WinxTestWindow()
+        public WinxTestWindow(User currentUser)
         {
             InitializeComponent();
             QuestionTextBlock.Text = _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
@@ -41,7 +42,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             Answer2.Content = _testyrepository.TextA2Test(_testyrepository.winxtest, winxcount);
             Answer3.Content = _testyrepository.TextA3Test(_testyrepository.winxtest, winxcount);
             Answer4.Content = _testyrepository.TextA4Test(_testyrepository.winxtest, winxcount);
-
+            CurretUser = currentUser;
         }
 
         private void Answer1_Click(object sender, RoutedEventArgs e)

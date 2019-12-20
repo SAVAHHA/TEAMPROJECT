@@ -21,6 +21,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class MainMenuWindow : Window
     {
+        User currentUser { get; set; }
         Repository repository = new Repository();
 
         public MainMenuWindow(User CurrentUser)
@@ -29,16 +30,18 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             //}
             InitializeComponent();
             WelcomeTextBlock.Text = "Доброго времени суток, " + CurrentUser.Name;
+            currentUser = CurrentUser;
             //UserWelcome(......);
         }
-        public void UserWelcome(string name)
-        {
-            WelcomeTextBlock.Text = $"Welcome, {name}!";
-        }
+        //public void UserWelcome(string name)
+        //{
+        //    WelcomeTextBlock.Text = $"Welcome, {name}!";
+        //}
 
         private void Testi_Click(object sender, RoutedEventArgs e)
         {
-            var window = new SelectTest();
+
+            var window = new SelectTest(currentUser);
             window.Show();
             Close();
 
@@ -46,7 +49,9 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         private void Goroskopi_Click(object sender, RoutedEventArgs e)
         {
-            
+            HoroscopMainWindow horoscopMainWindow = new HoroscopMainWindow(currentUser);
+            horoscopMainWindow.Show();
+            this.Close();
         }
     }
 }

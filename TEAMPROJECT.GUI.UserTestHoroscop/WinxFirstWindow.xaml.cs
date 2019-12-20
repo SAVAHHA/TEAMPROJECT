@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core.Models;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -19,15 +20,17 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class WinxFirstWindow : Window
     {
-        public WinxFirstWindow()
+        User currentUser { get; set; }
+        public WinxFirstWindow(User CurrentUser)
         {
             //PhonImage.ImageSource = "phon.png";
             InitializeComponent();
+            currentUser = CurrentUser;
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            var window = new WinxTestWindow();
+            var window = new WinxTestWindow(currentUser);
             window.Show();
             Close();
 
