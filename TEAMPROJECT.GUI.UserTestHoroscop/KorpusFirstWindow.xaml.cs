@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace TEAMPROJECT.GUI.User
+namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
     /// <summary>
-    /// Логика взаимодействия для SwitchWindow.xaml
+    /// Логика взаимодействия для KorpusFirstWindow.xaml
     /// </summary>
-    public partial class SwitchWindow : Window
+    public partial class KorpusFirstWindow : Window
     {
-        public SwitchWindow(int UserId) 
+        public KorpusFirstWindow()
         {
             InitializeComponent();
         }

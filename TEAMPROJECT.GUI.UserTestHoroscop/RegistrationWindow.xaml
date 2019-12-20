@@ -1,9 +1,9 @@
-﻿<Window x:Class="TEAMPROJECT.GUI.User.RegistrationWindow"
+﻿<Window x:Class="TEAMPROJECT.GUI.UserTestHoroscop.RegistrationWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TEAMPROJECT.GUI.User"
+        xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
         Title="RegistrationWindow"  Height="450" Width="450">
     <Grid>
@@ -21,7 +21,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">Введите информацию</TextBlock>
         <TextBlock Grid.Row="1" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Имя:</TextBlock>
-        <TextBlock Grid.Row="2" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Номер автомобиля:</TextBlock>
+        <TextBlock Grid.Row="2" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Дата рождения:</TextBlock>
         <TextBlock Grid.Row="3" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Логин:</TextBlock>
         <TextBlock Grid.Row="4" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Пароль:</TextBlock>
         <TextBox Name="UserName" Grid.Row="1" Grid.Column="1" Margin="15"></TextBox>

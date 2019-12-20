@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace TEAMPROJECT.GUI.User
+namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
     /// <summary>
-    /// Логика взаимодействия для SwitchWindow.xaml
+    /// Логика взаимодействия для ResultWinxWindow.xaml
     /// </summary>
-    public partial class SwitchWindow : Window
+    public partial class ResultWinxWindow : Window
     {
-        public SwitchWindow(int UserId) 
+        public ResultWinxWindow()
         {
             InitializeComponent();
         }
