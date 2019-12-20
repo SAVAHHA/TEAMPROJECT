@@ -30,6 +30,7 @@ namespace TEAMPROJECT.Core
         //Users берем из Repository
         private void LoadData()
         {
+
             //allTests = repository.Deserialize<List<AllTests>>(AllTestsName);
             winxtest = repository.Deserialize<List<Test>>(WinxTestName);
             //testResults = repository.Deserialize<List<TestResults>>(TestResultsName);   
