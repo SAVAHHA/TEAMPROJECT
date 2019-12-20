@@ -15,9 +15,9 @@ namespace TEAMPROJECT.Core
     {
         //Users берем из Repository
         //Zodiacs берем из Repository
-        List<Prediction> Predictions = new List<Prediction>();
-        List<Compability> Compabilities = new List<Compability>();
-        Repository repository = new Repository();
+        public List<Prediction> Predictions = new List<Prediction>();
+        public List<Compability> Compabilities = new List<Compability>();
+        public Repository repository = new Repository();
 
         public void LoadGOROSCOPYData()
         {
@@ -52,6 +52,11 @@ namespace TEAMPROJECT.Core
             prediction.Info = predictionText;
             prediction.PredictionID = Predictions.Count() + 1;
             Predictions.Add(prediction);
+        }
+
+        public void RewritePredictions()
+        {
+            repository.Serialize("Prediction", Predictions);
         }
     }
 }
