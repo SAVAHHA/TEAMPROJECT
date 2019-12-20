@@ -57,6 +57,5 @@
         <Button Style="{StaticResource UsusalButton}" Name="Answer4" Content="Button" HorizontalAlignment="Left" Margin="73.333,30.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Click="Answer4_Click"/>
         <TextBlock Style="{StaticResource Usual}" HorizontalAlignment="Left" Margin="141,83,0,0" TextWrapping="Wrap" Text="номер вопроса" VerticalAlignment="Top" Height="13"/>
         <TextBlock Style="{StaticResource Headings}" Name="QuestionTextBlock" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Текс вопроса" VerticalAlignment="Center" Height="38" Width="351" Grid.ColumnSpan="2"/>
-
     </Grid>
 </Window>

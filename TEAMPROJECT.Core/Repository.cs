@@ -14,7 +14,7 @@ namespace TEAMPROJECT.Core
     public class Repository: IRepository
     {
         //Регулярное вырожение для двух проектов
-        //public Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.User\\bin\\Debug|\\TEAMPROJECT\.GUI\.Owner\\bin\\Debug");
+        public Regex regex = new Regex(@"\\TEAMPROJECT\.GUI\.UserTestHoroscop\\bin|\\TEAMPROJECT\.GUI\.Owner\\bin");
         public List<User> Users = new List<User>();
         public List<Zodiac> Zodiacs = new List<Zodiac>();
         
@@ -26,7 +26,7 @@ namespace TEAMPROJECT.Core
 
         public virtual T Deserialize<T>(string fileName)
         {
-            using (var sw = new StreamReader(fileName))
+            using (var sw = new StreamReader(regex.Replace(Environment.CurrentDirectory, "") + fileName))
             {
                 using (var jsonReader = new JsonTextReader(sw))
                 {
@@ -37,7 +37,7 @@ namespace TEAMPROJECT.Core
         }
         public virtual void Serialize<T>(string fileName, T data)
         {
-            using (var sw = new StreamWriter(fileName))
+            using (var sw = new StreamWriter(regex.Replace(Environment.CurrentDirectory, "") + fileName))
             {
                 using (var jsonWriter = new JsonTextWriter(sw))
                 {
@@ -71,6 +71,7 @@ namespace TEAMPROJECT.Core
                 if (user.Login == login && user.Password == password)
                 {
                     check = true;
+                    id = user.UserID;
                     break;
                 }
             }

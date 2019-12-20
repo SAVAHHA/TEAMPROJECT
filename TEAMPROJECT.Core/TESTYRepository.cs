@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using TEAMPROJECT.Core.Models;
 using TEAMPROJECT.Core.Interfaces;
 
+
 namespace TEAMPROJECT.Core
 {
     public class TESTYRepository
@@ -17,16 +18,15 @@ namespace TEAMPROJECT.Core
         public TESTYRepository()
         {
             LoadData();
-
         }
-        
+
         Repository repository = new Repository();
         public List<Test> winxtest;
         public List<TestResults> testResults;
         public List<AllTests> allTests;
-        public const string AllTestsName = "../../../Data/AllTests.json";
+        public const string AllTestsName = "../../TEAMPROJRCT.Core/Data/AllTests.json";
         //public const string TestResultsName = "../../../Data/.json";
-        public const string WinxTestName = "../../Data/WinxTest.json";
+        public const string WinxTestName = "../../TEAMPROJECT.Core/Data/WinxTest.json";
         //Users берем из Repository
         private void LoadData()
         {

@@ -6,6 +6,35 @@
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.Owner"
         mc:Ignorable="d"
         Title="ChoosingTestWindow" Height="450" Width="800"  Background="#d5e7fb">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="baseButton">
+            <Setter Property="Foreground" Value="#4f0b40"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
+            <Setter Property="Background" Value="#f793ff"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="BackButton">
+            <Setter Property="Background" Value="#ca4d"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Headings">
+            <Setter Property="Foreground" Value="#823a6f"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Usual">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -19,11 +48,11 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="31" FontWeight="Bold" Margin="15">Получение статистики по определенному тесту</TextBlock>
-        <Button Grid.Row="5" Grid.Column="0" Name="BackButton" Margin="10,10,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
-        <Button Grid.Row="5" Grid.Column="1" Name="ExitButton" Margin="30,10,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
-        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Margin="15">Выберите тест:</TextBlock>
-        <TextBlock Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Margin="15,0,0,3" Height="67">Выберите дату <LineBreak/>(оставьте поле пустым для получения статистики за все время):</TextBlock>
+        <TextBlock Style="{StaticResource Headings}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="31" FontWeight="Bold" Margin="15">Получение статистики по определенному тесту</TextBlock>
+        <Button Style="{StaticResource BackButton}" Grid.Row="5" Grid.Column="0" Name="BackButton" Margin="10,10,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
+        <Button Style="{StaticResource BackButton}" Grid.Row="5" Grid.Column="1" Name="ExitButton" Margin="30,10,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
+        <TextBlock Style="{StaticResource Usual}" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Margin="15">Выберите тест:</TextBlock>
+        <TextBlock Style="{StaticResource Usual}" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Margin="15,0,0,3" Height="67">Выберите дату <LineBreak/>(оставьте поле пустым для получения статистики за все время):</TextBlock>
         <!--<ComboBox Name="TestsComboBox" Grid.Row="2" Grid.ColumnSpan="2" Margin="10">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
@@ -32,6 +61,6 @@
             </ComboBox.ItemTemplate>-->
         <!--</ComboBox>-->
         <DatePicker Grid.Row="4" Name="TestDatePicker" IsDropDownOpen="False" SelectedDateFormat="Long" VerticalAlignment="Center" Margin="15,23,30,23"/>
-        <Button Grid.Row="4" Grid.Column="1" Name="GetStatButton" Margin="30,13,10, 13" FontSize="22" Click="GetStatButton_Click">Готово</Button>
+        <Button Style="{StaticResource UsusalButton}" Grid.Row="4" Grid.Column="1" Name="GetStatButton" Margin="30,13,10, 13" FontSize="22" Click="GetStatButton_Click">Готово</Button>
     </Grid>
 </Window>
