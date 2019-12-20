@@ -19,6 +19,10 @@ namespace TEAMPROJECT.Core
         public List<Compability> Compabilities = new List<Compability>();
         public Repository repository = new Repository();
 
+        public GOROSCOPYRepository()
+        {
+            LoadGOROSCOPYData();
+        }
         public void LoadGOROSCOPYData()
         {
             Predictions = repository.Deserialize<List<Prediction>>("../../TEAMPROJECT.Core/Data/Predictions.json");

@@ -24,8 +24,8 @@ namespace TEAMPROJECT.GUI.Owner
         public ChoosingTestWindow()
         {
             InitializeComponent();
-            //TESTYRepository _testyRepository = new TESTYRepository();
-            //TestsComboBox.ItemsSource = _testyRepository.AllTests;
+            TESTYRepository _testyRepository = new TESTYRepository();
+            TestsComboBox.ItemsSource = _testyRepository.allTests;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)

@@ -31,7 +31,7 @@ namespace TEAMPROJECT.Core
         private void LoadData()
         {
 
-            //allTests = repository.Deserialize<List<AllTests>>(AllTestsName);
+            allTests = repository.Deserialize<List<AllTests>>(AllTestsName);
             winxtest = repository.Deserialize<List<Test>>(WinxTestName);
             //testResults = repository.Deserialize<List<TestResults>>(TestResultsName);   
         }
