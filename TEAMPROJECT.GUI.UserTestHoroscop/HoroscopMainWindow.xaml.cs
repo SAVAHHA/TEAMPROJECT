@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TEAMPROJECT.Core.Models;
+using TEAMPROJECT.Core;
 
 namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
@@ -20,18 +21,21 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class HoroscopMainWindow : Window
     {
+        GOROSCOPYRepository gOROSCOPYRepository = new GOROSCOPYRepository();
         User CurrentUser { get; set; }
         public HoroscopMainWindow(User currentUser)
         {
             InitializeComponent();
             CurrentUser = currentUser;
+            ZodiacTextBlock.Text = currentUser.Zodiac.Name + ". Предсказание на сегодня:";
+            PredictionTextBlock.Text = gOROSCOPYRepository.GetPrediction(currentUser.Zodiac.Name);
         }
 
-        private void PredictionsButton_Click(object sender, RoutedEventArgs e)
-        {
-            PredictionWindow predictionWindow = new PredictionWindow(CurrentUser);
-            predictionWindow.Show();
-            this.Close();
-        }
+        //private void PredictionsButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    PredictionWindow predictionWindow = new PredictionWindow(CurrentUser);
+        //    predictionWindow.Show();
+        //    this.Close();
+        //}
     }
 }

@@ -41,7 +41,9 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             }
             else
             {
-                //alert window
+                MessageBox.Show("Не существует пользователя с таким логином и/или паролем", "Введите корректные данные или зарегистрируйтесь", MessageBoxButton.OK);
+                UserLoginTextBox.Clear();
+                UserPasswordBox.Clear();
             }
         }
     }

@@ -5,7 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
-         Title="UserWelcomeWIndow" Height="200" Width="450">
+         Title="UserWelcomeWIndow" Height="200" Width="450" Background="#d5e7fb" >
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="baseButton">
+            <Setter Property="Foreground" Value="#4f0b40"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+            <Setter Property="Height" Value="65"/>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
+            <Setter Property="Background" Value="#f793ff"/>
+            <Setter Property="Width" Value="270"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="BackButton">
+            <Setter Property="Background" Value="#ca4d"/>
+            <Setter Property="Width" Value="70"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Headings">
+            <Setter Property="Foreground" Value="#823a6f"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Usual">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -15,9 +49,9 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.ColumnSpan="2" Margin="10 15" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom">Войдите в аккаунт или зарегистрируйтесь</TextBlock>
-        <Button Name="EnterAccountButton" Grid.Row="1" Margin="30,46,30,15" FontSize="15" Click="EnterAccountButton_Click">Войти</Button>
-        <Button Name="RegistrationButton" Grid.Row="1" Grid.Column="1" Margin="30 15" FontSize="15" Click="RegistrationButton_Click" Background="Fuchsia">Зарегистрироваться</Button>
+        <TextBlock Grid.ColumnSpan="2" Style="{StaticResource Headings}" Margin="10 15" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Bottom">Войдите в аккаунт или зарегистрируйтесь</TextBlock>
+        <Button Name="EnterAccountButton" Style="{StaticResource UsusalButton}" Grid.Row="1" Margin="30 15" FontSize="15" Click="EnterAccountButton_Click" Height="Auto" Width="Auto">Войти</Button>
+        <Button Name="RegistrationButton" Style="{StaticResource BackButton}" Grid.Row="1" Grid.Column="1" Margin="30,15,29,15" FontSize="15" Click="RegistrationButton_Click" Background="Fuchsia" Width="Auto" Height="Auto">Зарегистрироваться</Button>
     </Grid>
 </Window>
 

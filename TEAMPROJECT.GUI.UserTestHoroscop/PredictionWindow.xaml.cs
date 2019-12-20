@@ -27,6 +27,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         public PredictionWindow(User CurrentUser)
         {
             InitializeComponent();
+            //PredictionText.Text = gOROSCOPYRepository.GetPrediction(CurrentUser.Zodiac.Name);
             PredictionText.Text = gOROSCOPYRepository.GetRandomPrediction();
         }
     }

@@ -53,7 +53,7 @@
         </Grid.RowDefinitions>
         <Button Style="{StaticResource UsusalButton}" Name="Testi" Content="Пройти тесты" HorizontalAlignment="Left" Margin="69,29.333,0,0" Grid.Row="2" VerticalAlignment="Top"  Click="Testi_Click"/>
         <Button Style="{StaticResource UsusalButton}" Name ="Goroskopi" Content="Узнать гороскоп" HorizontalAlignment="Left" Margin="57.333,29.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Click="Goroskopi_Click"/>
-        <TextBlock Style="{StaticResource Headings}" Name="WelcomeTextBlock" HorizontalAlignment="Left" Margin="94,68,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="525"/>
+        <TextBlock Style="{StaticResource Headings}" Name="WelcomeTextBlock" Margin="70" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="525"></TextBlock>
 
     </Grid>
 </Window>

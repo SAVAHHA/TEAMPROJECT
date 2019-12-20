@@ -21,7 +21,8 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class AvtomatWindow : Window
     {
-        public AvtomatWindow()
+        User currentUser { get; set; }
+        public AvtomatWindow(User CurrentUser)
         {
             InitializeComponent();
             TestResults new_testresult = new TestResults();
@@ -29,13 +30,13 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             new_testresult.TestName = "Автомат по C#";
             //new_testresult.User =;
             new_testresult.ResultName = "Нет!";
-
+            currentUser = CurrentUser;
         }
 
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)
         {
-            //var window = new MainMenuWindow();
-            //window.Show();
+            var window = new MainMenuWindow(currentUser);
+            window.Show();
             Close();
 
         }

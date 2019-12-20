@@ -29,8 +29,9 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             //if (UserId == 0) { //прописать
             //}
             InitializeComponent();
-            WelcomeTextBlock.Text = "Доброго времени суток, " + CurrentUser.Name;
+            WelcomeTextBlock.Text = "Добро пожаловать, " + CurrentUser.Name;
             currentUser = CurrentUser;
+
             //UserWelcome(......);
         }
         //public void UserWelcome(string name)

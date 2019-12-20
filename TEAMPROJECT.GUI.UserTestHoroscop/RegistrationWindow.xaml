@@ -5,7 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
-        Title="RegistrationWindow"  Height="450" Width="450">
+        Title="RegistrationWindow"  Height="450" Width="450" Background="#d5e7fb" >
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="baseButton">
+            <Setter Property="Foreground" Value="#4f0b40"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+            <Setter Property="Height" Value="40"/>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
+            <Setter Property="Background" Value="#f793ff"/>
+            <Setter Property="Width" Value="250"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="BackButton">
+            <Setter Property="Background" Value="#ca4d"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Headings">
+            <Setter Property="Foreground" Value="#823a6f"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Usual">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -19,16 +53,16 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">Введите информацию</TextBlock>
-        <TextBlock Grid.Row="1" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Имя:</TextBlock>
-        <TextBlock Grid.Row="2" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Дата рождения:</TextBlock>
-        <TextBlock Grid.Row="3" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Логин:</TextBlock>
-        <TextBlock Grid.Row="4" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Пароль:</TextBlock>
+        <TextBlock Grid.ColumnSpan="2" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">Введите информацию</TextBlock>
+        <TextBlock Grid.Row="1" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Имя:</TextBlock>
+        <TextBlock Grid.Row="2" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Дата рождения:</TextBlock>
+        <TextBlock Grid.Row="3" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Логин:</TextBlock>
+        <TextBlock Grid.Row="4" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Пароль:</TextBlock>
         <TextBox Name="UserName" Grid.Row="1" Grid.Column="1" Margin="15"></TextBox>
         <TextBox Name="UserDateOfBirth" Grid.Row="2" Grid.Column="1" Margin="15"></TextBox>
         <TextBox Name="UserLogin" Grid.Row="3" Grid.Column="1" Margin="15"></TextBox>
         <PasswordBox Name="UserPassword" Grid.Row="4" Grid.Column="1" Margin="15"></PasswordBox>
-        <Button Name="RegistrationCancel" Margin="30 15" Grid.Row="5" FontSize="17" Click="RegistrationCancel_Click">Отмена</Button>
-        <Button Name="RegistrationOK" Margin="30 15" Grid.Row="5" Grid.Column="1" FontSize="17" Click="RegistrationOK_Click">Готово</Button>
+        <Button Name="RegistrationCancel" Style="{StaticResource BackButton}" Margin="29,15,30,15" Grid.Row="5" FontSize="17" Click="RegistrationCancel_Click" Width="Auto">Отмена</Button>
+        <Button Name="RegistrationOK" Style="{StaticResource UsusalButton}" Margin="30,15,29,15" Grid.Row="5" Grid.Column="1" FontSize="17" Click="RegistrationOK_Click" Width="Auto">Готово</Button>
     </Grid>
 </Window>
