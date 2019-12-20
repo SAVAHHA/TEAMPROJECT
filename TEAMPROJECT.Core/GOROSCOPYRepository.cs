@@ -19,6 +19,10 @@ namespace TEAMPROJECT.Core
         public List<Compability> Compabilities = new List<Compability>();
         public Repository repository = new Repository();
 
+        public GOROSCOPYRepository()
+        {
+            LoadGOROSCOPYData();
+        }
         public void LoadGOROSCOPYData()
         {
             Predictions = repository.Deserialize<List<Prediction>>("Predictions");
@@ -56,7 +60,7 @@ namespace TEAMPROJECT.Core
 
         public void RewritePredictions()
         {
-            repository.Serialize("Prediction", Predictions);
+            repository.Serialize("Predictions", Predictions);
         }
     }
 }

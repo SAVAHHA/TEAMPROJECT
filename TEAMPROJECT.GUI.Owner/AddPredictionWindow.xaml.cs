@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TEAMPROJECT.Core;
 
 namespace TEAMPROJECT.GUI.Owner
 {
@@ -45,6 +46,9 @@ namespace TEAMPROJECT.GUI.Owner
             else
             {
                 MessageBox.Show("Предсказание успешно добавлено!", "Поздравляем!", MessageBoxButton.OK);
+                GOROSCOPYRepository _goroscopyRepo = new GOROSCOPYRepository();
+                _goroscopyRepo.AddPrediction(PredskazaniyeTextBox.Text);
+                _goroscopyRepo.RewritePredictions();
                 PredskazaniyeTextBox.Clear();
             }
         }
