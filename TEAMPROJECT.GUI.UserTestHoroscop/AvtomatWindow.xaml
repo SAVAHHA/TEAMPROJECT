@@ -52,9 +52,9 @@
         </Grid.RowDefinitions>
         <TextBlock FontSize="70" Foreground="#4f0b40" FontWeight="Bold" HorizontalAlignment="Left" Margin="323,32.333,0,0" TextWrapping="Wrap" Text="НЕТ!" VerticalAlignment="Top" Height="78" Width="161" Grid.Row="1" Grid.ColumnSpan="2"/>
         <TextBlock Style="{StaticResource Headings}" HorizontalAlignment="Left" Margin="63,40,0,0" TextWrapping="Wrap" Text="На сколько бы вопросов ты не ответил результат уже очевиден:" VerticalAlignment="Top" Height="101" Width="619" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Button Style="{StaticResource BackButton}" Name = "MainMenuButton" Grid.Row="2" Grid.Column="0" Margin="93,48.333,153.667,36.667" RenderTransformOrigin="0.5,0.5" Click="MainMenuButton_Click">В главное меню
+        <Button Style="{StaticResource BackButton}" Name = "MainMenuButton" Grid.Row="2" Grid.Column="0" Margin="63,48,115,22" RenderTransformOrigin="0.249,0.718" Click="MainMenuButton_Click" Height="Auto" Width="Auto">В главное меню
         </Button>
-        <Button Style="{StaticResource BackButton}" Name = "ExitButton" Grid.Row="2" Grid.Column="1" Margin="135.333,48.333,111.333,36.667" RenderTransformOrigin="0.5,0.5" Click="ExitButton_Click" >Выйти
+        <Button Style="{StaticResource BackButton}" Name = "ExitButton" Grid.Row="2" Margin="111,48,63,22" RenderTransformOrigin="0.5,0.5" Click="ExitButton_Click" Height="Auto" Width="Auto" Grid.Column="1" >Выйти
         </Button>
     </Grid>
 </Window>

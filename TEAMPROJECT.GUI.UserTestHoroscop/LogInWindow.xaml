@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
-        Title="LogInWindow" Height="350" Width="450" Background="#d5e7fb" >
+        Title="LogInWindow" Height="450" Width="800" Background="#d5e7fb" >
     <Window.Resources>
         <Style TargetType="Button" x:Key="baseButton">
             <Setter Property="Foreground" Value="#4f0b40"/>
@@ -39,6 +39,11 @@
             <Setter Property="BorderThickness" Value="3"/>
             <Setter Property="BorderBrush" Value="AliceBlue"/>
         </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -52,8 +57,8 @@
         </Grid.RowDefinitions>
         <TextBlock FontSize="20" Style="{StaticResource Headings}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10">Логин:</TextBlock>
         <TextBlock Grid.Row="1" Style="{StaticResource Headings}" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10">Пароль:</TextBlock>
-        <TextBox Name="UserLoginTextBox" Grid.Column="1" Margin="30"></TextBox>
-        <PasswordBox Grid.Row="1" Name="UserPasswordBox" Grid.Column="1" Margin="30"></PasswordBox>
-        <Button Name="UserLogIn" Style="{StaticResource UsusalButton}" Margin="30,33" Grid.Row="2" Grid.Column="1" FontSize="20" Click="UserLogIn_Click" Width="Auto">Войти</Button>
+        <TextBox Name="UserLoginTextBox" FontSize="20" VerticalAlignment="Center" Margin="30,42,30,40" Height="58" Grid.Column="1"/>
+        <PasswordBox  Grid.Row="1" Name="UserPasswordBox" FontSize="20" VerticalAlignment="Center" Grid.Column="1" Margin="30,40,30,42" Height="58"></PasswordBox>
+        <Button Name="UserLogIn" Style="{StaticResource UsusalButton}" Margin="30,43,30,32" Grid.Row="2" Grid.Column="1" FontSize="20" Click="UserLogIn_Click" Width="Auto" Height="Auto">Войти</Button>
     </Grid>
 </Window>

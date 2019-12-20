@@ -42,8 +42,9 @@
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="39"/>
+            <ColumnDefinition Width="132*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -51,11 +52,10 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Style="{StaticResource UsusalButton}" Name="Answer1" HorizontalAlignment="Left" Margin="81,30.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Answer1_Click"/>
-        <Button Style="{StaticResource UsusalButton}" Name="Answer3" Content="Button" HorizontalAlignment="Left" Margin="73.333,30.667,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" Click="Answer3_Click"/>
-        <Button Style="{StaticResource UsusalButton}" Name="Answer2" Content="Button" HorizontalAlignment="Left" Margin="81,30.333,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Answer2_Click"/>
-        <Button Style="{StaticResource UsusalButton}" Name="Answer4" Content="Button" HorizontalAlignment="Left" Margin="73.333,30.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Click="Answer4_Click"/>
-        <TextBlock Style="{StaticResource Usual}" HorizontalAlignment="Left" Margin="141,83,0,0" TextWrapping="Wrap" Text="номер вопроса" VerticalAlignment="Top" Height="13"/>
-        <TextBlock Style="{StaticResource Headings}" Name="QuestionTextBlock" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Текс вопроса" VerticalAlignment="Center" Height="38" Width="351" Grid.ColumnSpan="2"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer1" HorizontalAlignment="Left" Margin="44,31,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Answer1_Click" Width="342" Grid.ColumnSpan="2"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer3" Content="Button" HorizontalAlignment="Left" Margin="10,31,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="2" Click="Answer3_Click" Width="342"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer2" Content="Button" HorizontalAlignment="Left" Margin="44,30,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Answer2_Click" Width="342" Grid.ColumnSpan="2"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer4" Content="Button" HorizontalAlignment="Left" Margin="10,30,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="2" Click="Answer4_Click" Width="342"/>
+        <TextBlock Style="{StaticResource Headings}" FontSize="26" Name="QuestionTextBlock" HorizontalAlignment="Center"  Text="Текс вопроса" VerticalAlignment="Center" Height="38" Width="702" Grid.ColumnSpan="3" Margin="44,35,46,32"/>
     </Grid>
 </Window>

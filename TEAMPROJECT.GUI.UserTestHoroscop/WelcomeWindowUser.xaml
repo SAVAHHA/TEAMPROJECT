@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
-         Title="UserWelcomeWIndow" Height="200" Width="450" Background="#d5e7fb" >
+         Title="UserWelcomeWIndow" Height="450" Width="800" Background="#d5e7fb">
     <Window.Resources>
         <Style TargetType="Button" x:Key="baseButton">
             <Setter Property="Foreground" Value="#4f0b40"/>
@@ -49,9 +49,9 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.ColumnSpan="2" Style="{StaticResource Headings}" Margin="10 15" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Bottom">Войдите в аккаунт или зарегистрируйтесь</TextBlock>
-        <Button Name="EnterAccountButton" Style="{StaticResource UsusalButton}" Grid.Row="1" Margin="30 15" FontSize="15" Click="EnterAccountButton_Click" Height="Auto" Width="Auto">Войти</Button>
-        <Button Name="RegistrationButton" Style="{StaticResource BackButton}" Grid.Row="1" Grid.Column="1" Margin="30,15,29,15" FontSize="15" Click="RegistrationButton_Click" Background="Fuchsia" Width="Auto" Height="Auto">Зарегистрироваться</Button>
+        <TextBlock Grid.ColumnSpan="2" Style="{StaticResource Headings}" Margin="10 15"  HorizontalAlignment="Center" VerticalAlignment="Center">Войдите в аккаунт или зарегистрируйтесь</TextBlock>
+        <Button Name="EnterAccountButton" Style="{StaticResource UsusalButton}" Grid.Row="1" Margin="30,15,30,114" Click="EnterAccountButton_Click" Height="Auto" Width="Auto">Войти</Button>
+        <Button Name="RegistrationButton" Style="{StaticResource UsusalButton}" Grid.Row="1" Grid.Column="1" Margin="30,15,29,114" Click="RegistrationButton_Click" Width="Auto" Height="Auto">Зарегистрироваться</Button>
     </Grid>
 </Window>
 

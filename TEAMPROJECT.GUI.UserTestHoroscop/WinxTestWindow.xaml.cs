@@ -39,7 +39,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         {
             InitializeComponent();
             _user = currentUser;
-            QuestionTextBlock.Text = _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
+            QuestionTextBlock.Text ="      " +  _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
             Answer1.Content = _testyrepository.TextA1Test(_testyrepository.winxtest, winxcount);
             Answer2.Content = _testyrepository.TextA2Test(_testyrepository.winxtest, winxcount);
             Answer3.Content = _testyrepository.TextA3Test(_testyrepository.winxtest, winxcount);
@@ -67,7 +67,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 _testyrepository.testResults.Add(new_testresult);
                 Console.WriteLine(_testyrepository.testResults[0].ResultName);
                 _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
-                var window = new ResultWinxWindow();
+                var window = new ResultWinxWindow(new_testresult.ResultName);
                 window.Show();
                 Close();
             }
@@ -96,7 +96,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 _testyrepository.testResults.Add(new_testresult);
                 Console.WriteLine(_testyrepository.testResults[0].ResultName);
                 _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
-                var window = new ResultWinxWindow();
+                var window = new ResultWinxWindow(new_testresult.ResultName);
                 window.Show();
                 Close();
             }
@@ -124,7 +124,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 _testyrepository.testResults.Add(new_testresult);
                 Console.WriteLine(_testyrepository.testResults[0].ResultName);
                 _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
-                var window = new ResultWinxWindow();
+                var window = new ResultWinxWindow(new_testresult.ResultName);
                 window.Show();
                 Close();
             }
@@ -153,7 +153,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 _testyrepository.testResults.Add(new_testresult);
                 _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
 
-                var window = new ResultWinxWindow();
+                var window = new ResultWinxWindow(new_testresult.ResultName);
                 window.Show();
                 Close();
             }

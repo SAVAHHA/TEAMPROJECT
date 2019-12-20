@@ -19,13 +19,22 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class ResultWinxWindow : Window
     {
-        public ResultWinxWindow()
+        public ResultWinxWindow(string res)
         {
-            //Congrats.Text = $
-            //ResultImage.Source = new BitmapImage(new Uri("/Photo/phon.png"));
-
-            //ResultImage.Source = "/Photo/phon.png";
             InitializeComponent();
+            ResultTB.Text = "   " + res;
+        }
+
+        private void MainMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new WelcomeWindowUser();
+            window.Show();
+            Close();
+        }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

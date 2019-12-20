@@ -73,7 +73,6 @@
     <None Include="Data\Compabilities.json" />
     <None Include="Data\Predictions.json" />
     <None Include="Data\PredictionsPerZodiacs.json" />
-    <None Include="Data\PrepodTest.json" />
     <None Include="Data\TestResults.json" />
     <None Include="Data\Users.json" />
     <None Include="Data\WinxTest.json" />

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
-        Title="RegistrationWindow"  Height="450" Width="450" Background="#d5e7fb" >
+        Title="RegistrationWindow"  Height="450" Width="800" Background="#d5e7fb" >
     <Window.Resources>
         <Style TargetType="Button" x:Key="baseButton">
             <Setter Property="Foreground" Value="#4f0b40"/>
@@ -53,11 +53,11 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.ColumnSpan="2" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">Введите информацию</TextBlock>
-        <TextBlock Grid.Row="1" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Имя:</TextBlock>
-        <TextBlock Grid.Row="2" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Дата рождения:</TextBlock>
-        <TextBlock Grid.Row="3" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Логин:</TextBlock>
-        <TextBlock Grid.Row="4" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10">Пароль:</TextBlock>
+        <TextBlock Grid.ColumnSpan="2" Style="{StaticResource Headings}" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">Введите информацию</TextBlock>
+        <TextBlock Grid.Row="1" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" Foreground="Black" VerticalAlignment="Center" Margin="10">Имя:</TextBlock>
+        <TextBlock Grid.Row="2" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" Foreground="Black" VerticalAlignment="Center" Margin="10">Дата рождения:</TextBlock>
+        <TextBlock Grid.Row="3" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" Foreground="Black" VerticalAlignment="Center" Margin="10">Логин:</TextBlock>
+        <TextBlock Grid.Row="4" Style="{StaticResource Headings}" FontSize="20" HorizontalAlignment="Right" Foreground="Black" VerticalAlignment="Center" Margin="10">Пароль:</TextBlock>
         <TextBox Name="UserName" Grid.Row="1" Grid.Column="1" Margin="15"></TextBox>
         <TextBox Name="UserDateOfBirth" Grid.Row="2" Grid.Column="1" Margin="15"></TextBox>
         <TextBox Name="UserLogin" Grid.Row="3" Grid.Column="1" Margin="15"></TextBox>

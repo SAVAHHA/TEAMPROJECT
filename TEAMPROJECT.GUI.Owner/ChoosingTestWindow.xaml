@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.Owner"
         mc:Ignorable="d"
-        Title="ChoosingTestWindow" Height="450" Width="800"  Background="#d5e7fb">
+        Title="ChoosingTestWindow" Height="450" Width="800" Background="#d5e7fb">
     <Window.Resources>
         <Style TargetType="Button" x:Key="baseButton">
             <Setter Property="Foreground" Value="#4f0b40"/>

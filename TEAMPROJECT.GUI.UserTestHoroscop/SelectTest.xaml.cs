@@ -35,20 +35,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         }
 
-        private void PrepodTest_Click(object sender, RoutedEventArgs e)
-        {
-            var window = new PrepodFirstWindow(CurrentUser);
-            window.Show();
-            Close();
-        }
 
-        private void KorpusTest_Click(object sender, RoutedEventArgs e)
-        {
-            var window = new KorpusFirstWindow(CurrentUser);
-            window.Show();
-            Close();
-
-        }
 
         private void AvtomatTest_Click(object sender, RoutedEventArgs e)
         {
@@ -60,8 +47,8 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            //var window = new MainMenuWindow(0);
-            //window.Show();
+            var window = new WelcomeWindowUser();
+            window.Show();
             Close();
 
         }
