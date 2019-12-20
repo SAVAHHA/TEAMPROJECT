@@ -25,8 +25,10 @@ namespace TEAMPROJECT.GUI.Owner
             InitializeComponent();
             OWNERRepository _ownerRepo = new OWNERRepository();
             TESTYRepository _testRepo = new TESTYRepository();
+            Repository _repo = new Repository();
             couUsTB.Text = _ownerRepo.CountUsersUsingTests().ToString();
             TotalTB.Text = _testRepo.testResults.Count().ToString();
+            percentageTestsTB.Text = ((_ownerRepo.CountUsersUsingTests() * 100) / _repo.Users.Count()).ToString();
             _ownerRepo.PassesCounter();
             maxTB.Text = _ownerRepo.GetMax();
             minTB.Text = _ownerRepo.GetMin();

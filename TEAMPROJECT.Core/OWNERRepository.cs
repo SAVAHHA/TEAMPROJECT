@@ -13,6 +13,8 @@ namespace TEAMPROJECT.Core
         TESTYRepository _testRepo = new TESTYRepository();
         public DateTime? selectedDate = new DateTime();
         public AllTests selectedTest;
+        public List<ResultsCount> results = new List<ResultsCount>();
+        public List<ResultsCount> neededResults = new List<ResultsCount>();
         public int CountZodiac(string zodiacName)
         {
             int count = 0;
@@ -92,12 +94,9 @@ namespace TEAMPROJECT.Core
         {
             if (selectedDate.ToString() == "")
             {
-                Console.WriteLine("0");
                 int count = 0;
                 foreach (var pass in _testRepo.testResults)
                 {
-                    Console.WriteLine(pass.TestName);
-                    Console.WriteLine(selectedTest.TestName);
                     if (pass.TestName == selectedTest.TestName)
                     {
                         count += 1;
@@ -107,20 +106,62 @@ namespace TEAMPROJECT.Core
             }
             else
             {
-                Console.WriteLine("+");
                 int count = 0;
                 foreach (var pass in _testRepo.testResults)
                 {
-                    Console.WriteLine(pass.TestName);
-                    Console.WriteLine(selectedTest.TestName);
-                    Console.WriteLine(pass.PassDate);
-                    Console.WriteLine(selectedDate);
                     if (pass.TestName == selectedTest.TestName && selectedDate.ToString().Substring(0, 10) == pass.PassDate.ToString().Substring(0, 10))
                     {
                         count += 1;
                     }
                 }
                 return count;
+            }
+        }
+
+        public void CountingResults()
+        {
+            foreach (var pass in _testRepo.testResults)
+            {
+                bool found = false;
+                foreach (var item in results)
+                {
+                    if (item.TestName == pass.TestName && item.ResulttName == pass.ResultName)
+                    {
+                        item.ResultNumber += 1;
+                        found = true;
+                        break;
+                    }
+                }
+                if (found == false)
+                {
+                    ResultsCount res = new ResultsCount();
+                    res.TestName = pass.TestName;
+                    res.ResulttName = pass.ResultName;
+                    res.ResultNumber = 1;
+                    res.DateTiming = pass.PassDate;
+                    results.Add(res);
+                }
+            }
+        }
+
+        public void ChoosingNeededResults()
+        {
+            foreach (var res in results)
+            {
+                if (selectedDate.ToString() == "")
+                {
+                    if (res.TestName == selectedTest.TestName)
+                    {
+                        neededResults.Add(res);
+                    }
+                }
+                else
+                {
+                    if (res.TestName == selectedTest.TestName && selectedDate.ToString().Substring(0, 10) == res.DateTiming.ToString().Substring(0, 10))
+                    {
+                        neededResults.Add(res);
+                    }
+                }
             }
         }
     }

@@ -29,6 +29,9 @@ namespace TEAMPROJECT.GUI.Owner
             ownerRepo.selectedDate = date;
             ownerRepo.selectedTest = _testRepo.allTests[index];
             countOneTB.Text = ownerRepo.CountPassesOneDay().ToString();
+            ownerRepo.CountingResults();
+            ownerRepo.ChoosingNeededResults();
+            oneTestLB.ItemsSource = ownerRepo.neededResults;
             //periodTextBox.Text = _ownerRepo.selectedDate.ToString().Substring(0, 10);
         }
 
