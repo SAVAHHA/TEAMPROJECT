@@ -6,6 +6,35 @@
         xmlns:local="clr-namespace:TEAMPROJECT.GUI.Owner"
         mc:Ignorable="d"
         Title="TestyWorkWindow" Height="450" Width="800" Background="#d5e7fb">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="baseButton">
+            <Setter Property="Foreground" Value="#4f0b40"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="BorderThickness" Value="4"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
+            <Setter Property="Background" Value="#f793ff"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="BackButton">
+            <Setter Property="Background" Value="#ca4d"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Headings">
+            <Setter Property="Foreground" Value="#823a6f"/>
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Usual">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="AliceBlue"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -19,25 +48,25 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="15">Общая статистика по тестам</TextBlock>
-        <Button Grid.Row="5" Grid.Column="0" Name="BackButton" Margin="10,10,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
-        <Button Grid.Row="5" Grid.Column="1" Name="ExitButton" Margin="30,10,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
+        <TextBlock Style="{StaticResource Headings}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Margin="15">Общая статистика по тестам</TextBlock>
+        <Button Style="{StaticResource BackButton}" Grid.Row="5" Grid.Column="0" Name="BackButton" Margin="10,10,30,10" FontSize="22" Click="BackButton_Click">В главное меню</Button>
+        <Button Style="{StaticResource BackButton}" Grid.Row="5" Grid.Column="1" Name="ExitButton" Margin="30,10,10,10" FontSize="22" Click="ExitButton_Click">Выход</Button>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="15">
-            <TextBlock Text="Количество клиентов, использующих тесты - " FontWeight="DemiBold" FontSize="20"/>
-            <TextBlock Text="{Binding EntryDt}"/>
+            <TextBlock Style="{StaticResource Usual}" Text="Количество клиентов, использующих тесты - " FontSize="20"/>
+            <TextBlock Style="{StaticResource Usual}" Text="{Binding EntryDt}"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="15">
-            <TextBlock Text="Общее количество прохождений тестов - " FontWeight="DemiBold" FontSize="20"/>
+            <TextBlock Style="{StaticResource Usual}" Text="Общее количество прохождений тестов - " FontSize="20"/>
             <TextBlock Text="{Binding EntryDt}"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Margin="15">
-            <TextBlock Text="Наиболее популярный тест:" FontWeight="DemiBold" FontSize="20"/>
+            <TextBlock Style="{StaticResource Usual}" Text="Наиболее популярный тест:" FontSize="20"/>
             <TextBlock Text="{Binding EntryDt}"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="1" Margin="15">
-            <TextBlock Text="Наименее популярный тест:" FontWeight="DemiBold" FontSize="20"/>
+            <TextBlock Style="{StaticResource Usual}" Text="Наименее популярный тест:" FontSize="20"/>
             <TextBlock Text="{Binding EntryDt}"/>
         </StackPanel>
-        <Button Grid.Row="4" Grid.ColumnSpan="2" Name="OneTestButton" Margin="10" FontSize="22" Click="OneTestButton_Click">Получить информацию по определенному тесту</Button>
+        <Button Style="{StaticResource UsusalButton}" Grid.Row="4" Grid.ColumnSpan="2" Name="OneTestButton" Margin="10" FontSize="22" Click="OneTestButton_Click">Получить информацию по определенному тесту</Button>
     </Grid>
 </Window>

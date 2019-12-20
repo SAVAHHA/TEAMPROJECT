@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TEAMPROJECT.Core;
 
-namespace TEAMPROJECT.GUI.User
+namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
     /// <summary>
     /// Логика взаимодействия для LogInWindow.xaml
@@ -34,8 +34,8 @@ namespace TEAMPROJECT.GUI.User
             bool check = repository.Entrance(UserLoginTextBox.Text, UserPasswordBox.Password, out id);
             if (check == true)
             {
-                SwitchWindow switchWindow = new SwitchWindow(id);
-                switchWindow.Show();
+                MainMenuWindow mainMenuWindow = new MainMenuWindow();//id);
+                mainMenuWindow.Show();
                 this.Close();
             }
             else

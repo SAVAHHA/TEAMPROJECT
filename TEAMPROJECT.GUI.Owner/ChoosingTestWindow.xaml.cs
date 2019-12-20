@@ -20,7 +20,7 @@ namespace TEAMPROJECT.GUI.Owner
     /// </summary>
     public partial class ChoosingTestWindow : Window
     {
-        OWNERRepository _ownerRepo { get; set; }
+        OWNERRepository ownerRepo { get; set; }
         public ChoosingTestWindow()
         {
             InitializeComponent();
@@ -42,8 +42,8 @@ namespace TEAMPROJECT.GUI.Owner
 
         private void GetStatButton_Click(object sender, RoutedEventArgs e)
         {
-            _ownerRepo = new OWNERRepository();
-            _ownerRepo.selectedDate = TestDatePicker.SelectedDate;
+            ownerRepo = new OWNERRepository();
+            ownerRepo.selectedDate = TestDatePicker.SelectedDate;
             OneTestWindow oneTestWindow = new OneTestWindow();
             oneTestWindow.Show();
             this.Close();

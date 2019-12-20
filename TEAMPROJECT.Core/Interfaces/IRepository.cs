@@ -13,8 +13,8 @@ namespace TEAMPROJECT.Core.Interfaces
         //Прописать код для Json файлов
         T Deserialize<T>(string fileName);
         void Serialize<T>(string fileName, T data);
-        void AddUser(string name, DateTime dateOfBirth, string login, string password);
-        bool Entrance(string login, string password);
+        void AddUser(string name, string dateOfBirthStr, string login, string password);
+        bool Entrance(string login, string password, out int id);
         int GetID(string login, string password);
     }
 }

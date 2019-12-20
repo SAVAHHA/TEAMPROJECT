@@ -1,29 +1,34 @@
-﻿<Window x:Class="TEAMPROJECT.GUI.Owner.WelcomingWindow"
+﻿<Window x:Class="TEAMPROJECT.GUI.UserTestHoroscop.WinxTestWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TEAMPROJECT.GUI.Owner"
+        xmlns:local="clr-namespace:TEAMPROJECT.GUI.UserTestHoroscop"
         mc:Ignorable="d"
-        Title="WelcomingWindow" Height="450" Width="800" Background="#d5e7fb">
+        Title="SelectTest" Height="450" Width="800" Background="#d5e7fb" >
     <Window.Resources>
         <Style TargetType="Button" x:Key="baseButton">
             <Setter Property="Foreground" Value="#4f0b40"/>
             <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontSize" Value="15"/>
             <Setter Property="BorderThickness" Value="4"/>
             <Setter Property="BorderBrush" Value="AliceBlue"/>
+            <Setter Property="Height" Value="65"/>
         </Style>
 
         <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="UsusalButton">
             <Setter Property="Background" Value="#f793ff"/>
+            <Setter Property="Width" Value="250"/>
         </Style>
         <Style TargetType="Button" BasedOn="{StaticResource baseButton}" x:Key="BackButton">
             <Setter Property="Background" Value="#ca4d"/>
+            <Setter Property="Width" Value="70"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="Headings">
             <Setter Property="Foreground" Value="#823a6f"/>
             <Setter Property="FontSize" Value="32"/>
             <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
         </Style>
         <Style TargetType="TextBlock" x:Key="Usual">
             <Setter Property="Foreground" Value="Black"/>
@@ -36,20 +41,21 @@
         </Style>
     </Window.Resources>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Style="{StaticResource Headings}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="Bold">Добро пожаловать, лучший администратор!</TextBlock>
-        <TextBlock Style="{StaticResource Usual}" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="DemiBold">Выберите следующее действие</TextBlock>
-        <Button Style="{StaticResource UsusalButton}" Grid.Row="2" Grid.Column="0" Name="TestStatisticsButton" Margin="30,20,10,10" FontSize="22" Click="TestStatisticsButton_Click">Получить статистику по тестам</Button>
-        <Button Style="{StaticResource UsusalButton}" Grid.Row="2" Grid.Column="1" Name="GoroscoryStatisticsButton" Margin="10,20,30,10" FontSize="22" Click="GoroscoryStatisticsButton_Click">Работать с гороскопами</Button>
-        <Button Style="{StaticResource BackButton}" Grid.Row="3" Name="ExitButton" Margin="217,40,219,10" FontSize="22" Grid.ColumnSpan="2" Click="ExitButton_Click">Выход</Button>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer1" HorizontalAlignment="Left" Margin="81,30.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Answer1_Click"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer3" Content="Button" HorizontalAlignment="Left" Margin="73.333,30.667,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" Click="Answer3_Click"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer2" Content="Button" HorizontalAlignment="Left" Margin="81,30.333,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Answer2_Click"/>
+        <Button Style="{StaticResource UsusalButton}" Name="Answer4" Content="Button" HorizontalAlignment="Left" Margin="73.333,30.333,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Click="Answer4_Click"/>
+        <TextBlock Style="{StaticResource Usual}" HorizontalAlignment="Left" Margin="141,83,0,0" TextWrapping="Wrap" Text="номер вопроса" VerticalAlignment="Top" Height="13"/>
+        <TextBlock Style="{StaticResource Headings}" Name="QuestionTextBlock" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Текс вопроса" VerticalAlignment="Center" Height="38" Width="351" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>
