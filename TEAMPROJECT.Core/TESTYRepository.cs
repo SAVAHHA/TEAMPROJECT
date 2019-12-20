@@ -141,27 +141,27 @@ namespace TEAMPROJECT.Core
         {
             string fairy = "";
             int resultnumber =  GetMax(r1, r2, r3, r4, r5, r6);
-            if (resultnumber == 1)
+            if (resultnumber == r1)
             {
                 fairy = "Блум";
             }
-            if (resultnumber == 2)
+            if (resultnumber == r2)
             {
                 fairy = "Стелла";
             }
-            if (resultnumber == 3)
+            if (resultnumber == r3)
             {
                 fairy = "Флора";
             }
-            if (resultnumber == 4)
+            if (resultnumber == r4)
             {
                 fairy = "Муза";
             }
-            if (resultnumber == 5)
+            if (resultnumber == r5)
             {
                 fairy = "Лейла";
             }
-            if (resultnumber == 6)
+            if (resultnumber == r6)
             {
                 fairy = "Текна";
             }

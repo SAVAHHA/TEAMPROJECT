@@ -23,6 +23,7 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     {
         User CurretUser { get; set; }
         private TESTYRepository _testyrepository = new TESTYRepository();
+        private Repository _repository = new Repository();
 
         int winxcount = 0;
 
@@ -32,11 +33,12 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
         int Result4 = 0;
         int Result5 = 0;
         int Result6 = 0;
-        
+        User _user { get; set; }
 
         public WinxTestWindow(User currentUser)
         {
             InitializeComponent();
+            _user = currentUser;
             QuestionTextBlock.Text = _testyrepository.TextQATest(_testyrepository.winxtest, winxcount);
             Answer1.Content = _testyrepository.TextA1Test(_testyrepository.winxtest, winxcount);
             Answer2.Content = _testyrepository.TextA2Test(_testyrepository.winxtest, winxcount);
@@ -59,10 +61,12 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
                 TestResults new_testresult = new TestResults();
                 new_testresult.PassDate = DateTime.Now;
                 new_testresult.TestName = testname;
-                //new_testresult.User =;
+                new_testresult.User = _user;
                 new_testresult.ResultName = _testyrepository.WinxTestResultLogic(Result1,Result2,Result3,Result4,Result5,Result6);
-                
 
+                _testyrepository.testResults.Add(new_testresult);
+                Console.WriteLine(_testyrepository.testResults[0].ResultName);
+                _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
                 var window = new ResultWinxWindow();
                 window.Show();
                 Close();
@@ -80,8 +84,18 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             int answernumber3 = 3;
             _testyrepository.ButtonTestLogic(_testyrepository.winxtest, winxcount, answernumber3, Result1, Result2, Result3, Result4, Result5, Result6);
             winxcount++;
+            string testname = _testyrepository.TextNameTest(_testyrepository.winxtest);
             if (winxcount == _testyrepository.winxtest.Count / 4)
             {
+                TestResults new_testresult = new TestResults();
+                new_testresult.PassDate = DateTime.Now;
+                new_testresult.TestName = testname;
+                new_testresult.User = _user;
+                new_testresult.ResultName = _testyrepository.WinxTestResultLogic(Result1, Result2, Result3, Result4, Result5, Result6);
+
+                _testyrepository.testResults.Add(new_testresult);
+                Console.WriteLine(_testyrepository.testResults[0].ResultName);
+                _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
                 var window = new ResultWinxWindow();
                 window.Show();
                 Close();
@@ -98,8 +112,18 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             int answernumber2 = 2;
             _testyrepository.ButtonTestLogic(_testyrepository.winxtest, winxcount, answernumber2, Result1, Result2, Result3, Result4, Result5, Result6);
             winxcount++;
+            string testname = _testyrepository.TextNameTest(_testyrepository.winxtest);
             if (winxcount == _testyrepository.winxtest.Count / 4)
             {
+                TestResults new_testresult = new TestResults();
+                new_testresult.PassDate = DateTime.Now;
+                new_testresult.TestName = testname;
+                new_testresult.User = _user;
+                new_testresult.ResultName = _testyrepository.WinxTestResultLogic(Result1, Result2, Result3, Result4, Result5, Result6);
+
+                _testyrepository.testResults.Add(new_testresult);
+                Console.WriteLine(_testyrepository.testResults[0].ResultName);
+                _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
                 var window = new ResultWinxWindow();
                 window.Show();
                 Close();
@@ -116,8 +140,20 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
             int answernumber4 = 4;
             _testyrepository.ButtonTestLogic(_testyrepository.winxtest, winxcount, answernumber4, Result1, Result2, Result3, Result4, Result5, Result6);
             winxcount++;
+
+            string testname = _testyrepository.TextNameTest(_testyrepository.winxtest);
             if (winxcount == _testyrepository.winxtest.Count / 4)
             {
+                TestResults new_testresult = new TestResults();
+                new_testresult.PassDate = DateTime.Now;
+                new_testresult.TestName = testname;
+                new_testresult.User = _user;
+                new_testresult.ResultName = _testyrepository.WinxTestResultLogic(Result1, Result2, Result3, Result4, Result5, Result6);
+
+                _testyrepository.testResults.Add(new_testresult);
+                Console.WriteLine(_testyrepository.testResults[0].ResultName);
+                _repository.Serialize("../../TEAMPROJECT.Core/Data/TestResults.json", _testyrepository.testResults);
+
                 var window = new ResultWinxWindow();
                 window.Show();
                 Close();
