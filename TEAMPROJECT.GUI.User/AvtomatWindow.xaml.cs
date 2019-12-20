@@ -26,7 +26,7 @@ namespace TEAMPROJECT.GUI.User
 
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow();
+            var window = new MainMenuWindow();
             window.Show();
             Close();
 

@@ -17,18 +17,23 @@ namespace TEAMPROJECT.Core
         public TESTYRepository()
         {
             LoadData();
-        }
 
+        }
+        
         Repository repository = new Repository();
         public List<Test> winxtest;
         public List<TestResults> testResults;
-        public List<AllTests> AllTests;
+        public List<AllTests> allTests;
+        public const string AllTestsName = "../../../Data/AllTests.json";
+        //public const string TestResultsName = "../../../Data/.json";
+        public const string WinxTestName = "../../Data/WinxTest.json";
         //Users берем из Repository
         private void LoadData()
         {
-            AllTests = repository.Deserialize<List<AllTests>>("AllTests");
-            winxtest = repository.Deserialize<List<Test>>("WinxTest");
-            testResults = repository.Deserialize<List<TestResults>>("TestResults");   
+
+            //allTests = repository.Deserialize<List<AllTests>>(AllTestsName);
+            winxtest = repository.Deserialize<List<Test>>(WinxTestName);
+            //testResults = repository.Deserialize<List<TestResults>>(TestResultsName);   
         }
         public void ButtonTestLogic(List<Test> testlist, int clickcount, int answernumber, int r1, int r2, int r3, int r4, int r5, int r6)
         {

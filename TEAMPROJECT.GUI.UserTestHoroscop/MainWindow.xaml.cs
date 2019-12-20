@@ -12,21 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace TEAMPROJECT.GUI.User
+namespace TEAMPROJECT.GUI.UserTestHoroscop
 {
     /// <summary>
-    /// Логика взаимодействия для PrepodFirstWindow.xaml
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class PrepodFirstWindow : Window
+    public partial class MainWindow : Window
     {
-        public PrepodFirstWindow()
+        public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Start_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

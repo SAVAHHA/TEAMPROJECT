@@ -21,6 +21,7 @@ namespace TEAMPROJECT.GUI.User
     {
         public MainMenuWindow()
         {
+            
             InitializeComponent();
             //UserWelcome(......);
         }

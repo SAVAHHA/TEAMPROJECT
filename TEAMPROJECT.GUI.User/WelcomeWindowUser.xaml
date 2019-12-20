@@ -24,6 +24,7 @@
             </Image.Source>
         </Image>
         <Button Name="RegistrationButton" Grid.Row="1" Grid.Column="1" Margin="30 15" FontSize="15" Click="RegistrationButton_Click" Background="Fuchsia">Зарегистрироваться</Button>
+
     </Grid>
 </Window>
 
