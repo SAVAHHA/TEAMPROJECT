@@ -145,23 +145,23 @@ namespace TEAMPROJECT.Core
             {
                 fairy = "Блум";
             }
-            if (resultnumber == 1)
+            if (resultnumber == 2)
             {
                 fairy = "Стелла";
             }
-            if (resultnumber == 1)
+            if (resultnumber == 3)
             {
                 fairy = "Флора";
             }
-            if (resultnumber == 1)
+            if (resultnumber == 4)
             {
                 fairy = "Муза";
             }
-            if (resultnumber == 1)
+            if (resultnumber == 5)
             {
                 fairy = "Лейла";
             }
-            if (resultnumber == 1)
+            if (resultnumber == 6)
             {
                 fairy = "Текна";
             }
