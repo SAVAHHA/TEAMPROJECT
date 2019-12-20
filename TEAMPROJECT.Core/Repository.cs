@@ -61,7 +61,7 @@ namespace TEAMPROJECT.Core
             user.UserID = Users.Count() + 1;
             foreach (var zodiac in Zodiacs)
             {
-                if (zodiac.FirstDate.Month <= dateOfBirth.Month && zodiac.FirstDate.Day <= dateOfBirth.Day && zodiac.LastDate.Month >= dateOfBirth.Month && zodiac.LastDate.Day >= dateOfBirth.Day) 
+                if (zodiac.FirstDate.DayOfYear <= dateOfBirth.DayOfYear && zodiac.LastDate.DayOfYear >= dateOfBirth.DayOfYear)
                 {
                     user.Zodiac = zodiac;
                 }
