@@ -21,13 +21,15 @@ namespace TEAMPROJECT.GUI.UserTestHoroscop
     /// </summary>
     public partial class AvtomatWindow : Window
     {
-        public AvtomatWindow(User currentUser)
+        User _currentUser { get; set; }
+        public AvtomatWindow(User CurrentUser)
         {
+            _currentUser = CurrentUser;
             InitializeComponent();
             TestResults new_testresult = new TestResults();
             new_testresult.PassDate = DateTime.Now;
             new_testresult.TestName = "Автомат по C#";
-            //new_testresult.User =;
+            new_testresult.User = _currentUser;
             new_testresult.ResultName = "Нет!";
 
         }
